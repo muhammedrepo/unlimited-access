@@ -31,9 +31,6 @@ const Landing = () => {
         <section className="mt-20">
           <EarnDevice />
         </section>
-        <section className="bg-green-800 p-4 md:p-5">
-          <CTA />
-        </section>
       </main>
     </Layout>
   );

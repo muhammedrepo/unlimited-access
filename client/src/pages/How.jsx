@@ -1,8 +1,121 @@
 import React from "react";
-import { Layout } from "../components";
+import { FaCommentDollar, FaMoneyBillWave, FaSignInAlt } from "react-icons/fa";
+import styled from "styled-components";
+import { BreadCrumb, Button, Layout } from "../components";
+import Counter from "../components/Counter";
+
+const Wrapper = styled.div`
+  .counter-num {
+    background-color: #1b4c43;
+    margin: 0 3px;
+    display: inline-block;
+    padding: 4px 10px 0;
+    min-width: 50px;
+    color: #fff;
+    line-height: 1.3;
+    border-radius: 4px;
+  }
+`;
 
 const How = () => {
-  return <Layout>How</Layout>;
+  return (
+    <Layout>
+      <Wrapper>
+        <BreadCrumb
+          title="HOW CLOUTZAP WORKS"
+          subtitle="Its very easy to get started with CloutZap."
+          page="How It Works"
+        />
+
+        <section className="px-4 mx-auto max-w-screen-xl pt-4 pb-0 mb-5">
+          <div className="text-center">
+            <h3>Learn How To Earn Money with CloutZap!</h3>
+            <p className="mb-0">Users like you have already received</p>
+            <div className="flex items-center justify-center my-2 text-4xl font-semibold">
+              <span className="counter-num">$</span>
+              <span className="flex counter-text mr-2">
+                <span className="counter-num">
+                  <Counter end={46} />
+                </span>
+                ,
+                <span className="counter-num">
+                  <Counter end={53} />
+                </span>
+                ,
+                <span className="counter-num">
+                  <Counter end={87} />
+                </span>
+                ,
+                <span className="counter-num">
+                  <Counter end={46} />
+                </span>
+              </span>
+            </div>
+            <p className="mb-0">in Cash by CloutZap.</p>
+          </div>
+        </section>
+
+        <section className="bg-gray-50 dark:bg-gray-900">
+          <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 text-center">
+            <div className="max-w-screen-md mb-8 lg:mb-16 mx-auto text-center">
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                How it Works
+              </h2>
+              <p className="text-gray-500 sm:text-xl dark:text-gray-400">
+                Easiest #1 Influencer Network in the world. Easy as 1,2,3 all
+                you have to do is Join, Share, and Earn.
+              </p>
+            </div>
+            <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+              <div className="text-center flex flex-col items-center">
+                <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-green-100 lg:h-12 lg:w-12 dark:bg-green-900">
+                  <FaSignInAlt className="w-5 h-5 text-green-600 lg:w-6 lg:h-6 text-5xl font-bold dark:text-green-300" />
+                </div>
+                <h3 className="mb-2 text-xl font-bold dark:text-white">
+                  Join CloutZap
+                </h3>
+                <p className="text-gray-500 dark:text-gray-400">
+                  We reward our members with money for the everyday things they
+                  already do online.
+                </p>
+              </div>
+              <div className="text-center flex flex-col items-center">
+                <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-green-100 lg:h-12 lg:w-12 dark:bg-green-900">
+                  <FaCommentDollar className="w-5 h-5 text-green-600 lg:w-6 lg:h-6 dark:text-green-300" />
+                </div>
+                <h3 className="mb-2 text-xl font-bold dark:text-white">
+                  Earn Money
+                </h3>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Invite your friends to our site by sharing your referral link
+                  and earn $15 for every person you invite.
+                </p>
+              </div>
+              <div className="text-center flex flex-col items-center">
+                <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-green-100 lg:h-12 lg:w-12 dark:bg-green-900">
+                  <FaMoneyBillWave className="w-5 h-5 text-green-600 lg:w-6 lg:h-6 dark:text-green-300" />
+                </div>
+                <h3 className="mb-2 text-xl font-bold dark:text-white">
+                  Get Paid
+                </h3>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Instantly withdraw your funds to PayPal, Cash App, Venmo,
+                  Zelle, and more!
+                </p>
+              </div>
+            </div>
+            <div className="mt-8">
+              <Button
+                text="Sign up now for $35 bonus!"
+                bgColor="green"
+                url="/register"
+              />
+            </div>
+          </div>
+        </section>
+      </Wrapper>
+    </Layout>
+  );
 };
 
 export default How;

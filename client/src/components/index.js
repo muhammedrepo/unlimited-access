@@ -14,6 +14,7 @@ import MapCounter from "./MapCounter";
 import EarnDevice from "./EarnDevice";
 import CTA from "./CTA";
 import FormRow from "./FormRow";
+import BreadCrumb from "./BreadCrumb";
 export {
   Alert,
   NavLinks,
@@ -31,4 +32,5 @@ export {
   EarnDevice,
   CTA,
   FormRow,
+  BreadCrumb,
 };
