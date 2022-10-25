@@ -113,6 +113,158 @@ const How = () => {
             </div>
           </div>
         </section>
+
+        <section className="bg-white m-0 pt-0 pb-0 mb-5">
+          <div className="px-4 mx-auto max-w-screen-xl">
+            <div className="flex flex-col items-center mw-sm mx-auto g-0">
+              <div className="col-12">
+                <div
+                  className="flex flex-wrap feature-box fbox-effect fbox-xl fadeInLeft animated"
+                  data-animate="fadeInLeft"
+                >
+                  <div className="w-40 h-36 px-3 fbox-icon me-3">
+                    <img
+                      src="https://cloutzap.com/images/referral.png"
+                      alt="Feature Icon"
+                      className="bg-transparent rounded-0"
+                    />
+                  </div>
+                  <div className="fbox-content">
+                    <h3>Clicks &amp; Referrals</h3>
+                    <p>
+                      Share your invite link with friends, family, and
+                      colleagues and receive $2 when they click it, and $15 for
+                      every sign up.
+                    </p>
+                    <a
+                      href="https://cloutzap.com/register"
+                      className="btn btn-success btn-sm mt-3"
+                    >
+                      Start Earning Now{" "}
+                      <i className="icon-line-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="line my-5"></div>
+              <div className="col-12">
+                <div
+                  className="flex flex-wrap feature-box fbox-effect fbox-xl flex-row-reverse fadeInLeft animated"
+                  data-animate="fadeInLeft"
+                >
+                  <div className="w-40 h-36 px-3 fbox-icon ms-3">
+                    <img
+                      src="https://cloutzap.com/images/survey.png"
+                      alt="Feature Icon"
+                      className="bg-transparent rounded-0"
+                    />
+                  </div>
+                  <div className="fbox-content">
+                    <h3>Survey Tasks</h3>
+                    <p>Earn Money when you answer fun surveys and polls.</p>
+                    <a
+                      href="https://cloutzap.com/register"
+                      className="btn btn-success btn-sm mt-3"
+                    >
+                      Start Earning Now{" "}
+                      <i className="icon-line-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="line my-5"></div>
+              <div className="col-12">
+                <div
+                  className="flex flex-wrap feature-box fbox-effect fbox-xl fadeInLeft animated"
+                  data-animate="fadeInLeft"
+                >
+                  <div className="w-40 h-36 px-3 fbox-icon ms-3">
+                    <img
+                      src="https://cloutzap.com/images/mobile.png"
+                      alt="Feature Icon"
+                      className="bg-transparent rounded-0"
+                    />
+                  </div>
+                  <div className="fbox-content">
+                    <h3>App Tasks</h3>
+                    <p>
+                      Earn Money for playing games and testing some free apps.
+                    </p>
+                    <a
+                      href="https://cloutzap.com/register"
+                      className="btn btn-success btn-sm mt-3"
+                    >
+                      Start Earning Now{" "}
+                      <i className="icon-line-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="line my-5"></div>
+              <div className="col-12">
+                <div
+                  className="flex flex-wrap feature-box fbox-effect fbox-xl flex-row-reverse fadeInLeft animated"
+                  data-animate="fadeInLeft"
+                >
+                  <div className="w-40 h-36 px-3 fbox-icon me-3">
+                    <img
+                      src="https://cloutzap.com/images/quest.png"
+                      alt="Feature Icon"
+                      className="bg-transparent rounded-0"
+                    />
+                  </div>
+                  <div className="fbox-content">
+                    <h3>Daily Quest</h3>
+                    <p>
+                      Complete Daily Quests on our site and redeem Money for
+                      every completed quest.
+                    </p>
+                    <a
+                      href="https://cloutzap.com/register"
+                      className="btn btn-success btn-sm mt-3"
+                    >
+                      Start Earning Now{" "}
+                      <i className="icon-line-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="line my-5"></div>
+              <div className="col-12">
+                <div
+                  className="flex flex-wrap feature-box fbox-effect fbox-xl fadeInLeft animated"
+                  data-animate="fadeInLeft"
+                >
+                  <div className="w-40 h-36 px-3 fbox-icon me-3">
+                    <img
+                      src="https://cloutzap.com/images/trophy.png"
+                      alt="Feature Icon"
+                      className="bg-transparent rounded-0"
+                    />
+                  </div>
+                  <div className="fbox-content">
+                    <h3>Giveaway</h3>
+                    <p>
+                      Enter the hourly giveaway to earn the money. The entry is
+                      free. All you have to do is join.
+                    </p>
+                    <a
+                      href="https://cloutzap.com/register"
+                      className="btn btn-success btn-sm mt-3"
+                    >
+                      Start Earning Now{" "}
+                      <i className="icon-line-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </Wrapper>
     </Layout>
   );
