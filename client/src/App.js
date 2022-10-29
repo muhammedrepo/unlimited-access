@@ -23,6 +23,7 @@ import {
   Withdraw,
   WithdrawHistory,
 } from "./pages/dashboard";
+import { About, Fraud, Terms, Privacy, InfoFaq } from "./pages/infoPages";
 
 function App() {
   return (
@@ -52,6 +53,11 @@ function App() {
         <Route path="/how" element={<How />} />
         <Route path="/proofs" element={<Proofs />} />
         <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="about-us" element={<About />} />
+        <Route path="info-faq" element={<InfoFaq />} />
+        <Route path="fraud-policy" element={<Fraud />} />
+        <Route path="terms-conditions" element={<Terms />} />
+        <Route path="privacy-policy" element={<Privacy />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>

@@ -1,30 +1,7 @@
 import { BsBoxArrowInRight, BsCheckCircle } from "react-icons/bs";
 import { FaQuestion, FaUserPlus } from "react-icons/fa";
+import { earnMore } from "../utils/data";
 import Button from "./Button";
-
-const steps = [
-  {
-    id: 1,
-    content: "Get paid for clicks on your referral link.",
-  },
-  {
-    id: 2,
-    content: "Get paid for referral sign ups.",
-  },
-  {
-    id: 3,
-    content:
-      "Get paid to do simple tasks i.e. Play games, test out free apps and more.",
-  },
-  {
-    id: 4,
-    content: "Hourly Giveaway and much more!",
-  },
-  {
-    id: 5,
-    content: "Get paid for completing daily Quests.",
-  },
-];
 
 const HowCanYouEarn = () => {
   return (
@@ -38,8 +15,8 @@ const HowCanYouEarn = () => {
         </h3>
       </div>
       <div className="wrapper grid grid-cols-1 lg:grid-cols-3 gap-4">
-        {steps.map((step) => {
-          const { id, content } = step;
+        {earnMore.map((item) => {
+          const { id, subtitle } = item;
 
           return (
             <div key={id}>
@@ -47,7 +24,7 @@ const HowCanYouEarn = () => {
                 <span className="mr-2 font-bold text-2xl">
                   <BsCheckCircle />
                 </span>{" "}
-                {content}
+                {subtitle}
               </p>
             </div>
           );

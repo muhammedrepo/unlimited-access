@@ -48,9 +48,11 @@ const PaymentProofs = () => {
             const { url } = image;
 
             return (
-              <div className="bg-white rounded-lg border border-gray-200 shadow-sm">
+              <div
+                key={index}
+                className="bg-white rounded-lg border border-gray-200 shadow-sm"
+              >
                 <img
-                  key={index}
                   src={url}
                   alt="img"
                   className="w-full"

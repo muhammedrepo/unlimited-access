@@ -1,5 +1,5 @@
 import Alert from "./Alert";
-import NavLinks from "./NavLinks";
+import MenuItems from "./MenuItems";
 import Navbar from "./Navbar";
 import Logo from "./Logo";
 import Layout from "./Layout";
@@ -15,9 +15,10 @@ import EarnDevice from "./EarnDevice";
 import CTA from "./CTA";
 import FormRow from "./FormRow";
 import BreadCrumb from "./BreadCrumb";
+import Dropdown from "./Dropdown";
 export {
   Alert,
-  NavLinks,
+  MenuItems,
   Navbar,
   Logo,
   Layout,
@@ -33,4 +34,5 @@ export {
   CTA,
   FormRow,
   BreadCrumb,
+  Dropdown,
 };

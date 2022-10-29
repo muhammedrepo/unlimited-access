@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCommentDollar, FaMoneyBillWave, FaSignInAlt } from "react-icons/fa";
+import { FiArrowRight } from "react-icons/fi";
 import styled from "styled-components";
 import { BreadCrumb, Button, Layout } from "../components";
 import Counter from "../components/Counter";
@@ -118,42 +119,35 @@ const How = () => {
           <div className="px-4 mx-auto max-w-screen-xl">
             <div className="flex flex-col items-center mw-sm mx-auto g-0">
               <div className="col-12">
-                <div
-                  className="flex flex-wrap feature-box fbox-effect fbox-xl fadeInLeft animated"
-                  data-animate="fadeInLeft"
-                >
-                  <div className="w-40 h-36 px-3 fbox-icon me-3">
+                <div className="flex flex-wrap">
+                  <div className="w-40 h-36 px-3 mr-4">
                     <img
                       src="https://cloutzap.com/images/referral.png"
                       alt="Feature Icon"
                       className="bg-transparent rounded-0"
                     />
                   </div>
-                  <div className="fbox-content">
+                  <div className="fbox-content px-3">
                     <h3>Clicks &amp; Referrals</h3>
                     <p>
                       Share your invite link with friends, family, and
                       colleagues and receive $2 when they click it, and $15 for
                       every sign up.
                     </p>
-                    <a
-                      href="https://cloutzap.com/register"
-                      className="btn btn-success btn-sm mt-3"
-                    >
-                      Start Earning Now{" "}
-                      <i className="icon-line-arrow-right"></i>
-                    </a>
+                    <Button
+                      text="Start Earning Now"
+                      url="/register"
+                      bgColor="green"
+                      icon=<FiArrowRight />
+                    />
                   </div>
                 </div>
               </div>
 
               <div className="line my-5"></div>
               <div className="col-12">
-                <div
-                  className="flex flex-wrap feature-box fbox-effect fbox-xl flex-row-reverse fadeInLeft animated"
-                  data-animate="fadeInLeft"
-                >
-                  <div className="w-40 h-36 px-3 fbox-icon ms-3">
+                <div className="flex flex-wrap fbox-xl flex-row-reverse">
+                  <div className="w-40 h-36 px-3 ms-3">
                     <img
                       src="https://cloutzap.com/images/survey.png"
                       alt="Feature Icon"
@@ -163,24 +157,20 @@ const How = () => {
                   <div className="fbox-content">
                     <h3>Survey Tasks</h3>
                     <p>Earn Money when you answer fun surveys and polls.</p>
-                    <a
-                      href="https://cloutzap.com/register"
-                      className="btn btn-success btn-sm mt-3"
-                    >
-                      Start Earning Now{" "}
-                      <i className="icon-line-arrow-right"></i>
-                    </a>
+                    <Button
+                      text="Start Earning Now"
+                      url="/register"
+                      bgColor="green"
+                      icon=<FiArrowRight />
+                    />
                   </div>
                 </div>
               </div>
 
               <div className="line my-5"></div>
               <div className="col-12">
-                <div
-                  className="flex flex-wrap feature-box fbox-effect fbox-xl fadeInLeft animated"
-                  data-animate="fadeInLeft"
-                >
-                  <div className="w-40 h-36 px-3 fbox-icon ms-3">
+                <div className="flex flex-wrap">
+                  <div className="w-40 h-36 px-3 ms-3">
                     <img
                       src="https://cloutzap.com/images/mobile.png"
                       alt="Feature Icon"
@@ -192,24 +182,20 @@ const How = () => {
                     <p>
                       Earn Money for playing games and testing some free apps.
                     </p>
-                    <a
-                      href="https://cloutzap.com/register"
-                      className="btn btn-success btn-sm mt-3"
-                    >
-                      Start Earning Now{" "}
-                      <i className="icon-line-arrow-right"></i>
-                    </a>
+                    <Button
+                      text="Start Earning Now"
+                      url="/register"
+                      bgColor="green"
+                      icon=<FiArrowRight />
+                    />
                   </div>
                 </div>
               </div>
 
               <div className="line my-5"></div>
               <div className="col-12">
-                <div
-                  className="flex flex-wrap feature-box fbox-effect fbox-xl flex-row-reverse fadeInLeft animated"
-                  data-animate="fadeInLeft"
-                >
-                  <div className="w-40 h-36 px-3 fbox-icon me-3">
+                <div className="flex flex-wrap fbox-xl flex-row-reverse">
+                  <div className="w-40 h-36 px-3 mr-4">
                     <img
                       src="https://cloutzap.com/images/quest.png"
                       alt="Feature Icon"
@@ -222,24 +208,20 @@ const How = () => {
                       Complete Daily Quests on our site and redeem Money for
                       every completed quest.
                     </p>
-                    <a
-                      href="https://cloutzap.com/register"
-                      className="btn btn-success btn-sm mt-3"
-                    >
-                      Start Earning Now{" "}
-                      <i className="icon-line-arrow-right"></i>
-                    </a>
+                    <Button
+                      text="Start Earning Now"
+                      url="/register"
+                      bgColor="green"
+                      icon=<FiArrowRight />
+                    />
                   </div>
                 </div>
               </div>
 
               <div className="line my-5"></div>
               <div className="col-12">
-                <div
-                  className="flex flex-wrap feature-box fbox-effect fbox-xl fadeInLeft animated"
-                  data-animate="fadeInLeft"
-                >
-                  <div className="w-40 h-36 px-3 fbox-icon me-3">
+                <div className="flex flex-wrap">
+                  <div className="w-40 h-36 px-3 mr-4">
                     <img
                       src="https://cloutzap.com/images/trophy.png"
                       alt="Feature Icon"
@@ -252,13 +234,12 @@ const How = () => {
                       Enter the hourly giveaway to earn the money. The entry is
                       free. All you have to do is join.
                     </p>
-                    <a
-                      href="https://cloutzap.com/register"
-                      className="btn btn-success btn-sm mt-3"
-                    >
-                      Start Earning Now{" "}
-                      <i className="icon-line-arrow-right"></i>
-                    </a>
+                    <Button
+                      text="Start Earning Now"
+                      url="/register"
+                      bgColor="green"
+                      icon=<FiArrowRight />
+                    />
                   </div>
                 </div>
               </div>
