@@ -1,7 +1,33 @@
-import { FaGift, FaMousePointer, FaUserPlus } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaFacebookMessenger,
+  FaGift,
+  FaGuilded,
+  FaInstagram,
+  FaMobile,
+  FaMousePointer,
+  FaPinterest,
+  FaShareSquare,
+  FaTwitter,
+  FaUserPlus,
+  FaVk,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
 import { GrTasks } from "react-icons/gr";
 import { ImCheckmark } from "react-icons/im";
-import { BiTime } from "react-icons/bi";
+import { BiInfoCircle, BiTime } from "react-icons/bi";
+import { FiDollarSign, FiHome, FiSettings, FiThumbsUp } from "react-icons/fi";
+import {
+  BsBank2,
+  BsBoxArrowUp,
+  BsClock,
+  BsPeople,
+  BsQuestion,
+  BsStar,
+} from "react-icons/bs";
+import { GoNote } from "react-icons/go";
+import { HiOutlineTrendingUp } from "react-icons/hi";
 
 export const menuItems = [
   {
@@ -55,6 +81,151 @@ export const menuItems = [
         path: "/privacy-policy",
       },
     ],
+  },
+];
+
+export const dashboardLinks = [
+  {
+    id: 1,
+    text: "home",
+    path: "/",
+    icon: <FiHome />,
+  },
+
+  {
+    id: 2,
+    text: "referrals",
+    number: "$15+",
+    icon: <BsPeople />,
+    submenu: [
+      {
+        id: 1,
+        text: "refer & earn",
+        number: "$15+",
+        icon: <FaUserPlus />,
+        path: "/referrals",
+      },
+      {
+        id: 2,
+        text: "referrals guide",
+        icon: <BiInfoCircle />,
+        path: "/referralguide",
+      },
+      {
+        id: 3,
+        text: "promotional posts",
+        icon: <FaInstagram />,
+        path: "/promo",
+      },
+    ],
+  },
+  {
+    id: 3,
+    text: "task wall",
+    number: "$100+",
+    path: "task-wall",
+    icon: <FiDollarSign />,
+  },
+  {
+    id: 4,
+    text: "social posts",
+    number: "$45+",
+    path: "social-posts",
+    icon: <BsBoxArrowUp />,
+  },
+  {
+    id: 5,
+    text: "daily quests",
+    path: "daily-quests",
+    icon: <HiOutlineTrendingUp />,
+  },
+  {
+    id: 6,
+    text: "giveaway",
+    path: "giveaway",
+    icon: <BsClock />,
+  },
+  {
+    id: 7,
+    text: "withdraw",
+    path: "withdraw",
+    icon: <BsBank2 />,
+  },
+  {
+    id: 8,
+    text: "withdraw history",
+    path: "withdraw-history",
+    icon: <GoNote />,
+  },
+  {
+    id: 9,
+    text: "my account",
+    path: "my-account",
+    icon: <FiSettings />,
+  },
+  {
+    id: 10,
+    text: "faq",
+    path: "faq",
+    icon: <BsQuestion />,
+  },
+  {
+    id: 11,
+    text: "payment-proofs",
+    path: "proofs",
+    icon: <BsStar />,
+  },
+  {
+    id: 12,
+    text: "user review",
+    path: "reviews",
+    icon: <FiThumbsUp />,
+  },
+];
+
+export const manyWays = [
+  {
+    id: 1,
+    title: "REFER FRIENDS",
+    subtitle:
+      "Refer A Friend And Earn $15 Per Referral and Also Receive 15% Bonus!",
+    icon: <FaShareSquare />,
+    path: "/referrals",
+  },
+  {
+    id: 2,
+    title: "DOWNLOAD APPS",
+    subtitle: "Earn $50+ Per App Installs",
+    icon: <FaMobile />,
+    path: "/",
+  },
+  {
+    id: 3,
+    title: "COMPLETE SURVEYS",
+    subtitle: "Earn $100+ Per Survey",
+    icon: <GrTasks />,
+    path: "/task-wall",
+  },
+  {
+    id: 4,
+    title: "DAILY QUESTS",
+    subtitle: "Login Daily For Extra $$$ Bonus Quests Everyday.",
+    icon: <ImCheckmark />,
+    path: "/daily-quests",
+  },
+  {
+    id: 5,
+    title: "EARN THROUGH GIVEAWAY",
+    subtitle: "Participate in the Giveaway which rewards $100 every hour!",
+    icon: <BiTime />,
+    path: "/giveaway",
+  },
+  {
+    id: 6,
+    title: "POST ON SOCIAL MEDIA",
+    subtitle: "POST ON SOCIAL MEDIA",
+    icon: <FaYoutube />,
+    path: "/social-posts",
   },
 ];
 
@@ -196,5 +367,50 @@ export const faqlinks = [
     link: "whatcountries",
     title: "What countries CloutZap is available in?",
     content: "CloutZap is available in over 190 countries.",
+  },
+];
+
+export const getfreetraffic = [
+  {
+    icon: <FaFacebook />,
+    buttonColor: "#4267B2",
+    title: "share on facebook",
+    path: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsend.cloutzap.com%2Fcoolzyte&amp;quote=I'm inviting you to join CloutZap, a website that lets you earn money effortlessly. I have already earned $2,541 today and you can too. You get paid for playing games, testing apps and even for using social media. Sign up with the link below and earn instant $35 sign up bonus!",
+  },
+  {
+    icon: <FaInstagram />,
+    buttonColor: "#E1306C",
+    title: "share on instagram",
+    path: "instagram.com",
+  },
+  {
+    icon: <FaWhatsapp />,
+    buttonColor: "#25D366",
+    title: "share on whatsapp",
+    path: "whatsapp://send?text=I'm inviting you to join CloutZap, a website that lets you earn money effortlessly. I have already earned $2,541 today and you can too. You get paid for playing games, testing apps and even for using social media. Sign up with the link below and earn instant $35 sign up bonus! https://send.cloutzap.com/coolzyte",
+  },
+  {
+    icon: <FaTwitter />,
+    buttonColor: "#1DA1F2",
+    title: "share on twitter",
+    path: "https://twitter.com",
+  },
+  {
+    icon: <FaPinterest />,
+    buttonColor: "#E60023",
+    title: "share on pinterest",
+    path: "https://pinterest.com",
+  },
+  {
+    icon: <FaVk />,
+    buttonColor: "#4C75A3",
+    title: "share on VK",
+    path: "https://vk.com/share.php?url=https%3A%2F%2Fsend.cloutzap.com%2Fcoolzyte&amp;title=Earn $500 Daily From Anywhere Effortlessly&amp;description=Join CloutZap, a website that lets you earn money effortlessly. I have already earned $2,541 today and you can too. You get paid for playing games and even for using social media. Signup now and earn instant $35 signup bonus!&amp;image=https%3A%2F%2Fcloutzap.com%2Fsocials.png",
+  },
+  {
+    icon: <FaFacebookMessenger />,
+    buttonColor: "#1982FC",
+    title: "direct message",
+    path: "facebook.com",
   },
 ];
