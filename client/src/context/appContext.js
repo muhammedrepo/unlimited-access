@@ -2,14 +2,7 @@ import React, { useReducer, useContext } from "react";
 
 import reducer from "./reducer";
 
-import {
-  CLEAR_ALERT,
-  DISPLAY_ALERT,
-  TOGGLE_SIDEBAR,
-  SETUP_USER_BEGIN,
-  SETUP_USER_SUCCESS,
-  SETUP_USER_ERROR,
-} from "./actions";
+import { CLEAR_ALERT, DISPLAY_ALERT, TOGGLE_SIDEBAR } from "./actions";
 
 const initialState = {
   isLoading: false,

@@ -7,6 +7,12 @@ import TasksButton from "./TasksButton";
 import WaysToEarn from "./WaysToEarn";
 import GetFreeTraffic from "./GetFreeTraffic";
 import LeaderBoard from "./LeaderBoard";
+import Breadcrumb from "./Breadcrumb";
+import Timeline from "./Timeline";
+import YourReferrals from "./YourReferrals";
+import Accordion from "./Accordion";
+import SingleQuestion from "./Question";
+import SocialMediaGuide from "./SocialMediaGuide";
 export {
   Navbar,
   BigSidebar,
@@ -17,4 +23,10 @@ export {
   WaysToEarn,
   GetFreeTraffic,
   LeaderBoard,
+  Breadcrumb,
+  Timeline,
+  YourReferrals,
+  Accordion,
+  SingleQuestion,
+  SocialMediaGuide,
 };

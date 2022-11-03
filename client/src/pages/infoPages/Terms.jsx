@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BreadCrumb, Layout } from "../../components";
 
 const Terms = () => {
@@ -18,11 +19,11 @@ const Terms = () => {
             you in mind, as well as protecting you, CloutZap and our customers.
             Please read thoroughly. If you have any questions, please contact us
             at&nbsp;
-            <a href="">
+            <Link to="/">
               <span className="__cf_email__" data-cfemail="">
                 questions@cloutzap.com
               </span>
-            </a>
+            </Link>
             .
           </p>
           <p>CloutZap Terms &amp; Conditions</p>
@@ -68,7 +69,7 @@ const Terms = () => {
             (as provided herein). This EULA does not entitle you to receive any
             support or assistance features not already provided to you through
             the&nbsp;
-            <a href="https://cloutzap.com/faq">CloutZap.com Help Center</a>.
+            <Link to="https://cloutzap.com/faq">CloutZap.com Help Center</Link>.
           </p>
           <p>
             <strong>Permitted Uses</strong>
@@ -137,7 +138,10 @@ const Terms = () => {
               offer you the ability to start a CloutZap earning shopping session
               when you have arrived at a participating merchant’s website. Our
               use of cookies is more specifically described in our&nbsp;
-              <a href="https://cloutzap.com/privacy-policy">Privacy Policy</a>.
+              <Link to="https://cloutzap.com/privacy-policy">
+                Privacy Policy
+              </Link>
+              .
             </li>
           </ul>
           <ul>
@@ -349,10 +353,10 @@ const Terms = () => {
             using any of the CloutZap Sites and Features or our Services, and/or
             clicking to “Accept” or otherwise agreeing to these Terms where that
             option is made available to you, you agree to be bound by these
-            Terms as well as our&nbsp;<a href="#">Privacy Policy</a>&nbsp;(
-            <a href="https://cloutzap.com/privacy-policy">/privacy</a>). If you
-            do not agree to these Terms or our Privacy Policy, please do not
-            register with or use any CloutZap Sites or Features or our Services.
+            Terms as well as our&nbsp;
+            <Link to="/privacy-policy">/privacy</Link>. If you do not agree to
+            these Terms or our Privacy Policy, please do not register with or
+            use any CloutZap Sites or Features or our Services.
           </p>
           <p>
             We may post additional terms, official rules, or agreements that
@@ -554,15 +558,15 @@ const Terms = () => {
                   use points is to redeem them for Rewards Program rewards as
                   available from time to time through the CloutZap.com Rewards
                   Store at&nbsp;
-                  <a href="https://cloutzap.com/home">/dashboard</a>, or other
-                  applicable Rewards Program redemption sites, as applicable.
-                  Some rewards may have eligibility requirements and in that
-                  case the Company reserves the right to verify your identity
-                  (by requesting photocopy of your driver’s license or state ID
-                  card, or other proof as we may require) and eligibility
-                  qualifications to our complete satisfaction prior to crediting
-                  points or fulfilling any reward in any Rewards Program, or
-                  otherwise providing you with any benefit.
+                  <Link to="https://cloutzap.com/home">/dashboard</Link>, or
+                  other applicable Rewards Program redemption sites, as
+                  applicable. Some rewards may have eligibility requirements and
+                  in that case the Company reserves the right to verify your
+                  identity (by requesting photocopy of your driver’s license or
+                  state ID card, or other proof as we may require) and
+                  eligibility qualifications to our complete satisfaction prior
+                  to crediting points or fulfilling any reward in any Rewards
+                  Program, or otherwise providing you with any benefit.
                 </p>
                 <p>
                   Delivery of Rewards
@@ -686,11 +690,11 @@ const Terms = () => {
                     <ul>
                       <li>
                         a) electronically to&nbsp;
-                        <a href="#">
+                        <Link to="/">
                           <span class="__cf_email__" data-cfemail="">
                             hey@cloutzap.com
                           </span>
-                        </a>
+                        </Link>
                         with sthe ubject line “DMCA Takedown Request”;
                       </li>
                     </ul>
@@ -1100,9 +1104,9 @@ const Terms = () => {
                                 the FTC’s Guidelines Concerning the Use of
                                 Testimonials and Endorsements in Advertising
                                 (available at&nbsp;
-                                <a href="https://www.ftc.gov/sites/default/files/attachments/press-releases/ftc-publishes-final-guides-governing-endorsements-testimonials/091005revisedendorsementguides.pdf">
+                                <Link to="https://www.ftc.gov/sites/default/files/attachments/press-releases/ftc-publishes-final-guides-governing-endorsements-testimonials/091005revisedendorsementguides.pdf">
                                   //www.ftc.gov/sites/default/files/attachments/press-releases/ftc-publishes-final-guides-governing-endorsements-testimonials/091005revisedendorsementguides.pdf
-                                </a>
+                                </Link>
                                 ) (“Guidelines”).
                               </p>
                               <p>
@@ -1157,13 +1161,13 @@ const Terms = () => {
                                   typed Notice of Dispute (“Notice”). Notice to
                                   us must be sent to our customer service email
                                   address at:&nbsp;
-                                  <a
-                                    href="/cdn-cgi/l/email-protection"
+                                  <Link
+                                    to="/cdn-cgi/l/email-protection"
                                     class="__cf_email__"
                                     data-cfemail=""
                                   >
                                     partners@cloutzap.com
-                                  </a>
+                                  </Link>
                                   , Subject Line: Attention: Legal Department;
                                   Notice of Dispute. The Notice must include:
                                   (1) the nature and basis of your Dispute or

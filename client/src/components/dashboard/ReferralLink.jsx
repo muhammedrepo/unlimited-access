@@ -1,7 +1,8 @@
-import React from "react";
-import { FaCopy, FaFacebookMessenger, FaShareSquare } from "react-icons/fa";
+import { FaFacebookMessenger, FaShareSquare } from "react-icons/fa";
 import { FiShare } from "react-icons/fi";
 import Button from "../Button";
+import CopyreferalLink from "../CopyreferalLink";
+
 import Card from "../UI/Card";
 
 const ReferralLink = () => {
@@ -15,17 +16,7 @@ const ReferralLink = () => {
           </h5>
         </div>
         <div className="card-body">
-          <input
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
-            value="https://send.cloutzap.com/coolzyte"
-            id="referrallink"
-            type="text"
-            onfocus="this.select();"
-            readonly=""
-          />
-          <div className="mt-2 mb-3 grid text-center">
-            <Button icon=<FaCopy /> text="Copy Link" bgColor="red" />
-          </div>
+          <CopyreferalLink />
           <p className="">
             <FiShare size="20px" />
             Share this link and <b>earn $2</b> for every person who clicks on

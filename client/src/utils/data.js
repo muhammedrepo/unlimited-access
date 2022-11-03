@@ -1,13 +1,15 @@
 import {
+  FaCopy,
   FaFacebook,
   FaFacebookMessenger,
   FaGift,
-  FaGuilded,
   FaInstagram,
   FaMobile,
   FaMousePointer,
   FaPinterest,
   FaShareSquare,
+  FaSnapchat,
+  FaTiktok,
   FaTwitter,
   FaUserPlus,
   FaVk,
@@ -28,6 +30,9 @@ import {
 } from "react-icons/bs";
 import { GoNote } from "react-icons/go";
 import { HiOutlineTrendingUp } from "react-icons/hi";
+import { newReferral } from "../images";
+import { Button, CopyreferalLink } from "../components";
+import { Link } from "react-router-dom";
 
 export const menuItems = [
   {
@@ -109,7 +114,7 @@ export const dashboardLinks = [
         id: 2,
         text: "referrals guide",
         icon: <BiInfoCircle />,
-        path: "/referralguide",
+        path: "/referrals-guide",
       },
       {
         id: 3,
@@ -412,5 +417,406 @@ export const getfreetraffic = [
     buttonColor: "#1982FC",
     title: "direct message",
     path: "facebook.com",
+  },
+];
+
+export const newreferral = [
+  {
+    id: 1,
+    avatar: newReferral,
+    username: "ali8989",
+    joined: "10 Jan 2022",
+    earnings: "$350",
+  },
+  {
+    id: 2,
+    avatar: newReferral,
+    username: "ashley",
+    joined: "10 Jan 2022",
+    earnings: "$39",
+  },
+  {
+    id: 3,
+    avatar: newReferral,
+    username: "shola099",
+    joined: "10 Jan 2022",
+    earnings: "$45",
+  },
+  {
+    id: 4,
+    avatar: newReferral,
+    username: "fiyi1902",
+    joined: "10 Jan 2022",
+    earnings: "$65",
+  },
+  {
+    id: 5,
+    avatar: newReferral,
+    username: "tunde56",
+    joined: "10 Jan 2022",
+    earnings: "$85",
+  },
+  {
+    id: 6,
+    avatar: newReferral,
+    username: "othomy",
+    joined: "10 Jan 2022",
+    earnings: "$35",
+  },
+  {
+    id: 7,
+    avatar: newReferral,
+    username: "ashrofdev",
+    joined: "10 Jan 2022",
+    earnings: "$95",
+  },
+  {
+    id: 8,
+    avatar: newReferral,
+    username: "jonny555",
+    joined: "10 Jan 2022",
+    earnings: "$35",
+  },
+];
+
+export const postandearn = [
+  {
+    id: 1,
+    name: "YouTube Videos",
+    icon: <FaYoutube />,
+    bgColor: "#FF0000",
+    bonus: "Earn $45 Per Video",
+    path: "https://www.youtube.com",
+  },
+  {
+    id: 2,
+    name: "Facebook Post",
+    icon: <FaFacebook />,
+    bgColor: "#4267B2",
+    bonus: "Earn $45 Per Video",
+    path: "https://www.facebook.com",
+  },
+  {
+    id: 3,
+    name: "Instagram",
+    icon: <FaInstagram />,
+    bgColor: "#E1306C",
+    bonus: "Earn $45 Per Post",
+    path: "https://www.instagram.com",
+  },
+  {
+    id: 4,
+    name: "Instagram Reels",
+    icon: <FaInstagram />,
+    bgColor: "#E1306C",
+    bonus: "Earn $20 Per Video",
+    path: "https://www.instagram.com",
+  },
+  {
+    id: 5,
+    name: "Snapchat Bonus",
+    icon: <FaSnapchat />,
+    bgColor: "#FFFC00",
+    bonus: "Earn $80 Per Video",
+    path: "https://www.snapchat.com",
+  },
+  {
+    id: 6,
+    name: "TikTok Most Used",
+    icon: <FaTiktok />,
+    bgColor: "#EE1D52",
+    bonus: "Earn $80 Per Video",
+    path: "https://www.tiktok.com",
+  },
+  {
+    id: 7,
+    name: "Facebook Story",
+    icon: <FaFacebook />,
+    bgColor: "#4267B2",
+    bonus: "Earn $15 Per Story",
+    path: "https://www.facebook.com",
+  },
+  {
+    id: 8,
+    name: "Instagram Story",
+    icon: <FaInstagram />,
+    bgColor: "#E1306C",
+    bonus: "Earn $10 Per Story",
+    path: "https://www.instagram.com",
+  },
+];
+
+export const socialguides = [
+  {
+    id: 1,
+    name: "Facebook",
+    badge: "#1 most used",
+    icon: <FaFacebook />,
+    bgColor: "#4267B2",
+  },
+  {
+    id: 2,
+    name: "Instagram",
+    badge: "hot",
+    icon: <FaInstagram />,
+    bgColor: "#E1306C",
+  },
+  {
+    id: 3,
+    name: "TikTok",
+    badge: "Trends Starts Here",
+    icon: <FaTiktok />,
+    bgColor: "#EE1D52",
+  },
+  {
+    id: 4,
+    name: "Twitter",
+    badge: "#1 most used",
+    icon: <FaTwitter />,
+    bgColor: "#1DA1F2",
+  },
+  {
+    id: 5,
+    name: "Snapchat",
+    badge: "#1 most used",
+    icon: <FaSnapchat />,
+    bgColor: "#FFFC00",
+    bonus: "",
+  },
+  {
+    id: 6,
+    name: "WhatsApp",
+    badge: "#1 most used",
+    icon: <FaWhatsapp />,
+    bgColor: "#25D366",
+  },
+];
+
+const Bio = () => {
+  return (
+    <>
+      <div className="card-body">
+        <h5 className="font-bold">1. Edit Profile</h5>
+        <p className="card-text">
+          Navigate to your Facebook profile and hit the pencil icon in the top
+          right corner.
+        </p>
+        <h5 className="font-bold">2. Update Website</h5>
+        <p className="card-text">
+          Copy And Paste your Invite link in the website field.
+        </p>
+        <CopyreferalLink />
+        <h5 className="font-bold">3. Update Bio</h5>
+        <p className="card-text">
+          Update your bio/status/about section with some of these
+          recommendations. This helps your profile stand out and attract more
+          clicks and referrals!
+        </p>
+        <dl>
+          <li>Top 1% Earner - I make money in minutes 💸</li>
+          <li>CloutZap Influencer - Start earning instantly! 🤑</li>
+          <li>Top CloutZap Earner 🏆</li>
+          <li>CloutZap Member - Easiest Way To Earn Online.</li>
+          <li>Using CloutZap I Earn While I Sleep.</li>
+        </dl>
+      </div>
+    </>
+  );
+};
+
+const Story = ({ bgColor }) => {
+  return (
+    <div className="card-body">
+      <h5 className="font-bold">1. Posting</h5>
+      <p className="card-text">
+        Navigate to your profile and hit 'Add story'. Upload your own content or
+        choose from a variety located in the{" "}
+        <Link to="https://cloutzap.com/promo">Promotional Posts</Link> page.
+      </p>
+      <h5 className="font-bold">2. Captioning</h5>
+      <p className="card-text">
+        Captions are important! Use the captions we have below or on our{" "}
+        <Link to="https://cloutzap.com/fbpost">Facebook Submissions page</Link>{" "}
+        then tag 3-5 friends.
+      </p>
+      <textarea
+        className="form-control"
+        rows="2"
+        onmouseup="return false;"
+        readonly=""
+      >
+        Join cloutzap.com and start making money online!
+      </textarea>
+      <div className="mt-2 mb-3 grid">
+        <Button
+          icon=<FaCopy />
+          text="Copy Caption"
+          style={{ backgroundColor: bgColor }}
+        />
+      </div>
+      <p className="card-text mt-1">
+        If possible, add your referral link to your story. If not, tell users to
+        click your link in your Facebook Profile.
+      </p>
+      <h5 className="font-bold">3. Be Smart</h5>
+      <p className="card-text">
+        We pay you for posting content on our{" "}
+        <Link to="https://cloutzap.com/socials">Submissions Page</Link>. Take
+        advantage of that by using these steps and then submitting your post to
+        earn!
+      </p>
+    </div>
+  );
+};
+
+export const facebookguide = [
+  {
+    id: 1,
+    title: "Your Bio",
+    info: <Bio />,
+    bgColor: "#4267B2",
+  },
+  {
+    id: 2,
+    title: "Story Post",
+    info: <Story />,
+    bgColor: "#4267B2",
+  },
+  {
+    id: 3,
+    title: "Page Posts",
+    info: "infor goes here",
+    bgColor: "#4267B2",
+  },
+  {
+    id: 4,
+    title: "Group",
+    info: "infor goes here",
+    bgColor: "#4267B2",
+  },
+  {
+    id: 5,
+    title: "Messenger App",
+    info: "infor goes here",
+    bgColor: "#4267B2",
+  },
+];
+export const instagramguide = [
+  {
+    id: 1,
+    title: "Your Bio",
+    info: <Bio />,
+    bgColor: "#E1306C",
+  },
+  {
+    id: 2,
+    title: "Instagram Post",
+    info: "infor goes here",
+    bgColor: "#E1306C",
+  },
+  {
+    id: 3,
+    title: "Reels",
+    info: "infor goes here",
+    bgColor: "#E1306C",
+  },
+  {
+    id: 4,
+    title: "Story",
+    info: "infor goes here",
+    bgColor: "#E1306C",
+  },
+];
+
+export const tiktokguide = [
+  {
+    id: 1,
+    title: "Create a viral post",
+    info: <Bio />,
+    bgColor: "#EE1D52",
+  },
+  {
+    id: 2,
+    title: "Add link to your bio",
+    info: "infor goes here",
+    bgColor: "#EE1D52",
+  },
+];
+
+export const twitterguide = [
+  {
+    id: 1,
+    title: "Your Twitter Bio",
+    info: <Bio />,
+    bgColor: "#1DA1F2",
+  },
+  {
+    id: 2,
+    title: "Tweet Tweet Tweet",
+    info: "infor goes here",
+    bgColor: "#1DA1F2",
+  },
+  {
+    id: 3,
+    title: "Tweet Scavenging",
+    info: "infor goes here",
+    bgColor: "#1DA1F2",
+  },
+];
+
+export const snapchatguide = [
+  {
+    id: 1,
+    title: "Make Content & share",
+    info: <Bio />,
+    bgColor: "#FFFC00",
+  },
+  {
+    id: 2,
+    title: "Spotlights",
+    info: "infor goes here",
+    bgColor: "#FFFC00",
+  },
+];
+
+export const whatsappguide = [
+  {
+    id: 1,
+    title: "Individual Promo",
+    info: <Bio />,
+    bgColor: "#25D366",
+  },
+  {
+    id: 2,
+    title: "Group Promo",
+    info: "infor goes here",
+    bgColor: "#25D366",
+  },
+];
+
+export const promodImage = [
+  {
+    path: "https://cloutzap.com/promotionals/Promo1.png",
+  },
+  {
+    path: "https://cloutzap.com/promotionals/Promo2.png",
+  },
+  {
+    path: "https://cloutzap.com/promotionals/Promo3.png",
+  },
+  {
+    path: "https://cloutzap.com/promotionals/Promo4.png",
+  },
+  {
+    path: "https://cloutzap.com/promotionals/Promo5.png",
+  },
+  {
+    path: "https://cloutzap.com/promotionals/Promo6.png",
+  },
+  {
+    path: "https://cloutzap.com/promotionals/Promo7.png",
+  },
+  {
+    path: "https://cloutzap.com/promotionals/Promo8.png",
   },
 ];

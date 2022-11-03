@@ -9,6 +9,8 @@ import SocialPosts from "./SocialPosts";
 import TaskWall from "./TaskWall";
 import Withdraw from "./Withdraw";
 import WithdrawHistory from "./WithdrawHistory";
+import ReferralsGuide from "./ReferralsGuide";
+import Promo from "./Promo";
 
 export {
   SharedLayout,
@@ -22,4 +24,6 @@ export {
   TaskWall,
   Withdraw,
   WithdrawHistory,
+  ReferralsGuide,
+  Promo,
 };

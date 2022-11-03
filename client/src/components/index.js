@@ -16,6 +16,7 @@ import CTA from "./CTA";
 import FormRow from "./FormRow";
 import BreadCrumb from "./BreadCrumb";
 import Dropdown from "./Dropdown";
+import CopyreferalLink from "./CopyreferalLink";
 export {
   Alert,
   MenuItems,
@@ -35,4 +36,5 @@ export {
   FormRow,
   BreadCrumb,
   Dropdown,
+  CopyreferalLink,
 };

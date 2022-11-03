@@ -17,6 +17,7 @@
     "react-scroll": "^1.8.8",
     "react-text-rotator": "^1.2.0",
     "styled-components": "^5.3.6",
+    "swiper": "^8.4.4",
     "twin.macro": "^2.8.2",
     "web-vitals": "^2.1.4"
   },

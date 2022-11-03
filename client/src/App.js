@@ -22,6 +22,8 @@ import {
   TaskWall,
   Withdraw,
   WithdrawHistory,
+  ReferralsGuide,
+  Promo,
 } from "./pages/dashboard";
 import { About, Fraud, Terms, Privacy, InfoFaq } from "./pages/infoPages";
 
@@ -39,6 +41,8 @@ function App() {
         >
           <Route index element={<Home />} />
           <Route path="referrals" element={<Referrals />} />
+          <Route path="referrals-guide" element={<ReferralsGuide />} />
+          <Route path="promo" element={<Promo />} />
           <Route path="task-wall" element={<TaskWall />} />
           <Route path="social-posts" element={<SocialPosts />} />
           <Route path="daily-quests" element={<DailyQuests />} />

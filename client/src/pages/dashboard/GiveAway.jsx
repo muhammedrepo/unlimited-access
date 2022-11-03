@@ -1,7 +1,11 @@
-import React from "react";
+import { Breadcrumb } from "../../components/dashboard";
 
 const GiveAway = () => {
-  return <div>GiveAway</div>;
+  return (
+    <div>
+      <Breadcrumb title="Giveaway" page="Giveaway" />
+    </div>
+  );
 };
 
 export default GiveAway;

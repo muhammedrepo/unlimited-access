@@ -10,6 +10,7 @@ import brazil from "./flags/brazil.png";
 import parallax from "./parallax.jpg";
 import logo from "./logomobile.png";
 import logofooter from "./logofooterw.svg";
+import newReferral from "./new_referral.png";
 export {
   usa,
   uk,
@@ -23,4 +24,5 @@ export {
   parallax,
   logo,
   logofooter,
+  newReferral,
 };
