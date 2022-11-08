@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <Wrapper>
       <BonusTab />
-      <section className="mb-4">
+      <section className="mt-12">
         <div className="grid md:grid-cols-2 gap-6">
           <ReferralLink />
           <div className="grid gap-2 h-24">

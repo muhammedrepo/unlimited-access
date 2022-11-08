@@ -13,6 +13,9 @@ import YourReferrals from "./YourReferrals";
 import Accordion from "./Accordion";
 import SingleQuestion from "./Question";
 import SocialMediaGuide from "./SocialMediaGuide";
+import Quest from "./Quest";
+import Quests from "./Quests";
+import Time from "./Time";
 export {
   Navbar,
   BigSidebar,
@@ -29,4 +32,7 @@ export {
   Accordion,
   SingleQuestion,
   SocialMediaGuide,
+  Quest,
+  Quests,
+  Time,
 };

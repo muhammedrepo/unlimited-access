@@ -1,12 +1,13 @@
 import { FaGift, FaUsers } from "react-icons/fa";
 import { FiUserPlus } from "react-icons/fi";
-import { Link } from "react-router-dom";
+
 import { Button, CopyreferalLink } from "../../components";
 import {
   Breadcrumb,
   SocialMediaGuide,
   TasksButton,
 } from "../../components/dashboard";
+import { CardHeader } from "../../components/UI";
 import Card from "../../components/UI/Card";
 import { socialguides } from "../../utils/data";
 
@@ -25,19 +26,11 @@ const ReferralsGuide = () => {
 
       <section className="max-w-2xl mx-auto mt-14">
         <Card>
-          <div class="card-header pb-0">
-            <h5>Hi Tunde Tijani,</h5>
-            <p class="mb-0">
-              Below are your referral stats so far.{" "}
-              <b>
-                On average, our users TRIPLE their earnings after using the{" "}
-                <Link to="/referrals" target="_blank">
-                  Refer &amp; Earn Section
-                </Link>
-                .
-              </b>
-            </p>
-          </div>
+          <CardHeader
+            title="Hi Tunde Tijani,"
+            subtitle="Below are your referral stats so far. On average, our users TRIPLE their earnings after using the Refer &amp; Earn Section"
+          />
+
           <div class="card-body">
             <div class="grid grid-cols-2 gap-6">
               <TasksButton

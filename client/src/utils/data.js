@@ -546,6 +546,39 @@ export const postandearn = [
   },
 ];
 
+export const approvedPost = [
+  {
+    id: 1,
+    name: "YouTube Videos",
+    icon: <FaYoutube />,
+    bgColor: "#FF0000",
+    path: "https://www.youtube.com",
+  },
+
+  {
+    id: 2,
+    name: "Instagram",
+    icon: <FaInstagram />,
+    bgColor: "#E1306C",
+    path: "https://www.instagram.com",
+  },
+  {
+    id: 3,
+    name: "Instagram Reels",
+    icon: <FaInstagram />,
+    bgColor: "#E1306C",
+    path: "https://www.instagram.com",
+  },
+
+  {
+    id: 4,
+    name: "TikTok Most Used",
+    icon: <FaTiktok />,
+    bgColor: "#000",
+    path: "https://www.tiktok.com",
+  },
+];
+
 export const socialguides = [
   {
     id: 1,
@@ -818,5 +851,64 @@ export const promodImage = [
   },
   {
     path: "https://cloutzap.com/promotionals/Promo8.png",
+  },
+];
+
+export const questResets = [
+  {
+    id: 1,
+    title: "1 Offer",
+    sub: "1 More Offer Needed",
+    progress: "0 Offer",
+    goal: "1 Offer",
+    claim: "$100",
+  },
+  {
+    id: 2,
+    title: "1 Offer",
+    sub: "3 More Invites Needed",
+    progress: "0 Invite",
+    goal: "3 Invites",
+    claim: "$80",
+  },
+  {
+    id: 3,
+    title: "3 Offers",
+    sub: "3 More Offers Needed",
+    progress: "0 Offer",
+    goal: "3 Offers",
+    claim: "$100",
+  },
+  {
+    id: 4,
+    title: "5 Invites",
+    sub: "5 More Invites Needed",
+    progress: "0 Invite",
+    goal: "5 Invites",
+    claim: "$120",
+  },
+  {
+    id: 5,
+    title: "5 Offers",
+    sub: "5 More Offers Needed",
+    progress: "0 Offer",
+    goal: "5 Offers",
+    claim: "$500",
+  },
+  {
+    id: 6,
+    title: "10 Invites",
+    sub: "10 More Invites Needed",
+    progress: "0 Offer",
+    goal: "10 Invites",
+    claim: "$250",
+  },
+  {
+    id: 7,
+    title: "10 Offers",
+    sub: "10 More Offers Needed",
+    progress: "0 Offer",
+    goal: "10 Offers",
+    claim: "$1000",
   },
 ];
