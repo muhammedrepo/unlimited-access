@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import tw from "twin.macro";
+
 const Wrapper = styled.div`
-  ${tw`p-4 bg-white rounded-lg border border-gray-200 shadow-md`}
+  ${tw``}
 
   .card-body {
     ${tw`p-7 bg-transparent flex-1`}
@@ -9,7 +10,13 @@ const Wrapper = styled.div`
 `;
 
 const Card = ({ children }) => {
-  return <Wrapper>{children}</Wrapper>;
+  return (
+    <Wrapper
+      className={`p-4 rounded-lg bg-white   border border-gray-200 shadow-md`}
+    >
+      {children}
+    </Wrapper>
+  );
 };
 
 export default Card;
