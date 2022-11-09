@@ -170,7 +170,7 @@ export const dashboardLinks = [
   {
     id: 9,
     text: "my account",
-    path: "my-account",
+    path: "settings",
     icon: <FiSettings />,
   },
   {
@@ -942,5 +942,95 @@ export const paymentHistory = [
     icon: <FaSearchDollar />,
     title: "Payment processing",
     sub: <Counter end="0" />,
+  },
+];
+
+export const membersFaq = [
+  {
+    id: 1,
+    question: "What's the best way to get referrals?",
+    info: "Getting referrals should be fairly easy. Start off by promoting your referral link on every social media platform and educating your followers about CloutZap using our various Promotional Posts. You can also try direct messaging (IG DM, Text, WhatsApp, etc) as it provides a one on one conversation.",
+  },
+  {
+    id: 2,
+    question: "Are there other ways to earn?",
+    info: `
+    <p class="font-medium">Of course! If referring is not your thing, you can always <b>Earn MORE through our <a href="https://cloutzap.com/taskwall">Task Wall</a>!</b><br>The Task Wall features a variety of free apps, surveys, and offers from our sponsors. You can earn by testing out these free apps, completing free surveys, or trying out free offers!</p>
+    <p class="font-medium">Some more ways to earn on CloutZap are listed below:</p>
+    <li class="text-muted fw-bold"><a href="https://cloutzap.com/quests" target="_blank">Earn through Daily Quests</a></li>
+    <li class="text-muted fw-bold"><a href="https://cloutzap.com/socials" target="_blank">Earn through posting on Social Media</a></li>
+    <li class="text-muted fw-bold"><a href="https://cloutzap.com/giveaway" target="_blank">Participate in the Giveaway</a></li>
+`,
+  },
+  {
+    id: 3,
+    question: "How much do I need to cashout?",
+    info: "We don't have a minimum payment amount to cashout. However, you must meet some requirements before you cash out for the first time to help prevent fraud.",
+  },
+  {
+    id: 4,
+    question: "How soon can I receive my payment?",
+    info: "We believe that getting paid shouldn't be a hassle. Once you cash out, your payment will be scheduled, and you will receive it immediately based on that payment schedule.",
+  },
+  {
+    id: 5,
+    question: "My friend signed up but I didn't get credited?",
+    info: `
+    <p class="font-medium">If your friend/family joined and you weren't credited, it could be because of the possible issues below.
+</p><ul class="font-medium text-muted">
+<li>- Your friend already has an account.</li>
+<li>- Your referral was fraudulent.</li>
+<li>- You provided the wrong referral link.</li>
+<li>- They entered the wrong link.</li>
+<li>- They forgot to sign up with your link.</li>
+</ul><p></p>
+`,
+  },
+  {
+    id: 6,
+    question: "I completed a task in the Task Wall but wasn't credited?",
+    info: "After completing a task, please allow 5-10 minutes for it to register back to our system. If you still aren't credited you either did the task incorrectly by not following the directions, OR you already completed the task in the past. Our advice is try a different task, we have variety of different tasks available.",
+  },
+];
+
+export const generalQuestion = [
+  {
+    id: 1,
+    question: "Is CloutZap safe?",
+    info: `
+    <p class="font-medium">We take your security and privacy very seriously. We encrypt all your data so that no-one can see it, <b>NOT EVEN US</b>. We <b>encrypt your password on our servers so that it cannot be read by anyone <u>it shouldn't be</u></b>. We don't share your data with anyone else without your permission. By using our Cashout Options to cash out your earnings, we don't hold any of your financial information. This is covered in more detail in our <a href="https://cloutzap.com/faq" target="_blank">FAQS Page.</a></p>
+`,
+  },
+  {
+    id: 2,
+    question: "What will you do with the information I give you?",
+    info: `
+    
+    <p class="font-medium">CloutZap does not share it's user data with third parties. When you join CloutZap, you agree to our information use and data protection policy as explained in our terms and conditions.<br>As in everything we do, we're honest and transparent about how we use your info – for more information take a look at our <a href="https://cloutzap.com/faq" target="_blank">FAQS Page.</a>.<br>If you leave CloutZap, we'll remove as much information as we can about your account other than data we are required to hold under statute.</p>
+
+`,
+  },
+  {
+    id: 3,
+    question: `Yes. You can make changes to your account from the account settings`,
+    info: ` <p className="font-medium" target="_blank">“My Account”</a> tab on your CloutZap Dashboard. If you would like to change the email address that you use to log in to your account you can do so here. Remember, you are only permitted to have one CloutZap account so edit your email address to the one you want to use rather than create a new account.</p>
+    
+`,
+  },
+  {
+    id: 4,
+    question: "I completed an App Task but wasn't credited Why?",
+    info: `
+    <p className="font-medium">After completing an App Tasks, please allow 15-25 minutes for it to register back to our system. If you still aren't credited, you either did the App Task incorrectly by not following the directions, OR you already completed the App Task in the past.</p>
+    <p className="font-medium">Some other reasons why you didn't get credited for an App Task :</p>
+<ul className="font-medium text-muted">
+  <li>- It may take 1-24 hours to reward you. <b>Make sure you have followed all the instructions mentioned for that task.</b></li>
+  <li>- You've already done the task in the past or you have owned the app in the past.</li>
+  <li>- One of the main reason : <b>You did not follow the instructions on the task.</b></li>
+  <li>- Do not use VPNs. They may affect your Tasks.</li>
+</ul>
+<p className="font-medium">We have many other tasks available on <a href="https://cloutzap.com/taskwall">Task Wall</a>, so please try different ones!</p>
+
+`,
   },
 ];

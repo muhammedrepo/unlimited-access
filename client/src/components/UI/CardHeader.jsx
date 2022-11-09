@@ -3,9 +3,9 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 const Wrapper = styled.div`
-  ${tw`relative mb-2 p-7 font-semibold text-gray-800 bg-white`}
+  ${tw`relative mb-2 font-semibold text-gray-800 bg-white`}
   & h5 {
-    ${tw`text-2xl capitalize bg-white mb-0`}
+    ${tw`text-2xl capitalize mb-0`}
   }
 
   & p,

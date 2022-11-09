@@ -49,7 +49,7 @@ function App() {
           <Route path="giveaway" element={<GiveAway />} />
           <Route path="withdraw" element={<Withdraw />} />
           <Route path="withdraw-history" element={<WithdrawHistory />} />
-          <Route path="my-account" element={<MyAccount />} />
+          <Route path="settings" element={<MyAccount />} />
           <Route path="faq" element={<Faq />} />
         </Route>
         <Route path="/register" element={<Register />} />

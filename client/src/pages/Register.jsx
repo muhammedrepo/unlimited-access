@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Alert, FormRow, Logo } from "../components";
+import { Alert, Button, FormRow, Logo } from "../components";
 import { useAppContext } from "../context/appContext";
 
 const initialState = {
@@ -144,7 +144,7 @@ const Register = () => {
                       required=""
                       name="terms"
                       type="checkbox"
-                      className="w-4 h-4 bg-gray-50 rounded border-gray-300 focus:ring-3 focus:ring-blue-300 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600"
+                      className="w-4 h-4 bg-gray-50 rounded border-gray-300 focus:ring-3 focus:ring-blue-300 "
                     />
                   </div>
                   <div className="ml-3 text-sm">
@@ -162,12 +162,7 @@ const Register = () => {
                     </label>
                   </div>
                 </div>
-                <button
-                  type="submit"
-                  className="text-white bg-green-600 hover:bg-green-500 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-md text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 mb-2 uppercase"
-                >
-                  Create account
-                </button>
+                <Button text="Create account" bgColor="green" type="submit" />
 
                 <div className="mb-6"></div>
                 <div className="text-sm font-medium text-gray-500 dark:text-gray-400">
@@ -178,7 +173,7 @@ const Register = () => {
                   <button
                     type="button"
                     onClick={toggleMember}
-                    className="ml-1 text-green-700 dark:text-blue-500 hover:underline"
+                    className="ml-1 text-green-700 hover:underline"
                   >
                     {values.isMember ? "Create an account." : "Sign in here"}
                   </button>
