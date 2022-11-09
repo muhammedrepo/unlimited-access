@@ -58,7 +58,7 @@ export const menuItems = [
   {
     id: 4,
     text: "user testimonials",
-    path: "/testimonials",
+    path: "/review",
   },
   {
     id: 5,
@@ -188,7 +188,7 @@ export const dashboardLinks = [
   {
     id: 12,
     text: "user review",
-    path: "reviews",
+    path: "review",
     icon: <FiThumbsUp />,
   },
 ];
