@@ -1,18 +1,22 @@
 import {
   FaCopy,
+  FaDollarSign,
   FaFacebook,
   FaFacebookMessenger,
   FaGift,
   FaInstagram,
   FaMobile,
   FaMousePointer,
+  FaPaypal,
   FaPinterest,
+  FaSearchDollar,
   FaShareSquare,
   FaSnapchat,
   FaTiktok,
   FaTwitter,
   FaUserPlus,
   FaVk,
+  FaWallet,
   FaWhatsapp,
   FaYoutube,
 } from "react-icons/fa";
@@ -33,6 +37,7 @@ import { HiOutlineTrendingUp } from "react-icons/hi";
 import { newReferral } from "../images";
 import { Button, CopyreferalLink } from "../components";
 import { Link } from "react-router-dom";
+import Counter from "../components/Counter";
 
 export const menuItems = [
   {
@@ -910,5 +915,32 @@ export const questResets = [
     progress: "0 Offer",
     goal: "10 Offers",
     claim: "$1000",
+  },
+];
+
+export const paymentHistory = [
+  {
+    id: 1,
+    icon: <FaDollarSign />,
+    title: "Total Earned",
+    sub: <Counter end="2541" />,
+  },
+  {
+    id: 2,
+    icon: <FaWallet />,
+    title: "Total Earned",
+    sub: <Counter end="2404" />,
+  },
+  {
+    id: 3,
+    icon: <FaPaypal />,
+    title: "Payment Method",
+    sub: "PayPal",
+  },
+  {
+    id: 4,
+    icon: <FaSearchDollar />,
+    title: "Payment processing",
+    sub: <Counter end="0" />,
   },
 ];

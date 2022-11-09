@@ -16,6 +16,8 @@ import SocialMediaGuide from "./SocialMediaGuide";
 import Quest from "./Quest";
 import Quests from "./Quests";
 import Time from "./Time";
+import Payments from "./Payments";
+import ProcessingTable from "./ProcessingTable";
 export {
   Navbar,
   BigSidebar,
@@ -35,4 +37,6 @@ export {
   Quest,
   Quests,
   Time,
+  Payments,
+  ProcessingTable,
 };
