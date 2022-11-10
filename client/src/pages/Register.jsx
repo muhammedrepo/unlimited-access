@@ -138,31 +138,39 @@ const Register = () => {
                     />
                   </div>
                 )}
-                <div className="flex items-start mb-6">
-                  <div className="flex items-center h-5">
-                    <input
-                      required=""
-                      name="terms"
-                      type="checkbox"
-                      className="w-4 h-4 bg-gray-50 rounded border-gray-300 focus:ring-3 focus:ring-blue-300 "
-                    />
-                  </div>
-                  <div className="ml-3 text-sm">
-                    <label
-                      htmlFor="terms"
-                      className="font-medium text-gray-900 dark:text-white"
-                    >
-                      I accept the
-                      <Link
-                        className="ml-1 text-green-700 dark:text-blue-500 hover:underline"
-                        to="/terms"
+                {values.isMember ? (
+                  ""
+                ) : (
+                  <div className="flex items-start mb-6">
+                    <div className="flex items-center h-5">
+                      <input
+                        required=""
+                        name="terms"
+                        type="checkbox"
+                        className="w-4 h-4 bg-gray-50 rounded border-gray-300 focus:ring-3 focus:ring-blue-300 "
+                      />
+                    </div>
+                    <div className="ml-3 text-sm">
+                      <label
+                        htmlFor="terms"
+                        className="font-medium text-gray-900 dark:text-white"
                       >
-                        Terms and Conditions
-                      </Link>
-                    </label>
+                        I accept the
+                        <Link
+                          className="ml-1 text-green-700 hover:underline"
+                          to="/terms"
+                        >
+                          Terms and Conditions
+                        </Link>
+                      </label>
+                    </div>
                   </div>
-                </div>
-                <Button text="Create account" bgColor="green" type="submit" />
+                )}
+                <Button
+                  text={values.isMember ? `sign in` : `create account`}
+                  bgColor="green"
+                  type="submit"
+                />
 
                 <div className="mb-6"></div>
                 <div className="text-sm font-medium text-gray-500 dark:text-gray-400">
