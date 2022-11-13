@@ -1,4 +1,5 @@
 import {
+  FaCommentDollar,
   FaCopy,
   FaDollarSign,
   FaFacebook,
@@ -6,11 +7,13 @@ import {
   FaGift,
   FaInstagram,
   FaMobile,
+  FaMoneyBillWave,
   FaMousePointer,
   FaPaypal,
   FaPinterest,
   FaSearchDollar,
   FaShareSquare,
+  FaSignInAlt,
   FaSnapchat,
   FaTiktok,
   FaTwitter,
@@ -34,7 +37,14 @@ import {
 } from "react-icons/bs";
 import { GoNote } from "react-icons/go";
 import { HiOutlineTrendingUp } from "react-icons/hi";
-import { newReferral } from "../images";
+import {
+  mobile,
+  newReferral,
+  quest,
+  referral,
+  survey,
+  trophy,
+} from "../images";
 import { Button, CopyreferalLink } from "../components";
 import { Link } from "react-router-dom";
 import Counter from "../components/Counter";
@@ -43,7 +53,7 @@ export const menuItems = [
   {
     id: 1,
     text: "home",
-    path: "/home",
+    path: "/landing",
   },
   {
     id: 2,
@@ -276,6 +286,54 @@ export const earnMore = [
     title: "JOIN AND GET BONUS",
     subtitle: "Sign up now and Earn $35 as a bonus.",
     icon: <FaGift />,
+  },
+];
+
+export const startMakingMoney = [
+  {
+    id: 1,
+    title: "Join CloutZap",
+    content:
+      "Sign up for a CloutZap account and join the community of people making money online with social media.",
+  },
+  {
+    id: 2,
+    title: "Share & Earn",
+    content:
+      "Invite your friends, family, and colleagues to our site by sharing your referral link. You will earn $15 for every person you invite that joins our site.",
+  },
+  {
+    id: 3,
+    title: "Get Paid",
+    content:
+      "Cash out your earnings instantly! We pay our members through PayPal, CashApp, Venmo, Bitcoin, Mailed checks, and more!",
+  },
+];
+
+export const paymentProofImages = [
+  {
+    url: "https://cloutzap.com/images/payments/cloutzap_payment_1.jpg",
+  },
+  {
+    url: "https://cloutzap.com/images/payments/cloutzap_payment_3.jpg",
+  },
+  {
+    url: "https://cloutzap.com/images/payments/cloutzap_payment_9.jpg",
+  },
+  {
+    url: "https://cloutzap.com/images/payments/cloutzap_payment_4.jpg",
+  },
+  {
+    url: "https://cloutzap.com/images/payments/cloutzap_payment_1.jpg",
+  },
+  {
+    url: "https://cloutzap.com/images/payments/cloutzap_payment_3.jpg",
+  },
+  {
+    url: "https://cloutzap.com/images/payments/cloutzap_payment_9.jpg",
+  },
+  {
+    url: "https://cloutzap.com/images/payments/cloutzap_payment_4.jpg",
   },
 ];
 
@@ -1032,5 +1090,65 @@ export const generalQuestion = [
 <p className="font-medium">We have many other tasks available on <a href="https://cloutzap.com/taskwall">Task Wall</a>, so please try different ones!</p>
 
 `,
+  },
+];
+
+export const howItWorks = [
+  {
+    id: 1,
+    icon: <FaSignInAlt />,
+    title: "Join CloutZap",
+    content:
+      "We reward our members with money for the everyday things they already do online.",
+  },
+  {
+    id: 2,
+    icon: <FaCommentDollar />,
+    title: "Earn Money",
+    content:
+      "Invite your friends to our site by sharing your referral link and earn $15 for every person you invite.",
+  },
+  {
+    id: 3,
+    icon: <FaMoneyBillWave />,
+    title: "Get Paid",
+    content:
+      "Instantly withdraw your funds to PayPal, Cash App, Venmo, Zelle, and more!",
+  },
+];
+
+export const methodsInfo = [
+  {
+    id: 1,
+    image: referral,
+    title: "Clicks & Referrals",
+    content:
+      "Share your invite link with friends, family, and colleagues and receive $2 when they click it, and $15 for every sign up.",
+  },
+  {
+    id: 2,
+    image: survey,
+    title: "Survey Tasks",
+    content: "Earn Money when you answer fun surveys and polls.",
+  },
+  {
+    id: 3,
+    image: mobile,
+    title: "App Tasks",
+    content: "Earn Money for playing games and testing some free apps.",
+  },
+  {
+    id: 4,
+    image: quest,
+    title: "Daily Quest",
+    content:
+      "Complete Daily Quests on our site and redeem Money for every completed quest.",
+  },
+  {
+    id: 5,
+    image: trophy,
+    title: "Giveaway",
+    content:
+      "Enter the hourly giveaway to earn the money. The entry is free. All you have to do is join.",
   },
 ];

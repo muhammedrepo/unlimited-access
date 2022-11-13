@@ -4,12 +4,14 @@ import Button from "./Button";
 
 const CTA = () => {
   return (
-    <section className="bg-green-700 p-4 md:p-5">
+    <section className="bg-green-700 py-8">
       <div className="mx-auto max-w-screen-xl p-4">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center">
-          <div className="text-white col-span-2">
-            <h3 className="text-white">Start Earning Money Today!</h3>
-            <span>
+        <div className="flex items-center flex-wrap md:justify-between">
+          <div className="text-white">
+            <h3 className="text-white md:text-3xl">
+              Start Earning Money Today!
+            </h3>
+            <span className="text-lg">
               CashZap is absolutely <b>free to join</b> and we offer instant
               cashouts to all our members.
             </span>

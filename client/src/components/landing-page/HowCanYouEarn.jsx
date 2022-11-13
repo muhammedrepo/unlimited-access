@@ -1,7 +1,7 @@
-import { BsBoxArrowInRight, BsCheckCircle } from "react-icons/bs";
-import { FaQuestion, FaUserPlus } from "react-icons/fa";
-import { earnMore } from "../utils/data";
-import Button from "./Button";
+import { BsBoxArrowInRight } from "react-icons/bs";
+import { FaQuestion, FaRegCheckCircle, FaUserPlus } from "react-icons/fa";
+import { earnMore } from "../../utils/data";
+import { Button } from "../../components";
 
 const HowCanYouEarn = () => {
   return (
@@ -20,9 +20,9 @@ const HowCanYouEarn = () => {
 
           return (
             <div key={id}>
-              <p className="flex items-center">
-                <span className="mr-2 font-bold text-2xl">
-                  <BsCheckCircle />
+              <p className="flex items-center font-medium">
+                <span className="mr-2 text-3xl">
+                  <FaRegCheckCircle />
                 </span>{" "}
                 {subtitle}
               </p>

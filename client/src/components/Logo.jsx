@@ -4,7 +4,7 @@ import { logofooter, logo } from "../images";
 
 const Logo = ({ footer }) => {
   return (
-    <Link to="/" className="relative flex items-center max-h-full ">
+    <Link to="/landing" className="relative flex items-center max-h-full ">
       <img
         src={footer ? logofooter : logo}
         alt="logo"

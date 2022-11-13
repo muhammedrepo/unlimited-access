@@ -2,34 +2,10 @@ import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
+import { paymentProofImages } from "../utils/data";
 import Button from "./Button";
 
-const images = [
-  {
-    url: "https://cloutzap.com/images/payments/cloutzap_payment_1.jpg",
-  },
-  {
-    url: "https://cloutzap.com/images/payments/cloutzap_payment_3.jpg",
-  },
-  {
-    url: "https://cloutzap.com/images/payments/cloutzap_payment_9.jpg",
-  },
-  {
-    url: "https://cloutzap.com/images/payments/cloutzap_payment_4.jpg",
-  },
-  {
-    url: "https://cloutzap.com/images/payments/cloutzap_payment_1.jpg",
-  },
-  {
-    url: "https://cloutzap.com/images/payments/cloutzap_payment_3.jpg",
-  },
-  {
-    url: "https://cloutzap.com/images/payments/cloutzap_payment_9.jpg",
-  },
-  {
-    url: "https://cloutzap.com/images/payments/cloutzap_payment_4.jpg",
-  },
-];
+let images = paymentProofImages;
 
 const PaymentProofs = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -82,7 +58,7 @@ const PaymentProofs = () => {
         <Button
           icon={<FaStar />}
           text="watch more reviews"
-          url="/reviews"
+          url="/review"
           bgColor="green"
         />
       </div>

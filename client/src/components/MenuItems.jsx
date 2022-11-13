@@ -34,8 +34,9 @@ const MenuItems = ({ items, toggleSidebar }) => {
       {items.submenu ? (
         <>
           <button
-            className="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:w-auto dark:text-gray-400"
+            className="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:w-auto"
             type="button"
+            aria-expanded={dropdown ? "true" : "false"}
             onClick={() => setDropdown((prev) => !prev)}
           >
             {items.text}

@@ -11,6 +11,11 @@ import parallax from "./parallax.jpg";
 import logo from "./logomobile.png";
 import logofooter from "./logofooterw.svg";
 import newReferral from "./new_referral.png";
+import mobile from "./method/mobile.png";
+import quest from "./method/quest.png";
+import referral from "./method/referral.png";
+import survey from "./method/survey.png";
+import trophy from "./method/trophy.png";
 export {
   usa,
   uk,
@@ -25,4 +30,9 @@ export {
   logo,
   logofooter,
   newReferral,
+  mobile,
+  quest,
+  referral,
+  survey,
+  trophy,
 };

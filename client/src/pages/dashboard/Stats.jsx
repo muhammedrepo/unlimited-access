@@ -24,7 +24,7 @@ const Wrapper = styled.section`
     ${tw`text-white bg-green-600 hover:bg-green-500 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-semibold rounded-md flex flex-col text-center items-center text-xl px-5 py-2.5`}
   }
 `;
-const Home = () => {
+const Stats = () => {
   return (
     <Wrapper>
       <BonusTab />
@@ -67,4 +67,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Stats;

@@ -4,19 +4,16 @@ const Alert = () => {
   const { alertType, alertText } = useAppContext();
   return (
     <div
-      className={`flex justify-between p-4 mb-4 bg-${alertType}-100 rounded-lg dark:bg-red-200`}
-      role="alert"
+      className={`flex justify-between p-4 mb-4 bg-${alertType}-100 rounded-lg`}
     >
-      <div
-        className={`text-sm font-medium text-${alertType}-700 dark:text-red-800`}
-      >
+      <div className={`text-sm font-medium text-${alertType}-700`}>
         <dl>
           <dd>{alertText}</dd>
         </dl>
       </div>
       <button
         type="button"
-        className={`ml-auto -mx-1.5 -my-1.5 bg-${alertType}-100 text-${alertType}-500 rounded-lg focus:ring-2 focus:ring-${alertType}-400 p-1.5 hover:bg-${alertType}-200 inline-flex h-8 w-8 dark:bg-${alertType}-200 dark:text-${alertType}-600 dark:hover:bg-${alertType}-300`}
+        className={`ml-auto -mx-1.5 -my-1.5 bg-${alertType}-100 text-${alertType}-500 rounded-lg focus:ring-2 focus:ring-${alertType}-400 p-1.5 hover:bg-${alertType}-200 inline-flex h-8 w-8`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

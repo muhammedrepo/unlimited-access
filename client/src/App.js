@@ -13,7 +13,7 @@ import {
 import {
   SharedLayout,
   DailyQuests,
-  Home,
+  Stats,
   Faq,
   GiveAway,
   MyAccount,
@@ -39,7 +39,7 @@ function App() {
             </ProtectedRoute>
           }
         >
-          <Route index element={<Home />} />
+          <Route index element={<Stats />} />
           <Route path="referrals" element={<Referrals />} />
           <Route path="referrals-guide" element={<ReferralsGuide />} />
           <Route path="promo" element={<Promo />} />
@@ -53,7 +53,7 @@ function App() {
           <Route path="faq" element={<Faq />} />
         </Route>
         <Route path="/register" element={<Register />} />
-        <Route path="/home" element={<Landing />} />
+        <Route path="/landing" element={<Landing />} />
         <Route path="/how" element={<How />} />
         <Route path="/proofs" element={<Proofs />} />
         <Route path="/review" element={<Testimonials />} />

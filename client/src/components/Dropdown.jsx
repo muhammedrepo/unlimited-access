@@ -3,7 +3,11 @@ import { NavLink } from "react-router-dom";
 
 const Dropdown = ({ submenus, dropdown }) => {
   return (
-    <div className={`${dropdown ? " show-dropdown" : "dropdown"}`}>
+    <div
+      className={`${
+        dropdown ? "block absolute" : "hidden"
+      } z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow`}
+    >
       <ul className="py-1 text-sm text-gray-700">
         {submenus.map((submenu, index) => (
           <li key={index}>

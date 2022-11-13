@@ -1,28 +1,7 @@
 import { FaUserPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Button from "./Button";
-import Counter from "./Counter";
-
-const steps = [
-  {
-    id: 1,
-    title: "Join CloutZap",
-    content:
-      "Sign up for a CloutZap account and join the community of people making money online with social media.",
-  },
-  {
-    id: 2,
-    title: "Share & Earn",
-    content:
-      "Invite your friends, family, and colleagues to our site by sharing your referral link. You will earn $15 for every person you invite that joins our site.",
-  },
-  {
-    id: 3,
-    title: "Get Paid",
-    content:
-      "Cash out your earnings instantly! We pay our members through PayPal, CashApp, Venmo, Bitcoin, Mailed checks, and more!",
-  },
-];
+import { Button, Counter } from "../../components";
+import { startMakingMoney } from "../../utils/data";
 
 const StartMakingMoney = () => {
   return (
@@ -48,7 +27,7 @@ const StartMakingMoney = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
-        {steps.map((step) => {
+        {startMakingMoney.map((step) => {
           const { id, title, content } = step;
 
           return (

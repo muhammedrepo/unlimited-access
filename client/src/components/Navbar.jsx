@@ -1,47 +1,35 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import tw from "twin.macro";
-import { Logo, MenuItems } from "../components";
+import { Logo, MenuItems, Button } from "../components";
 import { useAppContext } from "../context/appContext";
 import { menuItems } from "../utils/data";
 
 const Wrapper = styled.header`
   .active {
-    ${tw`text-white rounded bg-green-700 lg:bg-transparent lg:text-gray-700 lg:p-0`}
-  }
-
-  .dropdown {
-    ${tw`hidden z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow `}
-  }
-  .show-dropdown {
-    visibility: visible;
+    ${tw` text-white rounded bg-green-700 lg:bg-transparent lg:text-gray-700 lg:p-0`}
   }
 `;
 
 const Navbar = () => {
   const { showSidebar, toggleSidebar } = useAppContext();
+
   return (
-    <Wrapper className="">
-      <nav className=" bg-white border-gray-200 px-4 lg:px-6 py-3">
+    <Wrapper>
+      <nav className="fixed w-full z-20 top-0 left-0 border-b border-gray-200 bg-white px-4 lg:px-6 py-4">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Logo />
-          <div className="flex md:order-2">
-            <Link
-              to="/register"
-              className="text-green-800 bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
-            >
-              Log in
-            </Link>
-
-            <Link
-              to="/register"
-              className="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
-            >
-              Get started
-            </Link>
+          <div className="flex items-center md:order-2">
+            <Button text="Log In" bgColor="yellow" size="sm" url="/register" />
+            <Button
+              type="button"
+              text="Get Started"
+              bgColor="green"
+              size="sm"
+              url="/register"
+            />
             <button
               type="button"
-              className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
               onClick={toggleSidebar}
             >
               <span className="sr-only">Open main menu</span>
@@ -62,8 +50,8 @@ const Navbar = () => {
           <div
             className={
               showSidebar
-                ? "block justify-between items-center w-full"
-                : "hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+                ? "block w-full md:block md:w-auto"
+                : "hidden w-full md:block md:w-auto"
             }
           >
             <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">

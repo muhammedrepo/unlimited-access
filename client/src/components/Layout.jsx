@@ -4,7 +4,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      {children}
+      <main className="flex-grow pt-28">{children}</main>
       <CTA />
       <Footer />
     </>

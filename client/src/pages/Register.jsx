@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Alert, Button, FormRow, Logo } from "../components";
+import { Alert, FormRow, Logo } from "../components";
 import { useAppContext } from "../context/appContext";
 
 const initialState = {
@@ -33,10 +33,10 @@ const Register = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-gray-900">
-      <main className="bg-gray-50 dark:bg-gray-900">
+    <div className="flex flex-col min-h-screen bg-white">
+      <main className="bg-gray-50">
         <div className="flex flex-col justify-center items-center py-8 px-6 mx-auto md:h-screen">
-          <div className="flex justify-center items-center mb-8 text-2xl font-semibold lg:mb-10 dark:text-white">
+          <div className="flex justify-center items-center mb-8 text-2xl font-semibold lg:mb-10">
             <span
               style={{
                 boxSizing: "border-box",
@@ -73,10 +73,10 @@ const Register = () => {
               />
             </span>
           </div>
-          <div className="justify-center items-center w-full bg-white rounded-lg shadow lg:flex md:mt-0 lg:max-w-screen-sm xl:p-0 dark:bg-gray-800">
+          <div className="justify-center items-center w-full bg-white rounded-lg shadow lg:flex md:mt-0 lg:max-w-screen-sm xl:p-0 ">
             <div className="p-6 w-full sm:p-8 lg:p-10">
               {showAlert && <Alert />}
-              <h1 className="mb-3 text-2xl font-bold text-gray-900 lg:text-3xl dark:text-white">
+              <h1 className="mb-3 text-2xl font-bold text-gray-900 lg:text-3xl">
                 {values.isMember
                   ? "Sing in to your account"
                   : "Join now for free"}
@@ -153,7 +153,7 @@ const Register = () => {
                     <div className="ml-3 text-sm">
                       <label
                         htmlFor="terms"
-                        className="font-medium text-gray-900 dark:text-white"
+                        className="font-medium text-gray-900"
                       >
                         I accept the
                         <Link
@@ -166,14 +166,16 @@ const Register = () => {
                     </div>
                   </div>
                 )}
-                <Button
-                  text={values.isMember ? `sign in` : `create account`}
-                  bgColor="green"
+
+                <button
                   type="submit"
-                />
+                  className="text-white bg-green-600 hover:bg-green-500 border border-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 font-medium rounded-md text-xs md:text-sm px-5 py-2.5 text-center inline-flex items-center justify-center mb-2 capitalize"
+                >
+                  {values.isMember ? `sign in` : `create account`}
+                </button>
 
                 <div className="mb-6"></div>
-                <div className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                <div className="text-sm font-medium text-gray-500">
                   {values.isMember
                     ? "Not registered?"
                     : "Already have an account?"}

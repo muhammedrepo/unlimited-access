@@ -1,6 +1,6 @@
 import SharedLayout from "./SharedLayout";
 import DailyQuests from "./DailyQuests";
-import Home from "./Home";
+import Stats from "./Stats";
 import Faq from "./Faq";
 import GiveAway from "./GiveAway";
 import Referrals from "./Referrals";
@@ -15,7 +15,7 @@ import Promo from "./Promo";
 export {
   SharedLayout,
   DailyQuests,
-  Home,
+  Stats,
   Faq,
   GiveAway,
   MyAccount,
