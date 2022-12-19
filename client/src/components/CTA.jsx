@@ -17,13 +17,20 @@ const CTA = () => {
             </span>
           </div>
           <div className="flex gap-6 mt-4 lg:mt-0">
-            <Button icon=<FaUserPlus /> url="/register" text="Sign up now" />
-
             <Button
               url="/register"
-              icon={<BsBoxArrowInRight />}
-              text="Log In"
-            />
+              className="bg-skin-button-yellow text-skin-black"
+            >
+              <FaUserPlus className="mr-2" />
+              Sign Up Now
+            </Button>
+            <Button
+              url="/register"
+              className="bg-skin-button-green text-skin-base"
+            >
+              <BsBoxArrowInRight className="mr-2" />
+              Log In
+            </Button>
           </div>
         </div>
       </div>

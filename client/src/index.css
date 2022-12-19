@@ -6,44 +6,30 @@
 
 :root {
   /* colors */
-  --primary-50: #e0fcff;
-  --primary-100: #bef8fd;
-  --primary-200: #87eaf2;
-  --primary-300: #54d1db;
-  --primary-400: #38bec9;
-  --primary-500: #2cb1bc;
-  --primary-600: #14919b;
-  --primary-700: #0e7c86;
-  --primary-800: #0a6c74;
-  --primary-900: #044e54;
+  --color-base: #ffffff;
+  --color-text-muted: #6c757d;
+  --color-button-yellow: #ecd078;
+  --color-button-brown: #ba895d;
+  --color-button-hero: #eb9c4d;
+  --color-button-green: #59ba41;
+  --color-badge: rgba(36, 105, 92, 0.1);
+  --color-green-light: rgba(36, 105, 92, 0.1);
+  --color-fill: #198754;
+  --color-green-dark: #1b4c43;
 
-  /* grey */
-  --grey-50: #f0f4f8;
-  --grey-100: #d9e2ec;
-  --grey-200: #bcccdc;
-  --grey-300: #9fb3c8;
-  --grey-400: #829ab1;
-  --grey-500: #627d98;
-  --grey-600: #486581;
-  --grey-700: #334e68;
-  --grey-800: #243b53;
-  --grey-900: #102a43;
   /* rest of the colors */
-  --black: #222;
-  --white: #fff;
-  --red-light: #f8d7da;
-  --red-dark: #842029;
-  --green-light: #d1e7dd;
-  --green-dark: #0f5132;
+  --color-black: #222;
+  --color-red-light: #f8d7da;
+  --color-red-dark: #842029;
 
   /* fonts  */
-  --headingFont: "Roboto Condensed", Sans-Serif;
-  --bodyFont: "Cabin", Sans-Serif;
+  --headingFont: "Poppins", Sans-Serif;
+  --bodyFont: "Poppins", Sans-Serif;
   --small-text: 0.875rem;
   --extra-small-text: 0.7em;
   /* rest of the vars */
-  --backgroundColor: var(--grey-50);
-  --textColor: var(--grey-900);
+  --backgroundColor: var(--color-base);
+  --textColor: var(--color-text-muted);
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
@@ -76,7 +62,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #444;
+  color: var(--color-black);
   font-weight: 600;
   line-height: 1.5;
   margin: 0 0 30px 0;

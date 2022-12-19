@@ -11,10 +11,10 @@ const Wrapper = styled.aside`
     display: block;
     box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.1);
     .sidebar-container {
-      background: var(--white);
+      background: var(--color-base);
       min-height: 100vh;
       height: 100%;
-      width: 250px;
+      width: 290px;
       margin-left: -250px;
       transition: var(--transition);
     }
@@ -92,16 +92,8 @@ const BigSidebar = () => {
             className="sidebar-user text-center flex flex-col items-center"
             style={{ padding: "14px" }}
           >
-            <div
-              className="btn bg-green-600 quick-social icon-back mr-2 flex items-center justify-center text-white"
-              style={{
-                borderRadius: "100%",
-                padding: "10px 0",
-                width: "50px",
-                height: "50px",
-                fontSize: "18px",
-              }}
-            >
+            <div className="btn bg-skin-green-dark w-20 h-20 mb-3 rounded-full shadow-lg">
+              <img src="" alt="user" />
               <FaUser />
             </div>
 
@@ -111,7 +103,7 @@ const BigSidebar = () => {
                 @<span className="font-semibold">coolzyte</span>
               </h6>
             </Link>
-            <ul className="mt-2 flex text-xs space-x-4 mb-4">
+            <ul className="mt-2 flex text-xs font-semibold space-x-4 mb-4">
               <li>
                 <span>
                   $<span className="">2,541</span>
@@ -131,14 +123,14 @@ const BigSidebar = () => {
                 <p>Referrals</p>
               </li>
             </ul>
-
             <Button
-              type="button"
-              text="Download Apps For Money"
-              bgColor="green"
-              size="xs"
-              url="https://cloutzap.com/taskwall"
-            />
+              className="bg-skin-green-dark text-skin-base"
+              url="/takswall"
+            >
+              <span className="capitalize text-xs">
+                Download Apps For Money
+              </span>
+            </Button>
           </div>
 
           <NavLinks />

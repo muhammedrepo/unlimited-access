@@ -1,4 +1,5 @@
-import { Navbar, Footer, CTA } from ".";
+import { Footer, CTA } from ".";
+import Navbar from "../parts/Header/Navbar";
 
 const Layout = ({ children }) => {
   return (

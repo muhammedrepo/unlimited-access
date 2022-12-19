@@ -4,7 +4,7 @@ import {
   MyProfile,
   PaymentDetails,
   SetPayment,
-} from "../../components/dashboard/my-account";
+} from "../../features/myAccount-feature";
 
 const MyAccount = () => {
   return (

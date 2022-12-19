@@ -1,9 +1,17 @@
 import Error from "./Error";
-import How from "./How";
-import Landing from "./Landing";
-import Proofs from "./Proofs";
+import HowItWorks from "./how-it-works";
+import PaymentProofs from "./payment-proofs";
 import Register from "./Register";
-import Testimonials from "./Testimonials";
+import Testimonials from "./testimonials";
 import ProtectedRoute from "./ProtectedRoute";
+import Home from "./home";
 
-export { Error, Landing, How, Proofs, Register, Testimonials, ProtectedRoute };
+export {
+  Home,
+  Error,
+  PaymentProofs,
+  Register,
+  Testimonials,
+  ProtectedRoute,
+  HowItWorks,
+};

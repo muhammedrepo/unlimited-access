@@ -1,29 +1,25 @@
-import {
-  Breadcrumb,
-  Payments,
-  ProcessingTable,
-} from "../../components/dashboard";
+import { Breadcrumb } from "../../components/dashboard";
 import { Card, CardHeader } from "../../components/UI";
-import { paymentHistory } from "../../utils/data";
+
+import {
+  ProcessingTable,
+  TransactionLists,
+} from "../../features/withdrawHistory-feature";
 
 const WithdrawHistory = () => {
   return (
     <div>
       <Breadcrumb title="Payments" page="Withdraw History" />
-      <section className="pt-12">
-        <div className="grid md:grid-cols-2 gap-6">
-          {paymentHistory.map((payment) => {
-            return <Payments key={payment.id} {...payment} />;
-          })}
-        </div>
-      </section>
+
       <section className="pt-14">
+        <div className="mb-8">
+          <TransactionLists />
+        </div>
         <Card>
           <CardHeader
             title="Your Payment"
             subtitle="This is where your requested payment is shown."
           />
-
           <ProcessingTable />
         </Card>
       </section>

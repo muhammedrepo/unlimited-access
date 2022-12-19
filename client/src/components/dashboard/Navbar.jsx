@@ -32,12 +32,12 @@ const Wrapper = styled.nav`
     background: transparent;
     border-color: transparent;
     font-size: 1.75rem;
-    color: var(--primary-500);
+    color: var(--color-green-dark);
     cursor: pointer;
     display: flex;
     align-items: center;
   }
-  background: var(--white);
+  background: var(--color-base);
   .btn-container {
     position: relative;
   }
@@ -107,19 +107,25 @@ const Navbar = () => {
           <ul className="flex space-x-4">
             <li>
               <Button
-                icon=<FaFileInvoiceDollar />
-                text="Payments"
                 url="withdraw"
-                bgColor="green"
-              />
+                className="bg-skin-green-light text-skin-dark-green"
+              >
+                <FaFileInvoiceDollar className="mr-2" />{" "}
+                <span className="capitalize font-semibold text-xs">
+                  Payments
+                </span>
+              </Button>
             </li>
             <li>
               <Button
-                icon=<FiSettings />
-                text="Edit Account"
                 url="my-account"
-                bgColor="green"
-              />
+                className="bg-skin-green-light text-skin-dark-green"
+              >
+                <FiSettings className="mr-2" />{" "}
+                <span className="capitalize font-semibold text-xs">
+                  Edit Account
+                </span>
+              </Button>
             </li>
           </ul>
         </div>

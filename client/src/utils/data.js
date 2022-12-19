@@ -15,6 +15,7 @@ import {
   FaShareSquare,
   FaSignInAlt,
   FaSnapchat,
+  FaTasks,
   FaTiktok,
   FaTwitter,
   FaUserPlus,
@@ -23,6 +24,7 @@ import {
   FaWhatsapp,
   FaYoutube,
 } from "react-icons/fa";
+
 import { GrTasks } from "react-icons/gr";
 import { ImCheckmark } from "react-icons/im";
 import { BiInfoCircle, BiTime } from "react-icons/bi";
@@ -44,7 +46,7 @@ import {
   referral,
   survey,
   trophy,
-} from "../images";
+} from "../assets";
 import { Button, CopyreferalLink } from "../components";
 import { Link } from "react-router-dom";
 import Counter from "../components/Counter";
@@ -101,6 +103,29 @@ export const menuItems = [
         path: "/privacy-policy",
       },
     ],
+  },
+];
+
+export const footerLinks = [
+  {
+    id: 1,
+    text: "about us",
+    path: "/about-us",
+  },
+  {
+    id: 2,
+    text: "faq",
+    path: "/info-faq",
+  },
+  {
+    id: 3,
+    text: "payment proofs",
+    path: "/proofs",
+  },
+  {
+    id: 4,
+    text: "user testimonials",
+    path: "/review",
   },
 ];
 
@@ -203,6 +228,41 @@ export const dashboardLinks = [
   },
 ];
 
+export const testVid = [
+  {
+    id: 1,
+    vid: "https://www.youtube.com/embed/mCULIS_F6Nw",
+  },
+  {
+    id: 2,
+    vid: "https://www.youtube.com/embed/mCULIS_F6Nw",
+  },
+  {
+    id: 3,
+    vid: "https://www.youtube.com/embed/mCULIS_F6Nw",
+  },
+  {
+    id: 4,
+    vid: "https://www.youtube.com/embed/mCULIS_F6Nw",
+  },
+  {
+    id: 5,
+    vid: "https://www.youtube.com/embed/mCULIS_F6Nw",
+  },
+  {
+    id: 6,
+    vid: "https://www.youtube.com/embed/mCULIS_F6Nw",
+  },
+  {
+    id: 7,
+    vid: "https://www.youtube.com/embed/mCULIS_F6Nw",
+  },
+  {
+    id: 8,
+    vid: "https://www.youtube.com/embed/mCULIS_F6Nw",
+  },
+];
+
 export const manyWays = [
   {
     id: 1,
@@ -223,7 +283,7 @@ export const manyWays = [
     id: 3,
     title: "COMPLETE SURVEYS",
     subtitle: "Earn $100+ Per Survey",
-    icon: <GrTasks />,
+    icon: <FaTasks />,
     path: "/task-wall",
   },
   {
@@ -986,7 +1046,7 @@ export const paymentHistory = [
   {
     id: 2,
     icon: <FaWallet />,
-    title: "Total Earned",
+    title: "Total Withdraw",
     sub: <Counter end="2404" />,
   },
   {

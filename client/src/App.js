@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import {
+  Home,
   Error,
-  Landing,
-  How,
-  Proofs,
+  PaymentProofs,
   Register,
   Testimonials,
   ProtectedRoute,
+  HowItWorks,
 } from "./pages";
 
 import {
@@ -25,7 +25,8 @@ import {
   ReferralsGuide,
   Promo,
 } from "./pages/dashboard";
-import { About, Fraud, Terms, Privacy, InfoFaq } from "./pages/infoPages";
+
+import { About, Fraud, Terms, Privacy, InfoFaq } from "./pages/info";
 
 function App() {
   return (
@@ -53,9 +54,9 @@ function App() {
           <Route path="faq" element={<Faq />} />
         </Route>
         <Route path="/register" element={<Register />} />
-        <Route path="/landing" element={<Landing />} />
-        <Route path="/how" element={<How />} />
-        <Route path="/proofs" element={<Proofs />} />
+        <Route path="/landing" element={<Home />} />
+        <Route path="/how" element={<HowItWorks />} />
+        <Route path="/proofs" element={<PaymentProofs />} />
         <Route path="/review" element={<Testimonials />} />
         <Route path="about-us" element={<About />} />
         <Route path="info-faq" element={<InfoFaq />} />

@@ -1,22 +1,19 @@
-import React from "react";
 import { BsBoxArrowUp } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { getfreetraffic } from "../../utils/data";
+import { CardHeader } from "../UI";
 import Card from "../UI/Card";
 
 const GetFreeTraffic = () => {
   return (
     <Card className="card">
-      <div className="card-header b-l-primary border-3">
-        <h5 className="flex gap-2 text-2xl">
-          <BsBoxArrowUp />
-          Get Free Traffic And Earn
-        </h5>
-        <p className="mb-0">
-          On average, our users <b>TRIPLE</b> their earnings after sharing their
-          referral link on social media websites.
-        </p>
-      </div>
+      <CardHeader
+        icon=<BsBoxArrowUp />
+        title="Get Free Traffic And Earn"
+        subtitle="On average, our users TRIPLE their earnings after sharing their
+          referral link on social media websites."
+      />
+
       <div className="card-body">
         <ul
           className="h-64 overflow-auto xl:h-full xl:overflow-hidden"

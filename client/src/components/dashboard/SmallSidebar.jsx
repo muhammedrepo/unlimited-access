@@ -12,7 +12,7 @@ const Wrapper = styled.aside`
   .sidebar-container {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@ const Wrapper = styled.aside`
     opacity: 1;
   }
   .content {
-    background: var(--white);
+    background: var(--color-base);
     width: var(--fluid-width);
     height: 95vh;
     border-radius: var(--borderRadius);

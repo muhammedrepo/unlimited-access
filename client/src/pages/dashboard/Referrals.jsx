@@ -1,12 +1,9 @@
 import React from "react";
 import { FaGift, FaUserPlus } from "react-icons/fa";
-import {
-  GetFreeTraffic,
-  Timeline,
-  YourReferrals,
-} from "../../components/dashboard";
+import { GetFreeTraffic, YourReferrals } from "../../components/dashboard";
 import Breadcrumb from "../../components/dashboard/Breadcrumb";
 import TasksButton from "../../components/dashboard/TasksButton";
+import { Timeline } from "../../features/referrals-feature";
 
 const Referrals = () => {
   return (

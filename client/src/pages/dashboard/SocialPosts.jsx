@@ -1,11 +1,11 @@
 import { FaShareSquare } from "react-icons/fa";
-
 import { Breadcrumb } from "../../components/dashboard";
 import Card from "../../components/UI/Card";
-
 import { CardHeader } from "../../components/UI";
-import VideoPostLists from "../../components/dashboard/social-posts/VideoPostLists";
-import SocialPostAccordion from "../../components/dashboard/social-posts/SocialPostAccordion";
+import {
+  SocialPostAccordion,
+  VideoPostLists,
+} from "../../features/socialPost-feature";
 
 const SocialPosts = () => {
   return (
