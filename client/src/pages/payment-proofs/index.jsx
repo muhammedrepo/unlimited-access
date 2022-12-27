@@ -1,4 +1,3 @@
-import React from "react";
 import { BreadCrumb, Layout, Proofs } from "../../components";
 
 const PaymentProofs = () => {

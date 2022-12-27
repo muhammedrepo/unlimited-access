@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Breadcrumb, Quests, Time } from "../../components/dashboard";
+import { Breadcrumb } from "../../components/dashboard";
 import { Card, CardHeader } from "../../components/UI";
-
+import { Quests, Time } from "../../features/daily-quests";
 import { questResets } from "../../utils/data";
 
 const DailyQuests = () => {

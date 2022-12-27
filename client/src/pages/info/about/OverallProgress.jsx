@@ -3,7 +3,7 @@ import { Card } from "../../../components/UI";
 
 const OverallProgress = () => {
   return (
-    <section className="mx-auto max-w-5xl border-0 shadow rounded-4 card-seo-about mb-5 lg:mb-0">
+    <section className="mx-auto max-w-5xl border-0 shadow rounded-4 mb-5 lg:mb-0">
       <Card>
         <div className="card-body p-5">
           <div className="flex items-center">
@@ -25,11 +25,11 @@ const OverallProgress = () => {
                   successful influencer.
                 </p>
                 <Button
-                  text="Get started now"
                   url="/register"
-                  bgColor="skin-button-green"
-                  textColor="skin-base"
-                />
+                  className="bg-skin-green-dark text-skin-base"
+                >
+                  Get Started Now
+                </Button>
               </div>
             </div>
             <div className="col-md-6">

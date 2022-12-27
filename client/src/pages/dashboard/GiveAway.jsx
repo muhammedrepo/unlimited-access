@@ -52,7 +52,9 @@ const GiveAway = () => {
                     The entry is free. All you have to do is click the button.
                   </p>
                   <form className="flex flex-col items-center">
-                    <Button icon=<FaTicketAlt /> text="Enter" bgColor="green" />
+                    <Button className="bg-skin-green-dark text-skin-base">
+                      <FaTicketAlt className="mr-2 text-3xl" /> Enter
+                    </Button>
                   </form>
                 </div>
               </div>
@@ -81,8 +83,9 @@ const GiveAway = () => {
                   </p>
                 </div>
               </div>
-
-              <Button icon=<FaAward /> bgColor="green" />
+              <Button className="bg-skin-green-dark text-skin-base">
+                <FaAward />
+              </Button>
             </div>
           </div>
         </Card>

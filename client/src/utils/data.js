@@ -25,7 +25,6 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-import { GrTasks } from "react-icons/gr";
 import { ImCheckmark } from "react-icons/im";
 import { BiInfoCircle, BiTime } from "react-icons/bi";
 import { FiDollarSign, FiHome, FiSettings, FiThumbsUp } from "react-icons/fi";
@@ -327,7 +326,7 @@ export const earnMore = [
     title: "TASKS",
     subtitle:
       "Get paid to do simple tasks i.e. Play games, test out free aps and more.",
-    icon: <GrTasks />,
+    icon: <FaTasks />,
   },
   {
     id: 4,

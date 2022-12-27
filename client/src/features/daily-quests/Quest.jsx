@@ -1,7 +1,6 @@
-import React from "react";
 import { FaTrophy } from "react-icons/fa";
-import Button from "../Button";
-import Card from "../UI/Card";
+import Button from "../../components/Button";
+import Card from "../../components/UI/Card";
 
 const Quest = ({ id, title, sub, progress, claim, goal }) => {
   return (
@@ -33,7 +32,13 @@ const Quest = ({ id, title, sub, progress, claim, goal }) => {
           </div>
         </div>
         <div className="grid gap-2 w-full">
-          <Button icon=<FaTrophy /> text={claim} bgColor="yellow" />
+          <Button
+            className="bg-skin-button-brown text-skin-base"
+            icon=<FaTrophy />
+            text={claim}
+          >
+            <FaTrophy className="mr-2" /> {claim}
+          </Button>
         </div>
       </div>
     </Card>

@@ -7,7 +7,7 @@ const EarnMore = () => {
       <div className="px-4 mx-auto max-w-screen-xl">
         <div className="text-center">
           <div className="">
-            <h2 className="mb-3 text-green-800 border-b border-green-800">
+            <h2 className="mb-3 text-skin-green-dark border-b border-green-800">
               How Much Can I Expect to Earn Using CloutZap?
             </h2>
             <p className="mb-3">

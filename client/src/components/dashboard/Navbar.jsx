@@ -107,7 +107,7 @@ const Navbar = () => {
           <ul className="flex space-x-4">
             <li>
               <Button
-                url="withdraw"
+                url="/withdraw"
                 className="bg-skin-green-light text-skin-dark-green"
               >
                 <FaFileInvoiceDollar className="mr-2" />{" "}
@@ -118,7 +118,7 @@ const Navbar = () => {
             </li>
             <li>
               <Button
-                url="my-account"
+                url="settings"
                 className="bg-skin-green-light text-skin-dark-green"
               >
                 <FiSettings className="mr-2" />{" "}

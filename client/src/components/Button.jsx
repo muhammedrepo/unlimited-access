@@ -14,7 +14,7 @@ const BtnWrapper = styled(Link)`
   font-size: 0.875rem;
   line-height: 24px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 1px;
   border: none;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);

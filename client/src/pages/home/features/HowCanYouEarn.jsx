@@ -21,7 +21,7 @@ const HowCanYouEarn = () => {
           return (
             <div key={id}>
               <p className="flex items-center font-medium">
-                <span className="mr-2 text-3xl">
+                <span className="mr-2 text-2xl">
                   <FaRegCheckCircle />
                 </span>{" "}
                 {subtitle}

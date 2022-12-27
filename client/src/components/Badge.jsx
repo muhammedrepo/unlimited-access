@@ -1,6 +1,6 @@
-const Badge = ({ children }) => {
+const Badge = ({ children, color }) => {
   return (
-    <div className="bg-skin-badge text-xs font-medium p-1 rounded-sm">
+    <div className={`${color} text-xs font-medium p-1 rounded-md`}>
       {children}
     </div>
   );

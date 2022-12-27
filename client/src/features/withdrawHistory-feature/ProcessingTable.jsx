@@ -1,39 +1,47 @@
-import React from "react";
 import { FaEye } from "react-icons/fa";
 import Button from "../../components/Button";
 
-const ProcessingTable = () => {
+const ProcessingTable = ({ openInvoiceModal }) => {
   return (
-    <div class="overflow-x-auto relative">
-      <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+    <div className="overflow-x-auto relative">
+      <table className="w-full text-sm text-left text-skin-muted ">
+        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 ">
           <tr>
-            <th scope="col" class="py-3 px-6">
+            <th scope="col" className="py-3 px-6">
               Due Date
             </th>
-            <th scope="col" class="py-3 px-6">
+            <th scope="col" className="py-3 px-6">
               Amount
             </th>
-            <th scope="col" class="py-3 px-6">
+            <th scope="col" className="py-3 px-6">
               Status
             </th>
-            <th scope="col" class="py-3 px-6">
+            <th scope="col" className="py-3 px-6">
               View Details
             </th>
           </tr>
         </thead>
         <tbody>
-          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
             <th
               scope="row"
-              class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
             >
               20-11-10
             </th>
-            <td class="py-4 px-6">$2404</td>
-            <td class="py-4 px-6">Processing</td>
-            <td class="py-4 px-6">
-              <Button icon=<FaEye /> bgColor="green" onClick={() => {}} />
+            <td className="py-4 px-6">$2404</td>
+            <td className="py-4 px-6">
+              <span className="bg-skin-button-yellow px-1 rounded-sm">
+                Processing...
+              </span>
+            </td>
+            <td className="py-4 px-6">
+              <Button
+                className="bg-skin-green-dark text-skin-base"
+                onClick={openInvoiceModal}
+              >
+                <FaEye />
+              </Button>
             </td>
           </tr>
         </tbody>

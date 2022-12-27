@@ -19,7 +19,7 @@ const SetPayment = () => {
                   PAYMENT METHOD
                 </label>
                 <select
-                  className="form-select bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  className="form-select bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5"
                   name="payment_method"
                 >
                   <option value="PayPal" selected="">
@@ -40,7 +40,7 @@ const SetPayment = () => {
               <textarea
                 name="payment_details"
                 rows="5"
-                className="form-control block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                className="form-control block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-gray-500 focus:border-gray-500"
                 placeholder="Enter your PayPal email, CASH TAG, Venmo, Bitcoin or Ethereum wallet address OR Enter an Address where you want us to Mail your Cash Check."
                 required=""
               >
@@ -48,7 +48,12 @@ const SetPayment = () => {
               </textarea>
             </div>
             <div className="form-footer">
-              <Button text="Add Payment Method" bgColor="green" />
+              <Button
+                type="submit"
+                className="bg-skin-green-dark text-skin-base"
+              >
+                Add Payment Method
+              </Button>
             </div>
           </div>
         </div>

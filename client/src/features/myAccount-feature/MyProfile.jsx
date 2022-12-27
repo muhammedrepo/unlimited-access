@@ -6,6 +6,7 @@ import Button from "../../components/Button";
 
 import FormRow from "../../components/FormRow";
 import { Card, CardHeader } from "../../components/UI";
+import { Badge } from "../../components";
 
 const initialState = {
   name: "",
@@ -29,7 +30,6 @@ const MyProfile = () => {
       displayAlert();
       return;
     }
-    console.log(values);
   };
 
   return (
@@ -45,9 +45,9 @@ const MyProfile = () => {
 
                 <div class="flex flex-col items-center">
                   <h3 class="mb-1 text-green-600">Tunde Tijani</h3>
-                  <span class="bg-green-600 text-white text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">
+                  <Badge color="bg-skin-green-dark text-skin-base">
                     New Member
-                  </span>
+                  </Badge>
                 </div>
               </div>
             </div>
@@ -80,12 +80,9 @@ const MyProfile = () => {
             />
           </div>
           <div>
-            <Button
-              type="submit"
-              icon=<FaEdit />
-              text="Update Profile"
-              bgColor="green"
-            />
+            <Button type="submit" className="bg-skin-green-dark text-skin-base">
+              <FaEdit className="mr-2" /> Update Profile
+            </Button>
           </div>
         </form>
       </div>

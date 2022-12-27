@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { FaInfoCircle, FaRegThumbsUp } from "react-icons/fa";
+import { FaDollarSign, FaInfoCircle, FaRegThumbsUp } from "react-icons/fa";
 import { GrClose } from "react-icons/gr";
 import { Button } from "../../components";
-import { Breadcrumb } from "../../components/dashboard";
+import { Banner, Breadcrumb } from "../../components/dashboard";
 import Card from "../../components/UI/Card";
 
 const TaskWall = () => {
@@ -12,11 +12,12 @@ const TaskWall = () => {
       <Breadcrumb title="Task Wall" page="Task Wall" />
 
       <section className="w-full mt-14">
-        <Card className="ribbon-wrapper card">
-          <div className="card-body">
-            <div className="ribbon ribbon-secondary font-bold">
-              <i className="fa-solid fa-dollar-sign"></i> Task Wall
-            </div>
+        <Card>
+          <div className="p-8 bg-transparent">
+            <Banner bgColor="button-brown">
+              <FaDollarSign className="inline-flex" /> Badge link
+            </Banner>
+
             <p>
               Complete the easy tasks to earn extra money. This will be
               automatically added to your account within 5-10 minutes after
@@ -28,17 +29,19 @@ const TaskWall = () => {
             </p>
             <div className="grid gap-2">
               <Button
-                text="Want to complete offers more than once?"
-                bgColor="red"
+                className="bg-skin-button-brown text-skin-base"
                 onClick={() => setShowModal(!showModal)}
-              />
+              >
+                Want to complete offers more than once?
+              </Button>
+
               {showModal && (
                 <div className=" flex items-center justify-center">
                   <div className="relative p-4 w-full max-w-xl h-full md:h-auto">
-                    <div className="relative bg-white rounded-lg shadow">
+                    <div className="relative bg-skin-base rounded-lg shadow">
                       <div className="modal-header flex justify-between items-start p-4 rounded-t border-b">
                         <h5 className="modal-title flex gap-x-2">
-                          <FaInfoCircle className="text-green-600 text-2xl" />{" "}
+                          <FaInfoCircle className="text-skin-fill text-2xl" />{" "}
                           Multiple Tasks
                         </h5>
                         <button
@@ -62,11 +65,9 @@ const TaskWall = () => {
                           .
                         </p>
                         <p className="font-bold">Ready to continue?</p>
-                        <Button
-                          icon=<FaRegThumbsUp />
-                          text="Countinue"
-                          bgColor="green"
-                        />
+                        <Button className="bg-skin-green-dark text-skin-base">
+                          <FaRegThumbsUp className="mr-2" /> Continue
+                        </Button>
                       </div>
                     </div>
                   </div>
@@ -79,8 +80,9 @@ const TaskWall = () => {
 
       <section className="w-full mt-12">
         <Card className="ribbon-wrapper card">
-          <div className="card-body">
-            <div className="ribbon ribbon-primary">App Tasks</div>
+          <div className="p-8 bg-transparent">
+            <Banner bgColor="green-dark">App Task</Banner>
+
             <p className="alert alert-light solid alert-rounded">
               <strong>
                 There are currently no app tasks available for you.
@@ -97,8 +99,8 @@ const TaskWall = () => {
 
       <section className="mt-12">
         <Card className="ribbon-wrapper">
-          <div className="card-body">
-            <div className="ribbon ribbon-primary">Survey Tasks</div>
+          <div className="p-8 bg-transparent">
+            <Banner bgColor="green-dark">Survey Tasks</Banner>
             <div className="flex"></div>
           </div>
         </Card>

@@ -51,12 +51,9 @@ const ChangePassword = () => {
             />
           </div>
           <div>
-            <Button
-              type="submit"
-              icon=<FaUserLock />
-              text="Change Password"
-              bgColor="green"
-            />
+            <Button type="submit" className="bg-skin-green-dark text-skin-base">
+              <FaUserLock className="mr-2" /> Change Password
+            </Button>
           </div>
         </form>
       </div>

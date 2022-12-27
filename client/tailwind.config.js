@@ -9,6 +9,7 @@ module.exports = {
           muted: "var(--color-text-muted)",
           black: "var(--color-black)",
           fill: "var(--color-fill)",
+          "green-dark": "var(--color-green-dark)",
         },
       },
       backgroundColor: {
