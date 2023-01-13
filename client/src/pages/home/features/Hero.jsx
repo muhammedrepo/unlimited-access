@@ -1,4 +1,5 @@
 import { FaMoneyBillWave, FaRegSmile } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import ReactTextRotator from "react-text-rotator";
 import { Button } from "../../../components";
 
@@ -102,26 +103,29 @@ const Hero = () => {
             completing simple tasks. Use the power of your social media to make
             money online. Enjoy daily paychecks from the comfort of your home.
           </p>
-          <Button
-            url="/register"
-            className="bg-skin-button-green text-skin-base text-center flex flex-col"
-          >
-            <span className="text-2xl m-0">Sign Up Now </span>
-            <span className="capitalize font-normal italic">
-              Sign up now for $35 Bonus!
-            </span>
-          </Button>
+          <Link to="/register">
+            <Button primary className="flex-col">
+              <span className="text-2xl m-0">Sign Up Now </span>
+              <span className="font-normal italic">
+                Sign up now for $35 Bonus!
+              </span>
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="flex items-center justify-center space-x-2">
-        <Button url="/review" className="bg-skin-button-hero text-skin-base">
-          <FaRegSmile className="mr-2" />
-          Review
-        </Button>
-        <Button url="/proofs" className="bg-skin-button-hero text-skin-base">
-          <FaMoneyBillWave className="mr-2" />
-          Payment Proofs
-        </Button>
+        <Link to="/review">
+          <Button btnHero>
+            <FaRegSmile className="mr-2" />
+            Review
+          </Button>
+        </Link>
+        <Link to="/proofs">
+          <Button btnHero>
+            <FaMoneyBillWave className="mr-2" />
+            Payment Proofs
+          </Button>
+        </Link>
       </div>
     </div>
   );

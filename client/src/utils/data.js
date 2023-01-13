@@ -141,7 +141,7 @@ export const dashboardLinks = [
     text: "referrals",
     number: "$15+",
     icon: <BsPeople />,
-    submenu: [
+    submenus: [
       {
         id: 1,
         text: "refer & earn",
@@ -1072,11 +1072,11 @@ export const membersFaq = [
     id: 2,
     question: "Are there other ways to earn?",
     info: `
-    <p class="font-medium">Of course! If referring is not your thing, you can always <b>Earn MORE through our <a href="https://cloutzap.com/taskwall">Task Wall</a>!</b><br>The Task Wall features a variety of free apps, surveys, and offers from our sponsors. You can earn by testing out these free apps, completing free surveys, or trying out free offers!</p>
-    <p class="font-medium">Some more ways to earn on CloutZap are listed below:</p>
-    <li class="text-muted fw-bold"><a href="https://cloutzap.com/quests" target="_blank">Earn through Daily Quests</a></li>
-    <li class="text-muted fw-bold"><a href="https://cloutzap.com/socials" target="_blank">Earn through posting on Social Media</a></li>
-    <li class="text-muted fw-bold"><a href="https://cloutzap.com/giveaway" target="_blank">Participate in the Giveaway</a></li>
+    <p className="font-medium">Of course! If referring is not your thing, you can always <b>Earn MORE through our <a href="https://cloutzap.com/taskwall">Task Wall</a>!</b><br>The Task Wall features a variety of free apps, surveys, and offers from our sponsors. You can earn by testing out these free apps, completing free surveys, or trying out free offers!</p>
+    <p className="font-medium">Some more ways to earn on CloutZap are listed below:</p>
+    <li className="text-muted fw-bold"><a href="https://cloutzap.com/quests" target="_blank">Earn through Daily Quests</a></li>
+    <li className="text-muted fw-bold"><a href="https://cloutzap.com/socials" target="_blank">Earn through posting on Social Media</a></li>
+    <li className="text-muted fw-bold"><a href="https://cloutzap.com/giveaway" target="_blank">Participate in the Giveaway</a></li>
 `,
   },
   {
@@ -1093,8 +1093,8 @@ export const membersFaq = [
     id: 5,
     question: "My friend signed up but I didn't get credited?",
     info: `
-    <p class="font-medium">If your friend/family joined and you weren't credited, it could be because of the possible issues below.
-</p><ul class="font-medium text-muted">
+    <p className="font-medium">If your friend/family joined and you weren't credited, it could be because of the possible issues below.
+</p><ul className="font-medium text-muted">
 <li>- Your friend already has an account.</li>
 <li>- Your referral was fraudulent.</li>
 <li>- You provided the wrong referral link.</li>
@@ -1115,7 +1115,7 @@ export const generalQuestion = [
     id: 1,
     question: "Is CloutZap safe?",
     info: `
-    <p class="font-medium">We take your security and privacy very seriously. We encrypt all your data so that no-one can see it, <b>NOT EVEN US</b>. We <b>encrypt your password on our servers so that it cannot be read by anyone <u>it shouldn't be</u></b>. We don't share your data with anyone else without your permission. By using our Cashout Options to cash out your earnings, we don't hold any of your financial information. This is covered in more detail in our <a href="https://cloutzap.com/faq" target="_blank">FAQS Page.</a></p>
+    <p className="font-medium">We take your security and privacy very seriously. We encrypt all your data so that no-one can see it, <b>NOT EVEN US</b>. We <b>encrypt your password on our servers so that it cannot be read by anyone <u>it shouldn't be</u></b>. We don't share your data with anyone else without your permission. By using our Cashout Options to cash out your earnings, we don't hold any of your financial information. This is covered in more detail in our <a href="https://cloutzap.com/faq" target="_blank">FAQS Page.</a></p>
 `,
   },
   {
@@ -1123,7 +1123,7 @@ export const generalQuestion = [
     question: "What will you do with the information I give you?",
     info: `
     
-    <p class="font-medium">CloutZap does not share it's user data with third parties. When you join CloutZap, you agree to our information use and data protection policy as explained in our terms and conditions.<br>As in everything we do, we're honest and transparent about how we use your info – for more information take a look at our <a href="https://cloutzap.com/faq" target="_blank">FAQS Page.</a>.<br>If you leave CloutZap, we'll remove as much information as we can about your account other than data we are required to hold under statute.</p>
+    <p className="font-medium">CloutZap does not share it's user data with third parties. When you join CloutZap, you agree to our information use and data protection policy as explained in our terms and conditions.<br>As in everything we do, we're honest and transparent about how we use your info – for more information take a look at our <a href="https://cloutzap.com/faq" target="_blank">FAQS Page.</a>.<br>If you leave CloutZap, we'll remove as much information as we can about your account other than data we are required to hold under statute.</p>
 
 `,
   },

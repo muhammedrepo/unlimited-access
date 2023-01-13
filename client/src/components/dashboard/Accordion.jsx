@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import tw from "twin.macro";
+import React, { useState } from "react";
 import { SingleQuestion } from ".";
 
 import {
@@ -11,15 +10,19 @@ import {
   whatsappguide,
 } from "../../utils/data";
 
-const Wrapper = styled.div`
-  .button {
-    ${tw`flex items-center justify-between w-full p-4 font-medium text-left
-    focus:ring-2 focus:ring-blue-200 
-`}
-  }
-`;
-
 const Accordion = ({ name }) => {
+  const [expandedIndex, setExpandedIndex] = useState(-1);
+
+  const handleClick = (nextIndex) => {
+    setExpandedIndex((currentExpandedIndex) => {
+      if (currentExpandedIndex === nextIndex) {
+        return -1;
+      } else {
+        return nextIndex;
+      }
+    });
+  };
+
   let questions = instagramguide;
   if (name === "Facebook") {
     questions = facebookguide;
@@ -34,11 +37,20 @@ const Accordion = ({ name }) => {
   }
 
   return (
-    <Wrapper>
-      {questions.map((question) => {
-        return <SingleQuestion key={question.id} {...question} />;
+    <>
+      {questions.map((question, index) => {
+        const isExpanded = index === expandedIndex;
+        return (
+          <SingleQuestion
+            key={question.id}
+            {...question}
+            index={index}
+            isExpanded={isExpanded}
+            handleClick={handleClick}
+          />
+        );
       })}
-    </Wrapper>
+    </>
   );
 };
 

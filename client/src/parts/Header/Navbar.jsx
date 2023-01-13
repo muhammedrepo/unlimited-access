@@ -4,6 +4,7 @@ import { useAppContext } from "../../context/appContext";
 import { menuItems } from "../../utils/data";
 import { Logo, Button } from "../../components";
 import MenuItems from "./MenuItems";
+import { Link } from "react-router-dom";
 
 const Wrapper = styled.header`
   .active {
@@ -20,19 +21,15 @@ const Navbar = () => {
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Logo />
           <div className="flex items-center md:order-2">
-            <div className="space-x-2">
-              <Button
-                url="/register"
-                className="bg-skin-button-yellow text-skin-black"
-              >
-                Log In
-              </Button>
-              <Button
-                url="/register"
-                className="bg-skin-button-green text-skin-base"
-              >
-                Get Started
-              </Button>
+            <div className="space-x-2 hidden md:block">
+              <Link to="/register">
+                <Button secondary className="text-skin-black">
+                  Log In
+                </Button>
+              </Link>
+              <Link to="/register">
+                <Button primary>Get Started</Button>
+              </Link>
             </div>
             <button
               type="button"
@@ -62,17 +59,17 @@ const Navbar = () => {
             }
           >
             <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-skin-base">
-              {menuItems.map((menu, index) => {
+              {menuItems.map((menu) => {
                 return (
                   <>
                     {showSidebar ? (
                       <MenuItems
                         items={menu}
-                        key={index}
+                        key={menu.id}
                         toggleSidebar={toggleSidebar}
                       />
                     ) : (
-                      <MenuItems items={menu} key={index} />
+                      <MenuItems items={menu} key={menu.id} />
                     )}
                   </>
                 );

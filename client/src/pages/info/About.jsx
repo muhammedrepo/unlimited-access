@@ -13,7 +13,7 @@ const About = () => {
       />
 
       <section className="relative bg-white">
-        <div class="relative content-wrap py-0 overflow-visible">
+        <div className="relative content-wrap py-0 overflow-visible">
           <OverallProgress />
           <TheStory />
           <EarnMore />

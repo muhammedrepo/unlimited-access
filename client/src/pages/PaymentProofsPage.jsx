@@ -1,6 +1,7 @@
-import { BreadCrumb, Layout, Proofs } from "../../components";
+import { BreadCrumb, Layout } from "../components";
+import { PaymentProofs } from "../components/payment-proof";
 
-const PaymentProofs = () => {
+const PaymentProofsPage = () => {
   return (
     <Layout>
       <BreadCrumb
@@ -9,7 +10,7 @@ const PaymentProofs = () => {
         page="Proofs"
       />
       <div className="mx-auto max-w-screen-xl px-4">
-        <p class="text-center mb-5">
+        <p className="text-center mb-5">
           Does CloutZap seem too good to be true? Here are some proofs of
           payment. With over $22,670,000+ paid to over 560,000+ members,
           CloutZap has quickly become the #1 influencer earning network. With
@@ -17,11 +18,11 @@ const PaymentProofs = () => {
           are killing it! Cashing out and getting paid daily!{" "}
         </p>
         <div className="mt-8">
-          <Proofs />
+          <PaymentProofs />
         </div>
       </div>
     </Layout>
   );
 };
 
-export default PaymentProofs;
+export default PaymentProofsPage;

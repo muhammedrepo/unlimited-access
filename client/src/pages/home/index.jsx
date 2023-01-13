@@ -1,4 +1,5 @@
-import { Layout, Proofs } from "../../components";
+import { Layout } from "../../components";
+import { PaymentProofs } from "../../components/payment-proof";
 import {
   Hero,
   HowCanYouEarn,
@@ -20,7 +21,7 @@ const Home = () => {
         <StartMakingMoney />
       </section>
       <section className="py-14 bg-gray-50">
-        <Proofs />
+        <PaymentProofs />
       </section>
       <section className="mt-32 lg:mt-20">
         <MapSection />

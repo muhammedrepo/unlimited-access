@@ -38,7 +38,7 @@ const Faq = () => {
                   <div>
                     <h6 className="text-xl">{question}</h6>
                     <div
-                      class="mb-3 font-light text-gray-500"
+                      className="mb-3 font-light text-gray-500"
                       dangerouslySetInnerHTML={{ __html: info }}
                     />
                   </div>

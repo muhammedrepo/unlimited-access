@@ -8,8 +8,8 @@ import Card from "../../components/UI/Card";
 const ReferralLink = () => {
   return (
     <Card>
-      <div class="card">
-        <div class="card-header ">
+      <div className="card">
+        <div className="card-header ">
           <h5 className="flex gap-x-2 text-2xl">
             <FaShareSquare />
             Your Referral Link
@@ -26,7 +26,7 @@ const ReferralLink = () => {
             </span>
           </p>
 
-          <div class="mt-2 mb-3 grid">
+          <div className="mt-2 mb-3 grid">
             <Button
               url="/referrals"
               className="bg-skin-green-dark text-skin-base"

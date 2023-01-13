@@ -3,11 +3,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
   Home,
   Error,
-  PaymentProofs,
   Register,
   Testimonials,
   ProtectedRoute,
   HowItWorks,
+  PaymentProofsPage,
 } from "./pages";
 
 import {
@@ -56,7 +56,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/landing" element={<Home />} />
         <Route path="/how" element={<HowItWorks />} />
-        <Route path="/proofs" element={<PaymentProofs />} />
+        <Route path="/proofs" element={<PaymentProofsPage />} />
         <Route path="/review" element={<Testimonials />} />
         <Route path="about-us" element={<About />} />
         <Route path="info-faq" element={<InfoFaq />} />

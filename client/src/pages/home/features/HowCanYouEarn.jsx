@@ -2,6 +2,7 @@ import { BsBoxArrowInRight } from "react-icons/bs";
 import { FaQuestion, FaRegCheckCircle, FaUserPlus } from "react-icons/fa";
 import { earnMore } from "../../../utils/data";
 import { Button } from "../../../components";
+import { Link } from "react-router-dom";
 
 const HowCanYouEarn = () => {
   return (
@@ -31,17 +32,18 @@ const HowCanYouEarn = () => {
         })}
       </div>
       <div className="flex justify-center mt-8">
-        <Button
-          url="/register"
-          className="bg-skin-button-yellow text-skin-black"
-        >
-          <FaUserPlus className="mr-2" />
-          Sign Up
-        </Button>
-        <Button url="/register" className="bg-skin-button-green text-skin-base">
-          <BsBoxArrowInRight className="mr-2" />
-          Log In
-        </Button>
+        <Link to="/register">
+          <Button secondary>
+            <FaUserPlus className="mr-2" />
+            Sign Up
+          </Button>
+        </Link>
+        <Link to="/register">
+          <Button primary>
+            <BsBoxArrowInRight className="mr-2" />
+            Log In
+          </Button>
+        </Link>
       </div>
     </div>
   );

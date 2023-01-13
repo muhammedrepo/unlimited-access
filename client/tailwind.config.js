@@ -14,6 +14,7 @@ module.exports = {
       },
       backgroundColor: {
         skin: {
+          transparent: "transparent",
           base: "var(--color-base)",
           fill: "var(--color-fill)",
           badge: "var(--color-badge)",
@@ -25,6 +26,10 @@ module.exports = {
           "button-hero": "var(--color-button-hero)",
           "button-green": "var(--color-button-green)",
         },
+      },
+      boxShadow: {
+        button: "inset 0 -3px 0 rgba(0, 0, 0, 0.15)",
+        "button-hover": "0 4px 15px rgba(0, 0, 0, 0.05)",
       },
     },
   },

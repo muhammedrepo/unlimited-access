@@ -17,6 +17,7 @@ const WithdrawHistory = () => {
   return (
     <div className="relative">
       {invoice && <PaymentInvoice openInvoiceModal={openInvoiceModal} />}
+
       <Breadcrumb title="Payments" page="Withdraw History" />
 
       <section className="pt-14">

@@ -31,8 +31,8 @@ const ReferralsGuide = () => {
             subtitle="Below are your referral stats so far. On average, our users TRIPLE their earnings after using the Refer &amp; Earn Section"
           />
 
-          <div class="card-body">
-            <div class="grid grid-cols-2 gap-6">
+          <div className="card-body">
+            <div className="grid grid-cols-2 gap-6">
               <TasksButton
                 icon=<FiUserPlus />
                 title="Your Referrals"
@@ -44,14 +44,14 @@ const ReferralsGuide = () => {
                 number="$68"
               />
             </div>
-            <hr class="mb-2" />
-            <h6 class="mb-2 font-bold text-xl">YOUR REFERRAL LINK</h6>
+            <hr className="mb-2" />
+            <h6 className="mb-2 font-bold text-xl">YOUR REFERRAL LINK</h6>
             <CopyreferalLink />
             <p>
               You can share your link with your friends, family, and followers
               on social media OR share via text-message or WhatsApp.
             </p>
-            <div class="mt-2 mb-3 grid">
+            <div className="mt-2 mb-3 grid">
               <Button
                 icon=<FaUsers />
                 text="Check Your Referrals"

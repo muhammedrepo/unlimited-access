@@ -32,8 +32,8 @@ const StartMakingMoney = () => {
 
           return (
             <div key={id} className="lg:max-w-xs">
-              <div class="flex items-center space-x-3 ">
-                <div class="font-bold text-6xl">{id}.</div>
+              <div className="flex items-center space-x-3 ">
+                <div className="font-bold text-6xl">{id}.</div>
 
                 <Link to="/register" className="text-2xl font-bold">
                   {title}
@@ -45,13 +45,12 @@ const StartMakingMoney = () => {
           );
         })}
         <div>
-          <Button
-            url="/register"
-            className="bg-skin-button-green text-skin-base"
-          >
-            <FaUserPlus className="mr-2" />
-            Sign Up
-          </Button>
+          <Link to="/register">
+            <Button primary>
+              <FaUserPlus className="mr-2" />
+              Sign Up
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

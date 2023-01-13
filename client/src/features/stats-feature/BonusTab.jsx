@@ -32,12 +32,12 @@ const BonusTab = () => {
                 correctly. This bonus should take about 1-2 days to complete.
               </p>
               <div className="my-3 mb-0">
-                <div class="mb-1 text-base font-medium ">
+                <div className="mb-1 text-base font-medium ">
                   1. Get 15 Referrals
                 </div>
-                <div class="w-full bg-gray-200 rounded-full h-4 mb-2 ">
+                <div className="w-full bg-gray-200 rounded-full h-4 mb-2 ">
                   <div
-                    class="bg-skin-green-dark h-4 rounded-full"
+                    className="bg-skin-green-dark h-4 rounded-full"
                     style={{ width: "100%" }}
                   ></div>
                 </div>
@@ -51,12 +51,12 @@ const BonusTab = () => {
                 </div>
               </div>
               <div className="my-3">
-                <div class="mb-1 text-base font-medium ">
+                <div className="mb-1 text-base font-medium ">
                   2. Complete 20 Tasks
                 </div>
-                <div class="w-full bg-gray-200 rounded-full h-4 mb-2 ">
+                <div className="w-full bg-gray-200 rounded-full h-4 mb-2 ">
                   <div
-                    class="bg-skin-green-dark h-4 rounded-full"
+                    className="bg-skin-green-dark h-4 rounded-full"
                     style={{ width: "100%" }}
                   ></div>
                 </div>

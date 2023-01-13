@@ -1,5 +1,6 @@
 import { BsBoxArrowInRight } from "react-icons/bs";
 import { FaUserPlus } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import Button from "./Button";
 
 const CTA = () => {
@@ -17,20 +18,18 @@ const CTA = () => {
             </span>
           </div>
           <div className="flex gap-6 mt-4 lg:mt-0">
-            <Button
-              url="/register"
-              className="bg-skin-button-yellow text-skin-black"
-            >
-              <FaUserPlus className="mr-2" />
-              Sign Up Now
-            </Button>
-            <Button
-              url="/register"
-              className="bg-skin-button-green text-skin-base"
-            >
-              <BsBoxArrowInRight className="mr-2" />
-              Log In
-            </Button>
+            <Link to="/register">
+              <Button outline>
+                <FaUserPlus className="mr-2" />
+                Sign Up Now
+              </Button>
+            </Link>
+            <Link to="/register">
+              <Button outline>
+                <BsBoxArrowInRight className="mr-2" />
+                Log In
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

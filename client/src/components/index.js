@@ -4,7 +4,7 @@ import Layout from "./Layout";
 import Footer from "../parts/Footer/Footer";
 import Button from "./Button";
 import Counter from "./Counter";
-import Proofs from "./Proofs";
+
 import CTA from "./CTA";
 import FormRow from "./FormRow";
 import BreadCrumb from "./BreadCrumb";
@@ -19,7 +19,6 @@ export {
   Footer,
   Button,
   Counter,
-  Proofs,
   CTA,
   FormRow,
   BreadCrumb,

@@ -38,13 +38,13 @@ const MyProfile = () => {
       <div className="card-body">
         <form onSubmit={onSubmit}>
           {showAlert && <Alert />}
-          <div class="mb-2">
-            <div class="profile-title max-w-xs mx-auto">
-              <div class="flex flex-col xl:flex-row items-center xl:justify-between text-center">
+          <div className="mb-2">
+            <div className="profile-title max-w-xs mx-auto">
+              <div className="flex flex-col xl:flex-row items-center xl:justify-between text-center">
                 <FaUserEdit className="text-green-600 text-5xl" />
 
-                <div class="flex flex-col items-center">
-                  <h3 class="mb-1 text-green-600">Tunde Tijani</h3>
+                <div className="flex flex-col items-center">
+                  <h3 className="mb-1 text-green-600">Tunde Tijani</h3>
                   <Badge color="bg-skin-green-dark text-skin-base">
                     New Member
                   </Badge>

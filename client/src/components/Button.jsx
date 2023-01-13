@@ -1,44 +1,41 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import className from "classnames";
 
-const BtnWrapper = styled(Link)`
-  display: inline-flex;
-  position: relative;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  outline: none;
-  white-space: nowrap;
-  margin: 5px;
-  padding: 8px 22px;
-  font-size: 0.875rem;
-  line-height: 24px;
-  font-weight: 700;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-  border: none;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+function Button({
+  children,
+  primary,
+  secondary,
+  success,
+  warning,
+  danger,
+  btnHero,
+  rounded,
+  outline,
+  ...rest
+}) {
+  const classes = className(
+    rest.className,
+    "relative inline-flex cursor-pointer items-center justify-center outline-none m-1.5 py-2 px-6 text-sm font-bold capitalize rounded shadow-button hover:opacity-90 -hover:translateY hover:shadow-button-hover",
 
-  & {
-    border-radius: 3px;
-    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
-
-    transition: none;
-  }
-
-  &:hover {
-    opacity: 0.9;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  }
-`;
-
-const Button = ({ type = "button", url, onClick, children, ...rest }) => {
-  return (
-    <BtnWrapper to={url} onClick={onClick} {...rest}>
-      {children}
-    </BtnWrapper>
+    {
+      "bg-skin-button-green text-skin-base text-white": primary,
+      "bg-skin-button-yellow text-skin-black": secondary,
+      "bg-skin-button-hero text-white": btnHero,
+      "border-green-500 bg-green-500 text-white": success,
+      "border-yellow-500 bg-yellow-500 text-white": warning,
+      "border-red-500 bg-red-500 text-white": danger,
+      "rounded-full": rounded,
+      "text-white border": outline,
+      "border-white": outline && primary,
+      "text-gray-900": outline && secondary,
+      "text-green-500": outline && success,
+      "text-yellow-500": outline && warning,
+      "text-red-500": outline && danger,
+    }
   );
-};
-
+  return (
+    <button {...rest} className={classes}>
+      {children}
+    </button>
+  );
+}
 export default Button;

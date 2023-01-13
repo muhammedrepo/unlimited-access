@@ -17,9 +17,9 @@ const SocialPostAccordion = () => {
         const { icon, name, id, bgColor } = item;
 
         return (
-          <div className="mt-6">
+          <div className="mt-6" key={id}>
             <Card>
-              <AccordionItem key={id}>
+              <AccordionItem>
                 <AccordionItemHeading>
                   <AccordionItemButton>
                     <h5 className="p-0 text-xl font-bold text-gray-800">

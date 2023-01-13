@@ -18,8 +18,11 @@ const Quest = ({ id, title, sub, progress, claim, goal }) => {
             <h6 className="text-gray-400 text-base mb-0 text-right">Daily</h6>
           </div>
         </div>
-        <div class="w-full h-8 bg-gray-200 rounded-md">
-          <div class="h-8 bg-gray-200 rounded-md" style={{ width: "" }}></div>
+        <div className="w-full h-8 bg-gray-200 rounded-md">
+          <div
+            className="h-8 bg-gray-200 rounded-md"
+            style={{ width: "" }}
+          ></div>
         </div>
         <div className="flex justify-between items-center mb-4">
           <div className="text-start">

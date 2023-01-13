@@ -37,24 +37,19 @@ const Footer = () => {
             </div>
             <div className="col-span-2 flex flex-col">
               <div className="flex justify-around">
-                <div className="lg:mt-0 ">
-                  <Button
-                    url="/register"
-                    className="bg-skin-button-yellow text-skin-black"
-                  >
+                <Link to="/register" className="lg:mt-0">
+                  <Button secondary>
                     <FaUserPlus className="mr-2" />
                     Sign Up
                   </Button>
-                </div>
-                <div className=" mt-lg-0">
-                  <Button
-                    url="/register"
-                    className="bg-skin-button-green text-skin-base"
-                  >
+                </Link>
+
+                <Link to="/register" className="lg:mt-0">
+                  <Button primary>
                     <BsBoxArrowInRight className="mr-2" />
                     Log In
                   </Button>
-                </div>
+                </Link>
               </div>
 
               <div className="flex flex-col items-center text-center m-0 w-full ">

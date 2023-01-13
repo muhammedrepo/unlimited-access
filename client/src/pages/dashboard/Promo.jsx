@@ -31,8 +31,8 @@ const Promo = () => {
             </span>
           </div>
           <div className="card-body grid lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {promodImage.map((item) => (
-              <figure>
+            {promodImage.map((item, index) => (
+              <figure key={index}>
                 <Link to={item.path}>
                   <img
                     className="w-full p-px bg-white border border-solid border-white rounded-sm max-w-full h-auto"

@@ -9,8 +9,10 @@ import Accordion from "./Accordion";
 import SingleQuestion from "./Question";
 import SocialMediaGuide from "./SocialMediaGuide";
 import Banner from "./Banner";
+import BigSidebarDropdown from "./BigSidebarDropdown";
 
 export {
+  BigSidebarDropdown,
   Banner,
   Navbar,
   BigSidebar,

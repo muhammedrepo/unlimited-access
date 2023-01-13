@@ -10,8 +10,8 @@ const Privacy = () => {
         page="PRIVACY POLICY"
       />
 
-      <div class="section bg-white m-0 pt-4 pb-0 mb-5">
-        <div class="px-4 mx-auto max-w-screen-xl">
+      <div className="section bg-white m-0 pt-4 pb-0 mb-5">
+        <div className="px-4 mx-auto max-w-screen-xl">
           <p>
             Welcome to our Privacy Policy — Your privacy is critically important
             to us.

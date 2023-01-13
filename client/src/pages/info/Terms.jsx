@@ -691,7 +691,7 @@ const Terms = () => {
                       <li>
                         a) electronically to&nbsp;
                         <Link to="/">
-                          <span class="__cf_email__" data-cfemail="">
+                          <span className="__cf_email__" data-cfemail="">
                             hey@cloutzap.com
                           </span>
                         </Link>
@@ -1163,7 +1163,7 @@ const Terms = () => {
                                   address at:&nbsp;
                                   <Link
                                     to="/cdn-cgi/l/email-protection"
-                                    class="__cf_email__"
+                                    className="__cf_email__"
                                     data-cfemail=""
                                   >
                                     partners@cloutzap.com
