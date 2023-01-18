@@ -10,8 +10,9 @@ import SingleQuestion from "./Question";
 import SocialMediaGuide from "./SocialMediaGuide";
 import Banner from "./Banner";
 import BigSidebarDropdown from "./BigSidebarDropdown";
-
+import Modal from "./Modal";
 export {
+  Modal,
   BigSidebarDropdown,
   Banner,
   Navbar,

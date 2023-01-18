@@ -1,12 +1,41 @@
 import { useState } from "react";
-import { FaDollarSign, FaInfoCircle, FaRegThumbsUp } from "react-icons/fa";
-import { GrClose } from "react-icons/gr";
+import { FaDollarSign, FaRegThumbsUp } from "react-icons/fa";
 import { Button } from "../../components";
-import { Banner, Breadcrumb } from "../../components/dashboard";
+import { Banner, Breadcrumb, Modal } from "../../components/dashboard";
 import Card from "../../components/UI/Card";
 
 const TaskWall = () => {
   const [showModal, setShowModal] = useState(false);
+
+  const handleClick = () => {
+    setShowModal(true);
+  };
+  const handleClose = () => {
+    setShowModal(false);
+  };
+
+  const actionBar = (
+    <div className="flex items-center justify-center p-4 border-t border-gray-200 rounded-b ">
+      <Button btnDark onClick={handleClose}>
+        <FaRegThumbsUp className="mr-2" /> Continue
+      </Button>
+    </div>
+  );
+
+  const modal = (
+    <Modal onClose={handleClose} title="Multiple Task">
+      <div className="modal-body p-6 space-y-6 text-center text-sm">
+        <p>
+          If you want to complete tasks multiple times, you can do so by using
+          another device. For example, if you complete a task on you iPhone, you
+          can complete it again on your <b>computer</b> or an <b>old iPhone</b>{" "}
+          or <b>other device that hasn't been used to complete it yet</b>.
+        </p>
+        <p className="font-bold">Ready to continue?</p>
+        {actionBar}
+      </div>
+    </Modal>
+  );
   return (
     <div>
       <Breadcrumb title="Task Wall" page="Task Wall" />
@@ -27,52 +56,16 @@ const TaskWall = () => {
               Make sure you <b>follow the task instructions carefully</b> to
               receive credit for that task.
             </p>
+
             <div className="grid gap-2">
               <Button
                 className="bg-skin-button-brown text-skin-base"
-                onClick={() => setShowModal(!showModal)}
+                onClick={handleClick}
               >
                 Want to complete offers more than once?
               </Button>
 
-              {showModal && (
-                <div className=" flex items-center justify-center">
-                  <div className="relative p-4 w-full max-w-xl h-full md:h-auto">
-                    <div className="relative bg-skin-base rounded-lg shadow">
-                      <div className="modal-header flex justify-between items-start p-4 rounded-t border-b">
-                        <h5 className="modal-title flex gap-x-2">
-                          <FaInfoCircle className="text-skin-fill text-2xl" />{" "}
-                          Multiple Tasks
-                        </h5>
-                        <button
-                          type="button"
-                          onClick={() => setShowModal(!showModal)}
-                        >
-                          <GrClose className=" text-xl" />
-                        </button>
-                      </div>
-                      <div className="modal-body p-6 space-y-6 text-center">
-                        <p>
-                          If you want to complete tasks multiple times, you can
-                          do so by using another device. For example, if you
-                          complete a task on you iPhone, you can complete it
-                          again on your <b>computer</b> or an <b>old iPhone</b>{" "}
-                          or{" "}
-                          <b>
-                            other device that hasn't been used to complete it
-                            yet
-                          </b>
-                          .
-                        </p>
-                        <p className="font-bold">Ready to continue?</p>
-                        <Button className="bg-skin-green-dark text-skin-base">
-                          <FaRegThumbsUp className="mr-2" /> Continue
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
+              {showModal && modal}
             </div>
           </div>
         </Card>

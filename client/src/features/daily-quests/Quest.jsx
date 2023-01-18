@@ -35,11 +35,7 @@ const Quest = ({ id, title, sub, progress, claim, goal }) => {
           </div>
         </div>
         <div className="grid gap-2 w-full">
-          <Button
-            className="bg-skin-button-brown text-skin-base"
-            icon=<FaTrophy />
-            text={claim}
-          >
+          <Button btnCopy icon=<FaTrophy /> text={claim}>
             <FaTrophy className="mr-2" /> {claim}
           </Button>
         </div>

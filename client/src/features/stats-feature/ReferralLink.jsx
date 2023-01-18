@@ -1,5 +1,6 @@
 import { FaFacebookMessenger, FaShareSquare } from "react-icons/fa";
 import { FiShare } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import Button from "../../components/Button";
 import CopyreferalLink from "../../components/CopyreferalLink";
 
@@ -26,14 +27,11 @@ const ReferralLink = () => {
             </span>
           </p>
 
-          <div className="mt-2 mb-3 grid">
-            <Button
-              url="/referrals"
-              className="bg-skin-green-dark text-skin-base"
-            >
+          <Link to="/referrals" className="mt-2 mb-3 grid">
+            <Button btnDark>
               <FaShareSquare className="mr-2" /> Refer &amp; Earn
             </Button>
-          </div>
+          </Link>
           <p>
             <FaFacebookMessenger className="text-md mr-1 text-skin-black inline-flex" />
             Use this link to share on Facebook, Instagram, Snapchat and Twitter!

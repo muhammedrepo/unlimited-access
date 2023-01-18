@@ -2,7 +2,7 @@ import React from "react";
 import { FaInfoCircle, FaPaypal } from "react-icons/fa";
 import { Card } from "../../components/UI";
 
-const PaymentDetails = () => {
+const PaymentDetails = ({ paymentMethod, detail }) => {
   return (
     <div className="h-8">
       <Card>
@@ -30,8 +30,8 @@ const PaymentDetails = () => {
                 >
                   <FaPaypal className="text-blue-500" />
                 </th>
-                <td className="py-4 px-6">PayPal</td>
-                <td className="py-4 px-6">coolzyte@gmail</td>
+                <td className="py-4 px-6">{paymentMethod}</td>
+                <td className="py-4 px-6">{detail}</td>
               </tr>
             </tbody>
           </table>

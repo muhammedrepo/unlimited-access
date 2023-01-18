@@ -18,17 +18,14 @@ const Stats = () => {
       <section className="mt-12">
         <div className="grid md:grid-cols-2 gap-6">
           <ReferralLink />
-          <div className="grid gap-2 h-24">
-            <Button
-              to="/task-wall"
-              className="text-skin-base bg-skin-green-dark flex flex-col text-center items-center text-xl px-5 py-2.5"
-            >
+          <Link to="/task-wall" className="grid gap-2 h-24">
+            <Button btnDark className="flex flex-col text-xl px-5 py-2.5">
               <AiFillDollarCircle size="52px" />
               Earn $80+ Per Task
               <br />
               Start Making Money Now
             </Button>
-          </div>
+          </Link>
         </div>
       </section>
       <TasksReports />

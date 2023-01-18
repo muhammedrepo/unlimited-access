@@ -11,7 +11,7 @@ import { useAppContext } from "../../context/appContext";
 import Button from "../Button";
 
 const Wrapper = styled.nav`
-  z-index: 9999;
+  z-index: 40;
   height: var(--nav-height);
   display: flex;
   align-items: center;

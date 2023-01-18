@@ -1,7 +1,7 @@
 import { FaEye } from "react-icons/fa";
 import Button from "../../components/Button";
 
-const ProcessingTable = ({ openInvoiceModal }) => {
+const ProcessingTable = ({ openModal }) => {
   return (
     <div className="overflow-x-auto relative">
       <table className="w-full text-sm text-left text-skin-muted ">
@@ -36,10 +36,7 @@ const ProcessingTable = ({ openInvoiceModal }) => {
               </span>
             </td>
             <td className="py-2 px-6">
-              <Button
-                className="bg-skin-green-dark text-skin-base"
-                onClick={openInvoiceModal}
-              >
+              <Button btnDark onClick={openModal}>
                 <FaEye />
               </Button>
             </td>

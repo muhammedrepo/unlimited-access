@@ -1,11 +1,48 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Button from "../../components/Button";
 import { Card, CardHeader } from "../../components/UI";
 
-const SetPayment = () => {
+const SetPayment = ({ options, value, onChange, submitPayment, detail }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const divEl = useRef();
+
+  useEffect(() => {
+    const handler = (event) => {
+      if (!divEl.current) {
+        return;
+      }
+
+      if (!divEl.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("click", handler, true);
+
+    return () => {
+      document.removeEventListener("click", handler);
+    };
+  }, []);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+  const handleOptionClick = (option) => {
+    setIsOpen(false);
+    onChange(option);
+  };
+
+  const renderedOptions = options.map((option) => {
+    return (
+      <div key={option.id} onClick={() => handleOptionClick(option)}>
+        {option.label}
+      </div>
+    );
+  });
+
   return (
     <Card>
-      <form>
+      <div>
         <CardHeader title="Set Payment Method" />
 
         <div className="card-body">
@@ -18,46 +55,38 @@ const SetPayment = () => {
                 >
                   PAYMENT METHOD
                 </label>
-                <select
-                  className="form-select bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5"
-                  name="payment_method"
+                <div
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5"
+                  ref={divEl}
                 >
-                  <option value="PayPal" selected="">
-                    PayPal
-                  </option>
-                  <option value="Cash App">Cash App</option>
-                  <option value="Venmo">Venmo</option>
-                  <option value="Bitcoin">Bitcoin</option>
-                  <option value="Ethereum">Ethereum</option>
-                  <option value="Mailed Check">Mailed Check</option>
-                </select>
+                  <div onClick={handleClick}>
+                    {value?.label || "Select Payment Type"}
+                  </div>
+                  {isOpen && <div>{renderedOptions}</div>}
+                </div>
               </div>
             </div>
             <div className="mb-3">
               <label className="form-label block mb-2 text-sm font-medium text-gray-900">
                 PAYMENT DETAILS
               </label>
-              <textarea
-                name="payment_details"
-                rows="5"
+              <div
                 className="form-control block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-gray-500 focus:border-gray-500"
-                placeholder="Enter your PayPal email, CASH TAG, Venmo, Bitcoin or Ethereum wallet address OR Enter an Address where you want us to Mail your Cash Check."
-                required=""
+                placeholder="Enter your PayPal email, CASH TAG, Venmo, Bitcoin or Ethereum
+                wallet address OR Enter an Address where you want us to Mail
+                your Cash Check."
               >
-                coolzyte@gmail.com
-              </textarea>
+                {detail}
+              </div>
             </div>
             <div className="form-footer">
-              <Button
-                type="submit"
-                className="bg-skin-green-dark text-skin-base"
-              >
+              <Button btnDark onClick={submitPayment}>
                 Add Payment Method
               </Button>
             </div>
           </div>
         </div>
-      </form>
+      </div>
     </Card>
   );
 };

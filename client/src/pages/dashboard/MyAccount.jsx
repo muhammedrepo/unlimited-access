@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Breadcrumb } from "../../components/dashboard";
 import {
   ChangePassword,
@@ -7,6 +8,27 @@ import {
 } from "../../features/myAccount-feature";
 
 const MyAccount = () => {
+  const [value, setValue] = useState(null);
+  const [paymentMethod, setPaymentMethod] = useState("Add payment");
+  const [detail, setDetail] = useState("payment detail");
+
+  const handleSelect = (option) => {
+    setValue(option);
+  };
+
+  const handleSubmit = () => {
+    setPaymentMethod(value.label);
+    setDetail(detail);
+  };
+
+  const options = [
+    { id: 1, label: "PayPal" },
+    { id: 2, label: "Cash App" },
+    { id: 3, label: "Venmo" },
+    { id: 4, label: "Bitcoin" },
+    { id: 5, label: "Ethereum" },
+    { id: 6, label: "Mailed Check" },
+  ];
   return (
     <div>
       <Breadcrumb title="My Account" page="Edit Account" />
@@ -21,8 +43,13 @@ const MyAccount = () => {
         </section>
         <section className="pt-12">
           <div className="grid md:grid-cols-2 gap-6">
-            <SetPayment />
-            <PaymentDetails />
+            <SetPayment
+              options={options}
+              value={value}
+              onChange={handleSelect}
+              submitPayment={handleSubmit}
+            />
+            <PaymentDetails paymentMethod={paymentMethod} detail={detail} />
           </div>
         </section>
       </main>

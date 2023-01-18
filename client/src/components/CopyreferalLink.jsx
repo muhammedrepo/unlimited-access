@@ -28,7 +28,7 @@ const CopyreferalLink = () => {
       />
 
       <div className="mt-2 mb-3 grid text-center">
-        <Button className="text-skin-base bg-skin-button-brown" onClick={copy}>
+        <Button btnCopy onClick={copy}>
           <FaCopy className="mr-2" />{" "}
           {toggle ? "Referral Link copied" : "Copy Link"}
         </Button>
