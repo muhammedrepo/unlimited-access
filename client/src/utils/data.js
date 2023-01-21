@@ -497,7 +497,7 @@ export const faqlinks = [
   },
 ];
 
-export const getfreetraffic = [
+export const getTraffic = [
   {
     icon: <FaFacebook />,
     buttonColor: "#4267B2",
@@ -542,7 +542,7 @@ export const getfreetraffic = [
   },
 ];
 
-export const newreferral = [
+export const referrals = [
   {
     id: 1,
     avatar: newReferral,
@@ -701,7 +701,7 @@ export const approvedPost = [
   },
 ];
 
-export const socialguides = [
+export const socialGuides = [
   {
     id: 1,
     name: "Facebook",

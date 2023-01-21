@@ -19,7 +19,7 @@ const CopyreferalLink = () => {
     setToggle(!toggle);
   };
   return (
-    <>
+    <div className="flex flex-col gap-y-4">
       <FormRow
         type="text"
         value={copyLink}
@@ -27,13 +27,11 @@ const CopyreferalLink = () => {
         disabled
       />
 
-      <div className="mt-2 mb-3 grid text-center">
-        <Button btnCopy onClick={copy}>
-          <FaCopy className="mr-2" />{" "}
-          {toggle ? "Referral Link copied" : "Copy Link"}
-        </Button>
-      </div>
-    </>
+      <Button btnCopy onClick={copy}>
+        <FaCopy className="mr-2" />{" "}
+        {toggle ? "Referral Link copied" : "Copy Link"}
+      </Button>
+    </div>
   );
 };
 

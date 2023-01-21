@@ -47,7 +47,7 @@ const TaskWall = () => {
               <FaDollarSign className="inline-flex" /> Badge link
             </Banner>
 
-            <p>
+            <p className="mt-6">
               Complete the easy tasks to earn extra money. This will be
               automatically added to your account within 5-10 minutes after
               completion.
@@ -76,7 +76,7 @@ const TaskWall = () => {
           <div className="p-8 bg-transparent">
             <Banner bgColor="green-dark">App Task</Banner>
 
-            <p className="alert alert-light solid alert-rounded">
+            <p className="alert alert-light solid alert-rounded mt-6">
               <strong>
                 There are currently no app tasks available for you.
               </strong>{" "}

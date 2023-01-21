@@ -7,7 +7,7 @@ const Timeline = () => {
   return (
     <Card>
       <CardHeader title="Refer &amp; Earn in 2 Simple Steps" />
-      <section className="relative">
+      <div className="relative card-body">
         <div className="absolute hidden w-px h-full transform -translate-x-1/2 bg-gray-300 lg:block left-1/2"></div>
         <div className="space-y-12 lg:space-y-8">
           <div>
@@ -70,7 +70,7 @@ const Timeline = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </Card>
   );
 };

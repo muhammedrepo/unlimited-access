@@ -4,7 +4,7 @@ import Accordion from "./Accordion";
 const SocialMediaGuide = ({ id, name, icon, badge, bgColor }) => {
   return (
     <Card>
-      <div className="card-header pb-0">
+      <div className="card-header p-7 pb-0 ">
         <div className="flex justify-between items-center mb-2">
           <div className="flex">
             <div

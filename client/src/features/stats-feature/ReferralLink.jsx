@@ -3,6 +3,7 @@ import { FiShare } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button";
 import CopyreferalLink from "../../components/CopyreferalLink";
+import { CardHeader } from "../../components/UI";
 
 import Card from "../../components/UI/Card";
 
@@ -10,12 +11,8 @@ const ReferralLink = () => {
   return (
     <Card>
       <div className="card">
-        <div className="card-header ">
-          <h5 className="flex gap-x-2 text-2xl">
-            <FaShareSquare />
-            Your Referral Link
-          </h5>
-        </div>
+        <CardHeader icon=<FaShareSquare /> title="Your Referral Link" />
+
         <div className="card-body">
           <CopyreferalLink />
 

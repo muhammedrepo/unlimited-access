@@ -22,7 +22,7 @@ const SocialPostAccordion = () => {
               <AccordionItem>
                 <AccordionItemHeading>
                   <AccordionItemButton>
-                    <h5 className="p-0 text-xl font-bold text-gray-800">
+                    <h5 className="p-7 text-xl font-bold text-gray-800">
                       <button className="flex items-center gap-x-2">
                         <span
                           className="text-4xl mr-4"
@@ -38,7 +38,7 @@ const SocialPostAccordion = () => {
                 <AccordionItemPanel>
                   <Card>
                     <ul>
-                      <li className="flex">
+                      <li className="flex p-7">
                         <div
                           className="text-5xl mr-4 font-medium"
                           style={{ color: bgColor }}

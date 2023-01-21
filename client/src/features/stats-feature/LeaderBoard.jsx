@@ -45,7 +45,7 @@ const LeaderBoard = () => {
         title="Earnings Leaderboard"
       />
 
-      <div className="overflow-x-auto relative">
+      <div className="card-body overflow-x-auto relative">
         <table className="w-full text-sm text-left text-gray-500">
           <thead className="text-xs text-gray-900 uppercase">
             <tr>{renderedHeader}</tr>
