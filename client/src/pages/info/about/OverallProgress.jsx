@@ -3,9 +3,9 @@ import { Card } from "../../../components/UI";
 
 const OverallProgress = () => {
   return (
-    <section className="mx-auto max-w-5xl border-0 shadow rounded-4 mb-5 lg:mb-0">
+    <section className="mx-auto max-w-5xl border-0 shadow rounded-4 mb-5 lg:mb-0 transform -translate-y-1/4">
       <Card>
-        <div className="card-body p-5">
+        <div className="p-16">
           <div className="flex items-center">
             <div className="col-md-6">
               <div className="heading-block border-bottom-0 mb-0">

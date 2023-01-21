@@ -949,7 +949,7 @@ export const whatsappguide = [
   },
 ];
 
-export const promodImage = [
+export const promoImage = [
   {
     path: "https://cloutzap.com/promotionals/Promo1.png",
   },

@@ -3,7 +3,7 @@ import EarnMoreList from "./EarnMoreList";
 
 const EarnMore = () => {
   return (
-    <div className="bg-transparent p-2 mt-4">
+    <div className="bg-transparent p-2 mt-8">
       <div className="px-4 mx-auto max-w-screen-xl">
         <div className="text-center">
           <div className="">

@@ -1,17 +1,28 @@
 import { Link } from "react-router-dom";
 import { Breadcrumb } from "../../components/dashboard";
+import { CardHeader } from "../../components/UI";
 import Card from "../../components/UI/Card";
-import { promodImage } from "../../utils/data";
+import { promoImage } from "../../utils/data";
 
 const Promo = () => {
+  const renderedPromoImage = promoImage.map((item, index) => (
+    <figure key={index}>
+      <Link to={item.path}>
+        <img
+          className="w-full p-px bg-white border border-solid border-white rounded-sm max-w-full h-auto"
+          src={item.path}
+          alt="thumbnail"
+        />
+      </Link>
+    </figure>
+  ));
   return (
     <div>
       <Breadcrumb title="Promotional Posts" page="Promotional Posts" />
       <section className="mt-14">
         <Card>
-          <div className="card-header pb-0">
-            <h5 className="text-2xl m-0">Promotional Posts</h5>
-          </div>
+          <CardHeader title="Promotional Posts" />
+
           <div className="card-body p-b-0">
             <span className="text-gray-500">
               Find some images below that you can post on your social media
@@ -31,17 +42,7 @@ const Promo = () => {
             </span>
           </div>
           <div className="card-body grid lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {promodImage.map((item, index) => (
-              <figure key={index}>
-                <Link to={item.path}>
-                  <img
-                    className="w-full p-px bg-white border border-solid border-white rounded-sm max-w-full h-auto"
-                    src={item.path}
-                    alt="thumbnail"
-                  />
-                </Link>
-              </figure>
-            ))}
+            {renderedPromoImage}
           </div>
         </Card>
       </section>

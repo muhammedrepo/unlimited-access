@@ -1,5 +1,4 @@
-import React from "react";
-import { Card, CardHeader } from "../../../components/UI";
+import { Badge } from "../../../components";
 
 const TheStory = () => {
   return (
@@ -10,30 +9,37 @@ const TheStory = () => {
             className="heading-block border-b-0 text-center mx-auto"
             style={{ maxWidth: "550px" }}
           >
-            <div className="badge rounded-pill badge-default">The Story</div>
-            <CardHeader
-              title="The Story of CloutZap"
-              subtitle="How we got on our feet to become the #1 Influencer Earning
-              Network."
-            />
+            <Badge>The Story</Badge>
+            <h3 className="mb-3">The Story of CloutZap</h3>
+            <p className="mb-0">
+              How we got on our feet to become the #1 Influencer Earning
+              Network.
+            </p>
           </div>
-          <Card>
+
+          <div className=" bg-white border border-gray-200 rounded-lg shadow-md">
             <img
               src="https://cloutzap.com/images/about_cloutzap.jpg"
-              className="cloutzap-about-image"
+              className="w-full"
               alt="..."
             />
-            <div className="card-body p-4 text-center">
-              <CardHeader
-                title="Who Are We?"
-                subtitle=" When you join CloutZap, you join a community of millions of
+
+            <div className="p-5 text-center">
+              <a href="/">
+                <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900">
+                  Who Are We?
+                </h5>
+              </a>
+              <p className="mb-3 font-normal text-gray-700">
+                When you join CloutZap, you join a community of millions of
                 people who choose to share their opinions and complete offers in
                 exchange for payment. Every day, hundreds of brands you love
                 turn to CloutZap for consumer insights, and the information
-                shared by the CZ community powers that research."
-              />
+                shared by the CZ community powers that research.
+              </p>
             </div>
-          </Card>
+          </div>
+
           <div className="flex team team-list rounded-5 g-0 items-center shadow-sm border h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden mt-5 mb-5">
             <div className="col-md-4 team-image col-sm-5 d-flex align-self-stretch">
               <img

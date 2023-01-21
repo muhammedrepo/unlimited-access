@@ -5,6 +5,49 @@ import { Card, CardHeader } from "../../components/UI";
 import { generalQuestion, membersFaq } from "../../utils/data";
 
 const Faq = () => {
+  const renderedFaq = membersFaq.map((answer) => {
+    const { id, question, info } = answer;
+
+    return (
+      <Card key={id}>
+        <div className="inline-flex items-start space-x-4">
+          <span>
+            <FaQuestion className="text-3xl" />
+          </span>
+          <div>
+            <h6 className="text-xl">{question}</h6>
+            <div
+              className="mb-3 font-light text-gray-500"
+              dangerouslySetInnerHTML={{ __html: info }}
+            />
+          </div>
+        </div>
+      </Card>
+    );
+  });
+
+  const renderedGeneralQuestion = generalQuestion.map((item) => {
+    const { id, info, question } = item;
+    return (
+      <div key={id} className="mb-8">
+        <Card>
+          <div className="inline-flex items-start space-x-4">
+            <span>
+              <FaQuestion className="text-3xl" />
+            </span>
+            <div>
+              <h6 className="text-xl">{question}</h6>
+              <div
+                className="mb-3 font-light text-gray-500"
+                dangerouslySetInnerHTML={{ __html: info }}
+              />
+            </div>
+          </div>
+        </Card>
+      </div>
+    );
+  });
+
   return (
     <div>
       <Breadcrumb title="Members Help Area" page="F.A.Q" />
@@ -26,26 +69,7 @@ const Faq = () => {
       <section className="pt-12">
         <h5 className="text-2xl">Member Faq Area</h5>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 mb-8">
-          {membersFaq.map((answer) => {
-            const { id, question, info } = answer;
-
-            return (
-              <Card key={id}>
-                <div className="inline-flex items-start space-x-4">
-                  <span>
-                    <FaQuestion className="text-3xl" />
-                  </span>
-                  <div>
-                    <h6 className="text-xl">{question}</h6>
-                    <div
-                      className="mb-3 font-light text-gray-500"
-                      dangerouslySetInnerHTML={{ __html: info }}
-                    />
-                  </div>
-                </div>
-              </Card>
-            );
-          })}
+          {renderedFaq}
         </div>
         <Card>
           <div className="inline-flex items-start space-x-4">
@@ -67,29 +91,7 @@ const Faq = () => {
       </section>
       <section className="pt-12">
         <h5 className="text-2xl">General Questions</h5>
-        <div className="">
-          {generalQuestion.map((item) => {
-            const { id, info, question } = item;
-            return (
-              <div key={id} className="mb-8">
-                <Card>
-                  <div className="inline-flex items-start space-x-4">
-                    <span>
-                      <FaQuestion className="text-3xl" />
-                    </span>
-                    <div>
-                      <h6 className="text-xl">{question}</h6>
-                      <div
-                        className="mb-3 font-light text-gray-500"
-                        dangerouslySetInnerHTML={{ __html: info }}
-                      />
-                    </div>
-                  </div>
-                </Card>
-              </div>
-            );
-          })}
-        </div>
+        <div>{renderedGeneralQuestion}</div>
       </section>
     </div>
   );

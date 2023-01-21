@@ -12,9 +12,10 @@ const About = () => {
         page="About"
       />
 
-      <section className="relative bg-white">
+      <section className="relative bg-white mt-16">
         <div className="relative content-wrap py-0 overflow-visible">
           <OverallProgress />
+
           <TheStory />
           <EarnMore />
         </div>
