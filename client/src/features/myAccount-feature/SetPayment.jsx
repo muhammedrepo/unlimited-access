@@ -2,7 +2,14 @@ import React, { useEffect, useRef, useState } from "react";
 import Button from "../../components/Button";
 import { Card, CardHeader } from "../../components/UI";
 
-const SetPayment = ({ options, value, onChange, submitPayment, detail }) => {
+const SetPayment = ({
+  options,
+  value,
+  onChange,
+  submitPayment,
+  detail,
+  setDetail,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const divEl = useRef();
@@ -30,6 +37,10 @@ const SetPayment = ({ options, value, onChange, submitPayment, detail }) => {
   const handleOptionClick = (option) => {
     setIsOpen(false);
     onChange(option);
+  };
+
+  const handleChange = (e) => {
+    setDetail(e.target.value);
   };
 
   const renderedOptions = options.map((option) => {
@@ -70,14 +81,15 @@ const SetPayment = ({ options, value, onChange, submitPayment, detail }) => {
               <label className="form-label block mb-2 text-sm font-medium text-gray-900">
                 PAYMENT DETAILS
               </label>
-              <div
-                className="form-control block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-gray-500 focus:border-gray-500"
+              <input
+                type="text"
+                value={detail}
+                onChange={handleChange}
+                className="form-control block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 outline-none"
                 placeholder="Enter your PayPal email, CASH TAG, Venmo, Bitcoin or Ethereum
                 wallet address OR Enter an Address where you want us to Mail
                 your Cash Check."
-              >
-                {detail}
-              </div>
+              />
             </div>
             <div className="form-footer">
               <Button btnDark onClick={submitPayment}>

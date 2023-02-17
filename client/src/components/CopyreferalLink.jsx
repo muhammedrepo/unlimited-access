@@ -1,35 +1,26 @@
-import { useState } from "react";
-import { FaCopy } from "react-icons/fa";
-import Button from "./Button";
-
-import FormRow from "./FormRow";
-
-const refferal = "https://send.cloutzap.com/coolzyte";
+import { useState } from 'react';
+import { FaCopy } from 'react-icons/fa';
+import Button from './Button';
+import FormRow from './FormRow';
+import { useAppContext } from '../context/appContext';
 
 const CopyreferalLink = () => {
-  const [copyLink, setCopyLink] = useState(refferal);
   const [toggle, setToggle] = useState(false);
+  const { user } = useAppContext();
 
-  const inputHandler = (e) => {
-    setCopyLink(e.target.value);
-  };
-
+  const referralLink = `http://send.coolzyte.com/${user.name}`;
+  console.log(user);
   const copy = async () => {
-    await navigator.clipboard.writeText(copyLink);
+    await navigator.clipboard.writeText(referralLink);
     setToggle(!toggle);
   };
   return (
-    <div className="flex flex-col gap-y-4">
-      <FormRow
-        type="text"
-        value={copyLink}
-        handleChange={inputHandler}
-        disabled
-      />
+    <div className='flex flex-col gap-y-4'>
+      <FormRow type='text' value={referralLink} disabled />
 
       <Button btnCopy onClick={copy}>
-        <FaCopy className="mr-2" />{" "}
-        {toggle ? "Referral Link copied" : "Copy Link"}
+        <FaCopy className='mr-2' />{' '}
+        {toggle ? 'Referral Link copied' : 'Copy Link'}
       </Button>
     </div>
   );

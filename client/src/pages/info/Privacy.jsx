@@ -1,17 +1,17 @@
-import React from "react";
-import { BreadCrumb, Layout } from "../../components";
+import React from 'react';
+import { BreadCrumb } from '../../components';
 
 const Privacy = () => {
   return (
-    <Layout>
+    <main className='pt-20 sm:pt-28'>
       <BreadCrumb
-        title="PRIVACY POLICY"
-        subtitle="The Privacy Policy below is effective for all Users."
-        page="PRIVACY POLICY"
+        title='PRIVACY POLICY'
+        subtitle='The Privacy Policy below is effective for all Users.'
+        page='PRIVACY POLICY'
       />
 
-      <div className="section bg-white m-0 pt-4 pb-0 mb-5">
-        <div className="px-4 mx-auto max-w-screen-xl">
+      <div className='section bg-white m-0 pt-4 pb-0 mb-5'>
+        <div className='px-4 mx-auto max-w-screen-xl'>
           <p>
             Welcome to our Privacy Policy — Your privacy is critically important
             to us.
@@ -144,11 +144,11 @@ const Privacy = () => {
               defined below) is subject to binding individual arbitration of any
               disputes which may arise, as provided in Paragraph 11 of our&nbsp;
             </strong>
-            <a href="https://cloutzap.com/terms-of-service">
+            <a href='https://cloutzap.com/terms-of-service'>
               <strong>Terms of Use</strong>
             </a>
             <strong>&nbsp;(</strong>
-            <a href="https://cloutzap.com/terms-of-service">
+            <a href='https://cloutzap.com/terms-of-service'>
               <strong>Terms &amp; Condition</strong>
             </a>
             <strong>
@@ -198,9 +198,9 @@ const Privacy = () => {
             clicking to “Accept” or otherwise acknowledging or consenting to
             this Privacy Policy where that option is made available to you, you
             agree to be bound by this Privacy Policy, as well as our&nbsp;
-            <a href="https://cloutzap.com/terms-of-service">Terms of Use</a>
+            <a href='https://cloutzap.com/terms-of-service'>Terms of Use</a>
             &nbsp;(
-            <a href="https://cloutzap.com/terms-of-service">
+            <a href='https://cloutzap.com/terms-of-service'>
               https://www.CloutZap.com/terms
             </a>
             ; “Terms” or “Terms of Use”) . If you do not agree to this Privacy
@@ -235,7 +235,7 @@ const Privacy = () => {
             “personal information” that we collect, along with the business or
             commercial purpose for such use. We encourage California residents
             to visit the “
-            <a href="https://cloutzap.com/privacy-policy">
+            <a href='https://cloutzap.com/privacy-policy'>
               Your California Privacy Rights
             </a>
             ” section&nbsp;of this Privacy Policy (below) for additional
@@ -268,7 +268,7 @@ const Privacy = () => {
             Services and you will be unable to use the CloutZap Sites and
             Features. You can opt-out of data collection by changing the
             settings on your Device or by&nbsp;
-            <a href="https://cloutzap.com/privacy-policy">
+            <a href='https://cloutzap.com/privacy-policy'>
               Contacting Us&nbsp;
             </a>
             (but key services and features may lose functionality as a result).
@@ -439,7 +439,7 @@ const Privacy = () => {
             parties’ privacy policies or information collection practices. You
             may limit or remove such cookies and similar technologies through
             your Device settings; for more information, visit our “
-            <a href="https://cloutzap.com/privacy-policy">
+            <a href='https://cloutzap.com/privacy-policy'>
               Cookies and Tracking Technologies
             </a>
             ” section&nbsp;(below).&nbsp;&nbsp;Likewise, we may also work with
@@ -559,19 +559,19 @@ const Privacy = () => {
           </p>
           <ul>
             <li>
-              <a href="http://www.aboutads.info/choices">
+              <a href='http://www.aboutads.info/choices'>
                 http://www.aboutads.info/choices
               </a>
               ;
             </li>
             <li>
-              <a href="http://www.aboutads.info/appchoices">
+              <a href='http://www.aboutads.info/appchoices'>
                 http://www.aboutads.info/appchoices
               </a>
               ;&nbsp;and
             </li>
             <li>
-              <a href="https://www.networkadvertising.org/managing/opt_out.asp">
+              <a href='https://www.networkadvertising.org/managing/opt_out.asp'>
                 http://www.networkadvertising.org/managing/opt_out.asp
               </a>
             </li>
@@ -587,7 +587,7 @@ const Privacy = () => {
             a reward by successfully completing an Offer or
             action.&nbsp;&nbsp;For more information about Flash and the privacy
             choices Adobe offers, visit&nbsp;
-            <a href="https://www.macromedia.comm/support/documentation/en/flashplayer/help/settings_manager.html">
+            <a href='https://www.macromedia.comm/support/documentation/en/flashplayer/help/settings_manager.html'>
               http://www.macromedia.comm/support/documentation/en/flashplayer/help/settings_manager.html
             </a>
             .&nbsp;&nbsp;Note that your browser settings may allow you to
@@ -598,7 +598,7 @@ const Privacy = () => {
             currently do not alter our practices when we receive a “Do Not
             Track” signal from a user’s browser. To find out more about “Do Not
             Track,” you may wish to visit&nbsp;
-            <a href="http://www.allaboutdnt.comm/">
+            <a href='http://www.allaboutdnt.comm/'>
               http://www.allaboutdnt.comm
             </a>
             .
@@ -700,7 +700,7 @@ const Privacy = () => {
             information related thereto) as described in this section. Residents
             of California should also refer to the section of this Privacy
             Policy titled “
-            <a href="https://cloutzap.com/privacy-policy">
+            <a href='https://cloutzap.com/privacy-policy'>
               Your California Privacy Rights
             </a>
             ” for additional disclosures.&nbsp;We may disclose your Personal
@@ -772,7 +772,7 @@ const Privacy = () => {
             questions about updating your information, privacy choices and/or
             opting out of certain programs, services and data activities, please
             visit the “
-            <a href="https://cloutzap.com/privacy-policy">Contact Us</a>
+            <a href='https://cloutzap.com/privacy-policy'>Contact Us</a>
             ”&nbsp;section below for more information and instructions to
             contact us.&nbsp;&nbsp;&nbsp;You may opt out of receiving marketing
             emails by either (i) following the opt-out instructions provided to
@@ -798,7 +798,7 @@ const Privacy = () => {
             Advertising Alliance (“DAA”) AdChoices Program and may display an
             Advertising Option Icon for interest-based ads. You can learn more
             about the DAA AdChoices Program here:&nbsp;
-            <a href="http://www.youradchoices.comm/">
+            <a href='http://www.youradchoices.comm/'>
               http://www.youradchoices.comm
             </a>
             . In addition, certain advertising networks and exchanges may
@@ -807,7 +807,7 @@ const Privacy = () => {
             advertising delivered by NAI members’ Ad Networks. To learn more
             about opting out of targeted advertising or to use the tool, click
             here:&nbsp;
-            <a href="https://www.networkadvertising.org/choices">
+            <a href='https://www.networkadvertising.org/choices'>
               http://www.networkadvertising.org/choices
             </a>
             .&nbsp;You may opt-out of providing your location information to us.
@@ -915,7 +915,7 @@ const Privacy = () => {
             States.
           </p>
           <p>Your California Privacy Rights (FOR CALIFORNIA RESIDENTS ONLY)</p>
-          //{" "}
+          //{' '}
           <p>
             (a) When California residents provide certain Personal Information
             to a business, they have the right under California Civil Code
@@ -1013,7 +1013,7 @@ const Privacy = () => {
             of California-resident consumer privacy requests: (1) “Requests to
             Know”, (2) “Requests to Delete”, and (3) “Requests to Opt-Out of
             Sale”&nbsp;in our Notice of Collation of Info (
-            <a href="https://cloutzap.com/privacy-policy">
+            <a href='https://cloutzap.com/privacy-policy'>
               https://www.CloutZap.com/collection-notice/
             </a>
             ).&nbsp;&nbsp;The statistical data CloutZap will publish will
@@ -1045,7 +1045,7 @@ const Privacy = () => {
           <p>&nbsp;</p>
         </div>
       </div>
-    </Layout>
+    </main>
   );
 };
 

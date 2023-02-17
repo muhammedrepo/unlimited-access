@@ -1,12 +1,12 @@
-import { Footer, CTA } from ".";
-import Navbar from "../parts/Header/Navbar";
+import { Outlet } from 'react-router-dom';
+import { Footer } from '.';
+import Navbar from '../parts/Header/Navbar';
 
 const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main className="flex-grow pt-28">{children}</main>
-      <CTA />
+      <Outlet />
       <Footer />
     </>
   );

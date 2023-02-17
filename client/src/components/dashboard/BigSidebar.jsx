@@ -1,9 +1,9 @@
-import { useAppContext } from "../../context/appContext";
-import styled from "styled-components";
-import NavLinks from "./NavLinks";
-import { Logo, Button } from "../../components";
-import { FaPowerOff, FaUser } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { useAppContext } from '../../context/appContext';
+import styled from 'styled-components';
+import NavLinks from './NavLinks';
+import { Logo, Button } from '../../components';
+import { FaPowerOff, FaUser } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Wrapper = styled.aside`
   display: none;
@@ -76,58 +76,58 @@ const Wrapper = styled.aside`
 `;
 
 const BigSidebar = () => {
-  const { showSidebar } = useAppContext();
+  const { showSidebar, user } = useAppContext();
   return (
     <Wrapper>
       <div
         className={
-          showSidebar ? "sidebar-container " : "sidebar-container show-sidebar"
+          showSidebar ? 'sidebar-container ' : 'sidebar-container show-sidebar'
         }
       >
-        <div className="content">
+        <div className='content'>
           <header>
             <Logo />
           </header>
           <div
-            className="sidebar-user text-center flex flex-col items-center"
-            style={{ padding: "14px" }}
+            className='sidebar-user text-center flex flex-col items-center'
+            style={{ padding: '14px' }}
           >
-            <div className="btn bg-skin-green-dark w-20 h-20 mb-3 rounded-full shadow-lg">
-              <img src="" alt="user" />
+            <div className='btn bg-skin-green-dark w-20 h-20 mb-3 rounded-full shadow-lg'>
+              <img src='' alt='user' />
               <FaUser />
             </div>
 
-            <Link to="https://cloutzap.com/taskwall">
-              {" "}
-              <h6 className="mt-1 f-14 font-semibold">
-                @<span className="font-semibold">coolzyte</span>
+            <Link to='https://cloutzap.com/taskwall'>
+              {' '}
+              <h6 className='mt-1 f-14 font-semibold'>
+                <span className='font-semibold'>{user.email}</span>
               </h6>
             </Link>
-            <ul className="mt-2 flex text-xs font-semibold space-x-4 mb-4">
+            <ul className='mt-2 flex text-xs font-semibold space-x-4 mb-4'>
               <li>
                 <span>
-                  $<span className="">2,541</span>
+                  $<span className=''>2,541</span>
                 </span>
                 <p>Total Earnings</p>
               </li>
               <li>
                 <span>
-                  $<span className="">137</span>
+                  $<span className=''>137</span>
                 </span>
                 <p>Balance</p>
               </li>
               <li>
                 <span>
-                  <span className="">16</span>
+                  <span className=''>16</span>
                 </span>
                 <p>Referrals</p>
               </li>
             </ul>
             <Button
-              className="bg-skin-green-dark text-skin-base"
-              url="/takswall"
+              className='bg-skin-green-dark text-skin-base'
+              url='/takswall'
             >
-              <span className="capitalize text-xs">
+              <span className='capitalize text-xs'>
                 Download Apps For Money
               </span>
             </Button>
@@ -135,8 +135,8 @@ const BigSidebar = () => {
 
           <NavLinks />
           <button
-            type="button"
-            className="flex items-center gap-x-4 px-10 pt-4 text-sm"
+            type='button'
+            className='flex items-center gap-x-4 px-10 pt-4 text-sm'
             onClick={() => {}}
           >
             <FaPowerOff />

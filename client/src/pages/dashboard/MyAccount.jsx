@@ -10,7 +10,7 @@ import {
 const MyAccount = () => {
   const [value, setValue] = useState(null);
   const [paymentMethod, setPaymentMethod] = useState("Add payment");
-  const [detail, setDetail] = useState("payment detail");
+  const [detail, setDetail] = useState("");
 
   const handleSelect = (option) => {
     setValue(option);
@@ -18,7 +18,6 @@ const MyAccount = () => {
 
   const handleSubmit = () => {
     setPaymentMethod(value.label);
-    setDetail(detail);
   };
 
   const options = [
@@ -48,6 +47,8 @@ const MyAccount = () => {
               value={value}
               onChange={handleSelect}
               submitPayment={handleSubmit}
+              detail={detail}
+              setDetail={setDetail}
             />
             <PaymentDetails paymentMethod={paymentMethod} detail={detail} />
           </div>

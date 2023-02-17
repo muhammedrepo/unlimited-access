@@ -1,26 +1,26 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { BreadCrumb, Layout } from "../../components";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { BreadCrumb } from '../../components';
 
 const Terms = () => {
   return (
-    <Layout>
+    <main className='pt-20 sm:pt-28'>
       <BreadCrumb
-        title="TERMS & CONDITIONS"
-        subtitle="The Agreement below is effective for all Users."
-        page="Terms & Conditions"
+        title='TERMS & CONDITIONS'
+        subtitle='The Agreement below is effective for all Users.'
+        page='Terms & Conditions'
       />
 
-      <div className=" bg-white m-0 pt-4 pb-0 mb-5">
-        <div className="px-4 mx-auto max-w-screen-xl">
+      <div className=' bg-white m-0 pt-4 pb-0 mb-5'>
+        <div className='px-4 mx-auto max-w-screen-xl'>
           <p>
             Thank you for considering the CloutZap affiliate program. Our
             members are very important to us. This agreement is designed with
             you in mind, as well as protecting you, CloutZap and our customers.
             Please read thoroughly. If you have any questions, please contact us
             at&nbsp;
-            <Link to="/">
-              <span className="__cf_email__" data-cfemail="">
+            <Link to='/'>
+              <span className='__cf_email__' data-cfemail=''>
                 questions@cloutzap.com
               </span>
             </Link>
@@ -69,7 +69,7 @@ const Terms = () => {
             (as provided herein). This EULA does not entitle you to receive any
             support or assistance features not already provided to you through
             the&nbsp;
-            <Link to="https://cloutzap.com/faq">CloutZap.com Help Center</Link>.
+            <Link to='https://cloutzap.com/faq'>CloutZap.com Help Center</Link>.
           </p>
           <p>
             <strong>Permitted Uses</strong>
@@ -138,7 +138,7 @@ const Terms = () => {
               offer you the ability to start a CloutZap earning shopping session
               when you have arrived at a participating merchant’s website. Our
               use of cookies is more specifically described in our&nbsp;
-              <Link to="https://cloutzap.com/privacy-policy">
+              <Link to='https://cloutzap.com/privacy-policy'>
                 Privacy Policy
               </Link>
               .
@@ -354,7 +354,7 @@ const Terms = () => {
             clicking to “Accept” or otherwise agreeing to these Terms where that
             option is made available to you, you agree to be bound by these
             Terms as well as our&nbsp;
-            <Link to="/privacy-policy">/privacy</Link>. If you do not agree to
+            <Link to='/privacy-policy'>/privacy</Link>. If you do not agree to
             these Terms or our Privacy Policy, please do not register with or
             use any CloutZap Sites or Features or our Services.
           </p>
@@ -440,7 +440,7 @@ const Terms = () => {
             affiliated with, any of the Company’s Promotions (defined below),
             nor any of our Services or the CloutZap Sites and Features.
           </p>
-          <ol start="2">
+          <ol start='2'>
             <li>User Representations and Warranties</li>
 
             <p>
@@ -455,7 +455,7 @@ const Terms = () => {
               Services. Some offerings on the CloutZap Sites and Features or our
               Services may be subject to additional age restrictions.
             </p>
-            <ol start="3">
+            <ol start='3'>
               <li>Sweepstakes, Contests and Promotions</li>
 
               <p>
@@ -474,7 +474,7 @@ const Terms = () => {
                 The Third Party Outlets are in no way associated with the
                 Company’s Promotions.
               </p>
-              <ol start="4">
+              <ol start='4'>
                 <li>Affiliate Programs</li>
 
                 <p>
@@ -558,7 +558,7 @@ const Terms = () => {
                   use points is to redeem them for Rewards Program rewards as
                   available from time to time through the CloutZap.com Rewards
                   Store at&nbsp;
-                  <Link to="https://cloutzap.com/home">/dashboard</Link>, or
+                  <Link to='https://cloutzap.com/home'>/dashboard</Link>, or
                   other applicable Rewards Program redemption sites, as
                   applicable. Some rewards may have eligibility requirements and
                   in that case the Company reserves the right to verify your
@@ -635,7 +635,7 @@ const Terms = () => {
                   responsible for any losses that are occurred as a result of
                   using those services.
                 </p>
-                <ol start="5">
+                <ol start='5'>
                   <li>Intellectual Property</li>
 
                   <p>
@@ -673,7 +673,7 @@ const Terms = () => {
                     and derivative works thereof, and all intellectual property
                     rights related thereto.
                   </p>
-                  <ol start="6">
+                  <ol start='6'>
                     <li>Reporting Copyright Infringement – DMCA Policy</li>
 
                     <p>
@@ -690,15 +690,15 @@ const Terms = () => {
                     <ul>
                       <li>
                         a) electronically to&nbsp;
-                        <Link to="/">
-                          <span className="__cf_email__" data-cfemail="">
+                        <Link to='/'>
+                          <span className='__cf_email__' data-cfemail=''>
                             hey@cloutzap.com
                           </span>
                         </Link>
                         with sthe ubject line “DMCA Takedown Request”;
                       </li>
                     </ul>
-                    <ol start="2">
+                    <ol start='2'>
                       <li>
                         Each written notification must contain the following
                         information to be deemed a valid notice:
@@ -747,7 +747,7 @@ const Terms = () => {
                         repeat infringers in appropriate circumstances, in our
                         sole discretion, subject to reasonable limitations.
                       </p>
-                      <ol start="7">
+                      <ol start='7'>
                         <li>User Conduct</li>
 
                         <p>
@@ -903,7 +903,7 @@ const Terms = () => {
                           and Features and our Services for any reason, at its
                           sole and absolute discretion.
                         </p>
-                        <ol start="8">
+                        <ol start='8'>
                           <li>Communications Channels</li>
 
                           <p>
@@ -935,7 +935,7 @@ const Terms = () => {
                             you choose to share on the Communication Channels,
                             or for the actions of other users.
                           </p>
-                          <ol start="9">
+                          <ol start='9'>
                             <li>
                               Disclaimer of Warranties; Limitation of Liability;
                               Indemnification
@@ -1091,7 +1091,7 @@ const Terms = () => {
                               of our Services to you is, in our opinion, no
                               longer commercially viable.
                             </p>
-                            <ol start="10">
+                            <ol start='10'>
                               <li>
                                 Compliance with FTC Guidelines on
                                 Endorsements/Testimonials
@@ -1104,8 +1104,8 @@ const Terms = () => {
                                 the FTC’s Guidelines Concerning the Use of
                                 Testimonials and Endorsements in Advertising
                                 (available at&nbsp;
-                                <Link to="https://www.ftc.gov/sites/default/files/attachments/press-releases/ftc-publishes-final-guides-governing-endorsements-testimonials/091005revisedendorsementguides.pdf">
-                                  //www.ftc.gov/sites/default/files/attachments/press-releases/ftc-publishes-final-guides-governing-endorsements-testimonials/091005revisedendorsementguides.pdf
+                                <Link to='https://www.ftc.gov/sites/default/files/attachments/press-releases/ftc-publishes-final-guides-governing-endorsements-testimonials/091005revisedendorsementguides.pdf'>
+                                  endorsements
                                 </Link>
                                 ) (“Guidelines”).
                               </p>
@@ -1123,7 +1123,7 @@ const Terms = () => {
                                 regarding any product or service made on or
                                 through CloutZap’s services.
                               </p>
-                              <ol start="11">
+                              <ol start='11'>
                                 <li>Binding Arbitration of all Disputes</li>
                                 <li>Providing Notice of a Claim.</li>
 
@@ -1162,9 +1162,9 @@ const Terms = () => {
                                   us must be sent to our customer service email
                                   address at:&nbsp;
                                   <Link
-                                    to="/cdn-cgi/l/email-protection"
-                                    className="__cf_email__"
-                                    data-cfemail=""
+                                    to='/cdn-cgi/l/email-protection'
+                                    className='__cf_email__'
+                                    data-cfemail=''
                                   >
                                     partners@cloutzap.com
                                   </Link>
@@ -1537,7 +1537,7 @@ const Terms = () => {
                                   associated points, rewards, prizes, or credits
                                   earned or redeemed.
                                 </p>
-                                <ol start="13">
+                                <ol start='13'>
                                   <li>Notification of Changes</li>
 
                                   <p>
@@ -1579,7 +1579,7 @@ const Terms = () => {
                                     previously-specified notice period has
                                     passed after the date of these Terms.
                                   </p>
-                                  <ol start="14">
+                                  <ol start='14'>
                                     <li>International Users</li>
 
                                     <p>
@@ -1603,7 +1603,7 @@ const Terms = () => {
                                       are responsible for compliance with all
                                       local laws.
                                     </p>
-                                    <ol start="15">
+                                    <ol start='15'>
                                       <li>Excluded Users and Territories</li>
 
                                       <p>
@@ -1624,7 +1624,7 @@ const Terms = () => {
                                         would otherwise be illegal under any
                                         applicable law or regulation.
                                       </p>
-                                      <ol start="16">
+                                      <ol start='16'>
                                         <li>Miscellaneous</li>
 
                                         <p>
@@ -1668,7 +1668,7 @@ const Terms = () => {
                                           any such unauthorized assignment shall
                                           be null and void.
                                         </p>
-                                        <ol start="17">
+                                        <ol start='17'>
                                           <li>Contact Us</li>
 
                                           <p>
@@ -1697,7 +1697,7 @@ const Terms = () => {
           </ol>
         </div>
       </div>
-    </Layout>
+    </main>
   );
 };
 

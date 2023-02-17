@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import {
   aus,
   brazil,
@@ -9,79 +8,59 @@ import {
   sout,
   uk,
   usa,
-} from "../../../assets";
-import map from "../../../assets/map.png";
-import MapCounter from "./MapCounter";
-
-const Wrapper = styled.div`
-  .map-title {
-    position: absolute;
-    min-width: 70%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: -70px;
-  }
-  li {
-    display: flex;
-    gap: 1rem;
-
-    span {
-      font-size: 14px;
-      color: gray;
-    }
-  }
-`;
+} from '../../../assets';
+import map from '../../../assets/map.png';
+import MapCounter from './MapCounter';
 
 const MapSection = () => {
   return (
-    <Wrapper>
-      <figure className="relative">
-        <img src={map} alt="map" className="w-full h-auto opacity-60" />
+    <section className='mt-32 lg:mt-20'>
+      <figure className='relative'>
+        <img src={map} alt='map' className='w-full h-auto opacity-60' />
 
-        <figcaption className="map-title px-4 max-w-3xl">
-          <h3 className="capitalize text-center text-base lg:text-2xl">
+        <figcaption className='map-title px-4 max-w-3xl'>
+          <h3 className='capitalize text-center text-base lg:text-2xl'>
             Our Members are from Around The World. Some of our Most Popular
             Countries.
           </h3>
-          <div className="flex justify-center">
-            <ul className="pr-12">
+          <div className='flex justify-center'>
+            <ul className='map pr-12'>
               <li>
-                <img src={usa} alt="usa" />
+                <img src={usa} alt='usa' />
                 <span>USA</span>
               </li>
               <li>
-                <img src={uk} alt="uk" />
+                <img src={uk} alt='uk' />
                 <span>United Kingdom</span>
               </li>
               <li>
-                <img src={can} alt="canada" />
+                <img src={can} alt='canada' />
                 <span>Canada</span>
               </li>
               <li>
-                <img src={aus} alt="Australia" />
+                <img src={aus} alt='Australia' />
                 <span>Australia</span>
               </li>
               <li>
-                <img src={india} alt="india" />
+                <img src={india} alt='india' />
                 <span>India</span>
               </li>
             </ul>
-            <ul className="pl-12">
+            <ul className='map pl-12'>
               <li>
-                <img src={sing} alt="singapore" />
+                <img src={sing} alt='singapore' />
                 <span>Singapore</span>
               </li>
               <li>
-                <img src={jap} alt="japan" />
+                <img src={jap} alt='japan' />
                 <span>Japan</span>
               </li>
               <li>
-                <img src={sout} alt="south africa" />
+                <img src={sout} alt='south africa' />
                 <span>South Africa</span>
               </li>
               <li>
-                <img src={brazil} alt="brazil" />
+                <img src={brazil} alt='brazil' />
                 <span>Brazil</span>
               </li>
               <li>
@@ -92,7 +71,7 @@ const MapSection = () => {
         </figcaption>
       </figure>
       <MapCounter />
-    </Wrapper>
+    </section>
   );
 };
 

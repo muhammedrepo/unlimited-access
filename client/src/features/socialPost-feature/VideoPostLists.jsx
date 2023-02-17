@@ -1,10 +1,10 @@
-import { postandearn } from "../../utils/data";
-import VideoPostList from "./VideoPostList";
+import { postEarn } from '../../utils/data';
+import VideoPostList from './VideoPostList';
 
 const VideoPostLists = () => {
   return (
     <ul>
-      {postandearn.map((post) => {
+      {postEarn.map((post) => {
         return <VideoPostList key={post.id} {...post} />;
       })}
     </ul>

@@ -10,8 +10,8 @@ const YourReferrals = () => {
     const { id, avatar, username, earnings, joined } = referral;
 
     return (
-      <SwiperSlide>
-        <li key={id} className="py-3 sm:py-4">
+      <SwiperSlide key={id}>
+        <li className="py-3 sm:py-4">
           <div className="flex flex-col items-center justify-center border p-1 w-full">
             <div className=" mb-6">
               <img className="w-10 h-10 rounded-full" src={avatar} alt="Neil" />
