@@ -8,7 +8,12 @@ import {
   LOGIN_USER_BEGIN,
   LOGIN_USER_SUCCESS,
   LOGIN_USER_ERROR,
+  LOGOUT_USER,
+  TRACK_CLICK_BEGIN,
+  TRACK_CLICK_SUCCESS,
+  TRACK_CLICK_ERROR,
 } from './actions';
+import { initialState } from './appContext';
 
 const reducer = (state, action) => {
   if (action.type === DISPLAY_ALERT) {
@@ -86,6 +91,32 @@ const reducer = (state, action) => {
       alertText: action.payload.msg,
     };
   }
+
+  if (action.type === LOGOUT_USER) {
+    return {
+      ...initialState,
+      user: null,
+      token: null,
+      userLocation: '',
+      accountLocation: '',
+    };
+  }
+
+  // if (action.type === TRACK_CLICK_BEGIN) {
+  //   return { ...state, isLoading: true };
+  // }
+
+  // if (action.type === TRACK_CLICK_SUCCESS) {
+  //   return {
+  //     ...state,
+  //     isLoading: false,
+  //     clickCount: action.payload.clickCount,
+  //   };
+  // }
+
+  // if (action.type === TRACK_CLICK_ERROR) {
+  //   return { ...state, isLoading: false, alertText: 'Failed to track click' };
+  // }
 
   throw new Error(`no such action : ${action.type}`);
 };

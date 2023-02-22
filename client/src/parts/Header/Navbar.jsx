@@ -18,7 +18,7 @@ const Navbar = () => {
               <Button btnDark>Back to my dashboard</Button>
             </Link>
           ) : (
-            <div className='space-x-2 hidden md:block'>
+            <div className='space-x-2 hidden lg:block'>
               {showSidebar ? null : (
                 <React.Fragment>
                   <Link to='/register'>
@@ -63,15 +63,7 @@ const Navbar = () => {
         >
           <ul className='flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-skin-base'>
             {menuItems.map((menu) => {
-              return (
-                <React.Fragment key={menu.id}>
-                  {showSidebar ? (
-                    <MenuItems items={menu} toggleSidebar={toggleSidebar} />
-                  ) : (
-                    <MenuItems items={menu} key={menu.id} />
-                  )}
-                </React.Fragment>
-              );
+              return <MenuItems items={menu} key={menu.id} />;
             })}
           </ul>
         </div>

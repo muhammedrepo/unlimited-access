@@ -12,7 +12,7 @@ function Button({
   btnCopy,
   rounded,
   outline,
-
+  url,
   ...rest
 }) {
   const classes = className(
@@ -38,7 +38,7 @@ function Button({
     }
   );
   return (
-    <button {...rest} className={classes}>
+    <button url={url} {...rest} className={classes}>
       {children}
     </button>
   );

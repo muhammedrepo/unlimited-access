@@ -161,6 +161,17 @@ h6 {
   border-radius: 4px;
 }
 
+/* DASHBOARD */
+
+@media (min-width: 992px) {
+  .dashboard {
+    grid-template-columns: auto 1fr;
+  }
+  .dashboard-page {
+    width: 95%;
+  }
+}
+
 /* ANALOG CLOCK STYLE */
 
 .class1 .react-clock__face {

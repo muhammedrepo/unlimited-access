@@ -141,17 +141,7 @@ const Register = () => {
                     handleChange={handleChange}
                   />
                 </div>
-                {/* {!values.isMember && (
-                  <div className='mb-6'>
-                    <FormRow
-                      type='password'
-                      labelText='Confirm password'
-                      name='confirmPassword'
-                      value={values.confirmPassword}
-                      handleChange={handleChange}
-                    />
-                  </div>
-                )} */}
+
                 {values.isMember ? (
                   ''
                 ) : (
@@ -181,12 +171,6 @@ const Register = () => {
                   </div>
                 )}
 
-                {/* <button
-                  type='submit'
-                  className='text-white bg-green-600 hover:bg-green-500 border border-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 font-medium rounded-md text-xs md:text-sm px-5 py-2.5 text-center inline-flex items-center justify-center mb-2 capitalize'
-                >
-                  {values.isMember ? `sign in` : `create account`}
-                </button> */}
                 <Button primary type='submit' disabled={isLoading}>
                   {values.isMember ? `sign in` : `create account`}
                 </Button>

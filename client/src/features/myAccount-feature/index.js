@@ -1,6 +1,6 @@
-import MyProfile from "./MyProfile";
-import ChangePassword from "./ChangePassword";
-import SetPayment from "./SetPayment";
-import PaymentDetails from "./PaymentDetails";
+import MyProfile from './MyProfile';
+import ChangePassword from './ChangePassword';
+import SetPaymentMethod from './SetPaymentMethod';
+import PaymentDetails from './PaymentDetails';
 
-export { MyProfile, ChangePassword, SetPayment, PaymentDetails };
+export { MyProfile, ChangePassword, SetPaymentMethod, PaymentDetails };

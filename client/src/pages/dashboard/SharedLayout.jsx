@@ -1,43 +1,20 @@
-import { Outlet } from "react-router-dom";
-import styled from "styled-components";
+import { Outlet } from 'react-router-dom';
 
-import { BigSidebar, SmallSidebar, Navbar } from "../../components/dashboard";
-
-const Wrapper = styled.section`
-  .dashboard {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .dashboard-page {
-    width: 90vw;
-    margin: 0 auto;
-    padding: 1rem 0;
-  }
-  @media (min-width: 992px) {
-    .dashboard {
-      grid-template-columns: auto 1fr;
-    }
-    .dashboard-page {
-      width: 95%;
-    }
-  }
-`;
+import { BigSidebar, SmallSidebar, Navbar } from '../../components/dashboard';
 
 const SharedLayout = () => {
   return (
-    <Wrapper>
-      <main className="dashboard bg-gray-100">
-        <SmallSidebar />
-        <BigSidebar />
-        <div>
-          <Navbar />
+    <main className='dashboard grid-cols-1 grid bg-gray-100 '>
+      <SmallSidebar />
+      <BigSidebar />
+      <div>
+        <Navbar />
 
-          <div className="dashboard-page">
-            <Outlet />
-          </div>
+        <div className='dashboard-page w-11/12 mx-auto py-4 '>
+          <Outlet />
         </div>
-      </main>
-    </Wrapper>
+      </div>
+    </main>
   );
 };
 

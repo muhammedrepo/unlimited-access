@@ -15,7 +15,7 @@ const Wrapper = styled.aside`
       min-height: 100vh;
       height: 100%;
       width: 290px;
-      margin-left: -250px;
+      margin-left: -290px;
       transition: var(--transition);
     }
     .content {
@@ -77,6 +77,9 @@ const Wrapper = styled.aside`
 
 const BigSidebar = () => {
   const { showSidebar, user } = useAppContext();
+
+  const firstLetter = user.name.charAt(0);
+
   return (
     <Wrapper>
       <div
@@ -92,13 +95,11 @@ const BigSidebar = () => {
             className='sidebar-user text-center flex flex-col items-center'
             style={{ padding: '14px' }}
           >
-            <div className='btn bg-skin-green-dark w-20 h-20 mb-3 rounded-full shadow-lg'>
-              <img src='' alt='user' />
-              <FaUser />
+            <div className='bg-skin-green-dark w-20 h-20 mb-3 rounded-full shadow-lg flex items-center justify-center text-white font-bold text-4xl'>
+              {user ? firstLetter : <FaUser className='text-white' />}
             </div>
 
-            <Link to='https://cloutzap.com/taskwall'>
-              {' '}
+            <Link to='task-wall'>
               <h6 className='mt-1 f-14 font-semibold'>
                 <span className='font-semibold'>{user.email}</span>
               </h6>

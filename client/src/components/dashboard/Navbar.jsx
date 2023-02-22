@@ -1,14 +1,15 @@
-import { useState } from "react";
+import { useState } from 'react';
 import {
   FaAlignLeft,
   FaCaretDown,
   FaFileInvoiceDollar,
   FaUserCircle,
-} from "react-icons/fa";
-import { FiSettings } from "react-icons/fi";
-import styled from "styled-components";
-import { useAppContext } from "../../context/appContext";
-import Button from "../Button";
+} from 'react-icons/fa';
+import { FiSettings } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { useAppContext } from '../../context/appContext';
+import Button from '../Button';
 
 const Wrapper = styled.nav`
   z-index: 40;
@@ -65,14 +66,7 @@ const Wrapper = styled.nav`
   .show-dropdown {
     visibility: visible;
   }
-  .dropdown-btn {
-    background: transparent;
-    border-color: transparent;
-    color: var(--primary-500);
-    letter-spacing: var(--letterSpacing);
-    text-transform: capitalize;
-    cursor: pointer;
-  }
+
   .logo-text {
     display: none;
     margin: 0;
@@ -99,50 +93,45 @@ const Navbar = () => {
 
   return (
     <Wrapper>
-      <div className="nav-center">
-        <button type="button" className="toggle-btn" onClick={toggleSidebar}>
+      <div className='nav-center'>
+        <button type='button' className='toggle-btn' onClick={toggleSidebar}>
           <FaAlignLeft />
         </button>
-        <div className="p-0">
-          <ul className="flex space-x-4">
+        <div className='p-0'>
+          <ul className='flex space-x-4'>
             <li>
-              <Button
-                url="/withdraw"
-                className="bg-skin-green-light text-skin-dark-green"
-              >
-                <FaFileInvoiceDollar className="mr-2" />{" "}
-                <span className="capitalize font-semibold text-xs">
-                  Payments
-                </span>
-              </Button>
+              <Link to='withdraw'>
+                <Button className='bg-skin-green-light text-skin-dark-green'>
+                  <FaFileInvoiceDollar className='mr-2' />
+                  <span className='capitalize font-semibold text-xs'>
+                    Payments
+                  </span>
+                </Button>
+              </Link>
             </li>
             <li>
-              <Button
-                url="settings"
-                className="bg-skin-green-light text-skin-dark-green"
-              >
-                <FiSettings className="mr-2" />{" "}
-                <span className="capitalize font-semibold text-xs">
-                  Edit Account
-                </span>
-              </Button>
+              <Link to='settings'>
+                <Button className='bg-skin-green-light text-skin-dark-green'>
+                  <FiSettings className='mr-2' />
+                  <span className='capitalize font-semibold text-xs'>
+                    Edit Account
+                  </span>
+                </Button>
+              </Link>
             </li>
           </ul>
         </div>
-        <div className="btn-container">
-          <button
-            type="button"
-            className="btn"
-            onClick={() => setShowLogout(!showLogout)}
-          >
-            <FaUserCircle />
+        <div className='btn-container'>
+          <Button btnDark onClick={() => setShowLogout(!showLogout)}>
+            <FaUserCircle className='mr-2' />
             {user?.name}
-            <FaCaretDown />
-          </button>
-          <div className={showLogout ? "dropdown show-dropdown" : "dropdown"}>
-            <button type="button" className="dropdown-btn" onClick={logoutUser}>
+            <FaCaretDown className='ml-1' />
+          </Button>
+
+          <div className={showLogout ? 'dropdown show-dropdown' : 'dropdown'}>
+            <Button danger onClick={logoutUser}>
               logout
-            </button>
+            </Button>
           </div>
         </div>
       </div>

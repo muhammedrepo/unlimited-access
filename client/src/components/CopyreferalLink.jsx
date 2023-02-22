@@ -8,8 +8,8 @@ const CopyreferalLink = () => {
   const [toggle, setToggle] = useState(false);
   const { user } = useAppContext();
 
-  const referralLink = `http://send.coolzyte.com/${user.name}`;
-  console.log(user);
+  const referralLink = `http://send.localhost:500/${user.name}`;
+
   const copy = async () => {
     await navigator.clipboard.writeText(referralLink);
     setToggle(!toggle);

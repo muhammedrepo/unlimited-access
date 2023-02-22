@@ -63,4 +63,13 @@ const updateUser = async (req, res) => {
   res.status(StatusCodes.OK).json({ user, token });
 };
 
-export { register, login, updateUser };
+const clickTracker = async (req, res) => {
+  const { url } = req.body;
+  if (clickCounts[url]) {
+    clickCounts[url]++;
+  } else {
+    clickCounts[url] = 1;
+  }
+  res.json({ clickCount: clickCounts[url] });
+};
+export { register, login, updateUser, clickTracker };

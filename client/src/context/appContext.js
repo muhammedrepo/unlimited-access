@@ -12,6 +12,10 @@ import {
   LOGIN_USER_BEGIN,
   LOGIN_USER_SUCCESS,
   LOGIN_USER_ERROR,
+  LOGOUT_USER,
+  TRACK_CLICK_BEGIN,
+  TRACK_CLICK_SUCCESS,
+  TRACK_CLICK_ERROR,
 } from './actions';
 
 const token = localStorage.getItem('token');
@@ -28,6 +32,7 @@ const initialState = {
   token: token,
   userLocation: userLocation || '',
   accountLocation: userLocation || '',
+  clickCount: 0,
 };
 
 const AppContext = React.createContext();
@@ -67,7 +72,7 @@ const AppProvider = ({ children }) => {
 
     try {
       const response = await axios.post('/api/v1/auth/register', currentUser);
-      // console.log(response);
+
       const { user, token, location } = response.data;
       dispatch({
         type: REGISTER_USER_SUCCESS,
@@ -75,7 +80,6 @@ const AppProvider = ({ children }) => {
       });
       addUserToLocalStorage({ user, token, location });
     } catch (error) {
-      // console.log(error.response);
       dispatch({
         type: REGISTER_USER_ERROR,
         payload: { msg: error.response.data.msg },
@@ -105,6 +109,34 @@ const AppProvider = ({ children }) => {
     clearAlert();
   };
 
+  // const trackClick = async (currentUser) => {
+  //   dispatch({ type: TRACK_CLICK_BEGIN });
+
+  //   try {
+  //     const { data } = await axios.post(
+  //       '/api/v1/auth/track-click',
+  //       currentUser
+  //     );
+
+  //     const { user, token, clickCount } = data;
+  //     dispatch({
+  //       type: TRACK_CLICK_SUCCESS,
+  //       payload: { user, token, clickCount },
+  //     });
+  //     addUserToLocalStorage({ user, token, clickCount });
+  //   } catch (error) {
+  //     dispatch({
+  //       type: TRACK_CLICK_ERROR,
+  //       payload: { msg: error.response.data.msg },
+  //     });
+  //   }
+  // };
+
+  const logoutUser = () => {
+    dispatch({ type: LOGOUT_USER });
+    removeUserFromLocalStorage();
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -113,6 +145,7 @@ const AppProvider = ({ children }) => {
         toggleSidebar,
         registerUser,
         loginUser,
+        logoutUser,
       }}
     >
       {children}

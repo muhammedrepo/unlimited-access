@@ -2,6 +2,7 @@ import { FaMoneyBillWave, FaRegSmile } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import ReactTextRotator from 'react-text-rotator';
 import { Button } from '../../../components';
+
 import { useAppContext } from '../../../context/appContext';
 
 const contentA = [
