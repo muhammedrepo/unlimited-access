@@ -13,6 +13,8 @@ import {
   LOGIN_USER_SUCCESS,
   LOGIN_USER_ERROR,
   LOGOUT_USER,
+  PAYMENT_METHOD_SUCCESS,
+  PAYMENT_METHOD_ERROR,
   TRACK_CLICK_BEGIN,
   TRACK_CLICK_SUCCESS,
   TRACK_CLICK_ERROR,
@@ -137,6 +139,18 @@ const AppProvider = ({ children }) => {
     removeUserFromLocalStorage();
   };
 
+  const addPaymentMethod = () => {
+    try {
+      dispatch({ type: PAYMENT_METHOD_SUCCESS });
+    } catch (error) {
+      dispatch({
+        type: PAYMENT_METHOD_ERROR,
+        payload: { msg: error.response.data.msg },
+      });
+    }
+    clearAlert();
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -146,6 +160,7 @@ const AppProvider = ({ children }) => {
         registerUser,
         loginUser,
         logoutUser,
+        addPaymentMethod,
       }}
     >
       {children}

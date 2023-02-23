@@ -12,6 +12,8 @@ import {
   TRACK_CLICK_BEGIN,
   TRACK_CLICK_SUCCESS,
   TRACK_CLICK_ERROR,
+  PAYMENT_METHOD_SUCCESS,
+  PAYMENT_METHOD_ERROR,
 } from './actions';
 import { initialState } from './appContext';
 
@@ -38,6 +40,23 @@ const reducer = (state, action) => {
     return { ...state, showSidebar: !state.showSidebar };
   }
 
+  if (action.type === PAYMENT_METHOD_SUCCESS) {
+    return {
+      ...state,
+      showAlert: true,
+      alertType: 'green',
+      alertText: 'Payment method added successfully',
+    };
+  }
+
+  if (action.type === PAYMENT_METHOD_ERROR) {
+    return {
+      ...state,
+      showAlert: true,
+      alertType: 'red',
+      alertText: action.payload.msg,
+    };
+  }
   if (action.type === REGISTER_USER_BEGIN) {
     return { ...state, isLoading: true };
   }

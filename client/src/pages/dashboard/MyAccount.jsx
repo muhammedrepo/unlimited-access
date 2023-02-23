@@ -1,5 +1,7 @@
 import { useState } from 'react';
+import { Alert } from '../../components';
 import { Breadcrumb } from '../../components/dashboard';
+import { useAppContext } from '../../context/appContext';
 import {
   ChangePassword,
   MyProfile,
@@ -9,6 +11,7 @@ import {
 
 const MyAccount = () => {
   const [paymentList, setPaymentList] = useState([]);
+  const { showAlert } = useAppContext();
 
   const handleAddPayment = (pMethod, pDetail) => {
     setPaymentList((prevPaymentList) => {
@@ -25,21 +28,20 @@ const MyAccount = () => {
   return (
     <div>
       <Breadcrumb title='My Account' page='Edit Account' />
-      <main className='pt-14'>
-        <section>
-          <div className='grid grid-cols-1 gap-y-6 lg:gap-6 lg:grid-cols-3'>
-            <MyProfile />
-            <div className='col-span-2'>
-              <ChangePassword />
-            </div>
+      <main className='pt-6'>
+        {showAlert && <Alert />}
+
+        <div className='grid grid-cols-1 gap-y-6 lg:gap-6 lg:grid-cols-3'>
+          <MyProfile />
+          <div className='col-span-2'>
+            <ChangePassword />
           </div>
-        </section>
-        <section className='pt-12'>
-          <div className='grid md:grid-cols-2 gap-6'>
-            <SetPaymentMethod onAddPayment={handleAddPayment} />
-            <PaymentDetails details={paymentList} />
-          </div>
-        </section>
+        </div>
+
+        <div className='grid md:grid-cols-2 gap-6 pt-6'>
+          <SetPaymentMethod onAddPayment={handleAddPayment} />
+          <PaymentDetails details={paymentList} />
+        </div>
       </main>
     </div>
   );

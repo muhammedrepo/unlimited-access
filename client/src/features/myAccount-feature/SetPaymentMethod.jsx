@@ -3,6 +3,7 @@ import { FaPaypal } from 'react-icons/fa';
 import { SiCashapp } from 'react-icons/si';
 import Button from '../../components/Button';
 import { Card, CardHeader } from '../../components/UI';
+import { useAppContext } from '../../context/appContext';
 
 const options = [
   { id: 1, label: 'PayPal', icon: <FaPaypal className='text-blue-500' /> },
@@ -17,6 +18,7 @@ const SetPaymentMethod = ({ onAddPayment }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [enteredDetail, setEnteredDetail] = useState('');
   const [selectedOption, setSelectedOption] = useState();
+  const { displayAlert, addPaymentMethod } = useAppContext();
 
   const divEl = useRef();
 
@@ -52,10 +54,11 @@ const SetPaymentMethod = ({ onAddPayment }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (enteredDetail.trim().length === 0 || selectedOption === null) {
-      console.log('Fill the input');
+      displayAlert();
       return;
     }
     onAddPayment(selectedOption, enteredDetail);
+    addPaymentMethod();
     setSelectedOption(null);
     setEnteredDetail('');
   };

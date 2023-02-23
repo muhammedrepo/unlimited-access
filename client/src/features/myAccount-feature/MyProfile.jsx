@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaEdit, FaUserEdit } from 'react-icons/fa';
 import { useAppContext } from '../../context/appContext';
-import Alert from '../../components/Alert';
+
 import Button from '../../components/Button';
 
 import FormRow from '../../components/FormRow';
@@ -17,7 +17,9 @@ const initialState = {
 
 const MyProfile = () => {
   const [values, setValues] = useState(initialState);
-  const { showAlert, displayAlert, user } = useAppContext();
+  const { displayAlert, user } = useAppContext();
+
+  const username = user.email.split('@')[0].concat(` (Can't be changed)`);
 
   const handleChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
@@ -34,14 +36,13 @@ const MyProfile = () => {
 
   return (
     <Card>
-      <CardHeader title='My Profile' />
+      <CardHeader title='My Profile' className='pb-0' />
       <div className='card-body'>
         <form onSubmit={onSubmit}>
-          {showAlert && <Alert />}
           <div className='mb-2'>
             <div className='profile-title max-w-xs mx-auto'>
               <div className='flex flex-col xl:flex-row items-center xl:justify-between text-center'>
-                <FaUserEdit className='text-green-600 text-5xl' />
+                <FaUserEdit className='text-green-600 text-4xl' />
 
                 <div className='flex flex-col items-center'>
                   <h3 className='mb-1 text-green-600'>
@@ -77,7 +78,7 @@ const MyProfile = () => {
               type='text'
               labelText='CoutZap Username'
               name='username'
-              value={values.username}
+              value={username}
               disabled='disabled'
             />
           </div>
